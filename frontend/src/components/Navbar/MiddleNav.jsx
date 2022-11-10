@@ -24,15 +24,7 @@ import { FiShoppingBag } from "react-icons/fi";
 import { GrContact } from "react-icons/gr";
 import { ProductPageNav } from "./ProductPageNav";
 import styles from "./nav.module.css";
-import SubNav from "./WomensubMenu";
-import MenSubNav from "./MenSubNav";
-import { BottomBanner } from "./BottomBanner";
-import { useDispatch, useSelector } from "react-redux";
-import { SwitchTab } from "../../Redux/App/action";
-import { useState } from "react";
-import { useEffect } from "react";
-import { getaddcartdata } from "../../Redux/Addtocart/action";
-
+import SubNav from "./subMenu";
 export const MiddleNav = () => {
   const Navigate=useNavigate()
   const dispatch=useDispatch();
@@ -168,22 +160,16 @@ dispatch(getaddcartdata())
             </Box>
           </Flex>
         </Box>
-      </TabList>
-      <TabPanels>
-        <TabPanel p="0" w="100%">
-          <SubNav />
-          <BottomBanner />
-        </TabPanel>
-        <TabPanel p="0" w="100%">
-
-        {/* <SubNav /> */}
-          <MenSubNav />
-          <BottomBanner />
-        </TabPanel>
-      </TabPanels>
-    </Tabs>
-
-
-
+    
+  </TabList>
+  <TabPanels>
+    <TabPanel p="0"  w="100%">
+    <SubNav />
+    </TabPanel>
+    <TabPanel>
+      <p>two!</p>
+    </TabPanel>
+  </TabPanels>
+</Tabs>
   );
 };
