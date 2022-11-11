@@ -123,6 +123,9 @@ dispatch(getaddcartdata())
               <Flex alignItems={"center"}>
                 <Popover>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ea90062 (productpage added)
                   <PopoverTrigger>
                     <Button
                       mr={-5}
@@ -191,6 +194,7 @@ dispatch(getaddcartdata())
                   </PopoverContent>
                 </Popover>
 <<<<<<< HEAD
+<<<<<<< HEAD
                
 =======
   <PopoverTrigger>
@@ -234,6 +238,8 @@ dispatch(getaddcartdata())
                 </Link>
                 </Box>
 =======
+=======
+>>>>>>> ea90062 (productpage added)
                 <Link to="/wishlist">
                   <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
                 </Link>
