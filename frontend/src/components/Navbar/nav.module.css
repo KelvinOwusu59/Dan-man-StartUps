@@ -88,6 +88,10 @@
   .megaBox .content {
     background: #fdfdfd;
     display: flex;
+<<<<<<< HEAD
+=======
+    /* margin-top: -35px; */
+>>>>>>> 7960daf (productpage adde)
     width: 100%;
   gap: 4rem;
   }

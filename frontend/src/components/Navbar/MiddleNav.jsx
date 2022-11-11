@@ -15,7 +15,11 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
+=======
+import { Link } from "react-router-dom";
+>>>>>>> 7960daf (productpage adde)
 import { RepeatClockIcon } from "@chakra-ui/icons";
 import { SearchInput } from "./SearchInput";
 import { HiOutlineUser, HiOutlineHeart } from "react-icons/hi";
@@ -24,7 +28,13 @@ import { FiShoppingBag } from "react-icons/fi";
 import { GrContact } from "react-icons/gr";
 import { ProductPageNav } from "./ProductPageNav";
 import styles from "./nav.module.css";
+<<<<<<< HEAD
 import SubNav from "./subMenu";
+=======
+import SubNav from "./WomensubMenu";
+import MenSubNav from "./MenSubNav";
+import { BottomBanner } from "./BottomBanner";
+>>>>>>> 7960daf (productpage adde)
 export const MiddleNav = () => {
   const Navigate=useNavigate()
   const dispatch=useDispatch();
@@ -44,28 +54,46 @@ dispatch(getaddcartdata())
   return (
     <Tabs variant="unstyled">
       <TabList>
+<<<<<<< HEAD
         <Box  h="60px" w="100%" bgColor={"#2d2d2d"}>
+=======
+        <Box h="60px" w="100%" bgColor={"#2d2d2d"}>
+>>>>>>> 7960daf (productpage adde)
           <Flex
             color={"white"}
             alignItems={"center"}
             w="90%"
             h="100%"
             m={"auto"}
+<<<<<<< HEAD
           > <Link to="/womenhome">
             <Box  mr="20px" fontWeight={"bold"}>
              
                 <Text className={styles.Heading} lineHeight="22px">FASHION WORLD</Text>
               
             </Box></Link>
+=======
+          >
+            <Box mr="20px" fontWeight={"bold"}>
+              <Link to="/">
+                <Heading size={"xl"}>Fashion World</Heading>
+              </Link>
+            </Box>
+>>>>>>> 7960daf (productpage adde)
             <Tab
               borderLeft={"1px solid grey"}
               _selected={{ color: "white", bg: "#525050" }}
               w="8%"
               h="100%"
               fontWeight={"bold"}
+<<<<<<< HEAD
              
             >
                 <Link to={"/womenhome"}> WOMEN</Link>
+=======
+            >
+                <Link to={"/women"}> WOMEN</Link>
+>>>>>>> 7960daf (productpage adde)
             </Tab>
 
         <Tab
@@ -75,11 +103,19 @@ dispatch(getaddcartdata())
               h="100%"
               fontWeight={"bold"}
             >
+<<<<<<< HEAD
              <Link to={"/menhome"}> MEN</Link>
             </Tab>
           
             <SearchInput />
             <Box ml={5}>
+=======
+             <Link to={"/men"}> MEN</Link>
+            </Tab>
+          
+            <SearchInput />
+            <Box ml={10}>
+>>>>>>> 7960daf (productpage adde)
               <Flex alignItems={"center"}>
                 <Popover>
                   <PopoverTrigger>
@@ -95,6 +131,7 @@ dispatch(getaddcartdata())
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader bgColor={"#ddd"}>
+<<<<<<< HEAD
                     <Box> { userData?<><Flex><Text>{userData.data.firstname}</Text>
                       &nbsp;|&nbsp; <Text cursor={"pointer"}
                        onClick={handelSignout}>SignOut</Text></Flex></>:
@@ -103,6 +140,10 @@ dispatch(getaddcartdata())
                       <Link to="/signup">Join</Link>
                       </Box>}
                      </Box>
+=======
+                      <Link to="/login">Sign In</Link>|{" "}
+                      <Link to="/signup">Join</Link>
+>>>>>>> 7960daf (productpage adde)
                     </PopoverHeader>
                     <PopoverBody>
                       <Flex
@@ -144,6 +185,7 @@ dispatch(getaddcartdata())
                     </PopoverBody>
                   </PopoverContent>
                 </Popover>
+<<<<<<< HEAD
                
                 <Link to="/wishlist">
                   <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
@@ -156,10 +198,20 @@ dispatch(getaddcartdata())
                   <Text position={"absolute"} right="3" top="1.5">{ data.length}</Text>
                 </Link>
                 </Box>
+=======
+                <Link to="/wishlist">
+                  <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
+                </Link>
+                <Link to={"/cart"}>
+                  {" "}
+                  <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
+                </Link>
+>>>>>>> 7960daf (productpage adde)
               </Flex>
             </Box>
           </Flex>
         </Box>
+<<<<<<< HEAD
     
   </TabList>
   <TabPanels>
@@ -171,5 +223,20 @@ dispatch(getaddcartdata())
     </TabPanel>
   </TabPanels>
 </Tabs>
+=======
+      </TabList>
+      <TabPanels>
+        <TabPanel p="0" w="100%">
+          <SubNav />
+          <BottomBanner />
+        </TabPanel>
+        <TabPanel p="0" w="100%">
+        <SubNav />
+          {/* <MenSubNav /> */}
+          <BottomBanner />
+        </TabPanel>
+      </TabPanels>
+    </Tabs>
+>>>>>>> 7960daf (productpage adde)
   );
 };

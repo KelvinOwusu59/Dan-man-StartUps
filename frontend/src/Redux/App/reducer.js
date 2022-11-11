@@ -5,10 +5,14 @@ const initialState={
     products:[],
     Gridproducts:[],
     product:{},
+<<<<<<< HEAD
     loading:false,
     cart:[],
     searchProd:[],
     searchQuery:""
+=======
+    loading:true
+>>>>>>> 7960daf (productpage adde)
 }
 
 
@@ -21,6 +25,7 @@ const reducers=(state=initialState,action)=>{
                 products:action.payload,
                 loading:false
             }
+<<<<<<< HEAD
         case types.CART:
             return {
                 ...state,
@@ -37,6 +42,10 @@ const reducers=(state=initialState,action)=>{
                    loading:true,
                 }
             
+=======
+           
+        
+>>>>>>> 7960daf (productpage adde)
         default:
             return state
     }

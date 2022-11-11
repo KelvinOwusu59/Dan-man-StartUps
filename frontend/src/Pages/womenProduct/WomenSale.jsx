@@ -9,7 +9,10 @@ import {
   Collapse,
   Flex,
   Heading,
+<<<<<<< HEAD
   Image,
+=======
+>>>>>>> 7960daf (productpage adde)
   Select,
   SimpleGrid,
   Tag,
@@ -33,16 +36,24 @@ console.log(products)
 
   const handleToggle = () => setShow(!show);
 const HandleSort=(e)=>{
+<<<<<<< HEAD
   // dispatch(loadProduct("women","sale"));
+=======
+  dispatch(loadProduct("women","sale"));
+>>>>>>> 7960daf (productpage adde)
 console.log(e.target.value)
 }
   return (
     <Box mb={10}>
+<<<<<<< HEAD
       {
         products.length===0 ? 
         <Flex justifyContent={"center"}>
         <Image  src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
         </Flex> :<>  <Box w="85%" m="auto" mt={3} mb={3}>
+=======
+      <Box w="85%" m="auto" mt={3} mb={3}>
+>>>>>>> 7960daf (productpage adde)
         <Breadcrumb
           spacing="8px"
           separator={<ChevronRightIcon color="gray.500" />}
@@ -98,8 +109,13 @@ console.log(e.target.value)
         </VStack>
       </Box>
       <hr />
+<<<<<<< HEAD
       <SimpleGrid columns={[4,6,6,10]} p={[5,5,5,5]}  spacing={[5,5,5,5]} mb={2}>
         <Button mt={2} h="30px" borderRadius={"25px"}>DRESSES</Button>
+=======
+      <Flex justifyContent={"space-between"} w="85%" m="auto" mb={2}>
+        <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
+>>>>>>> 7960daf (productpage adde)
         <Button mt={2} h="30px" borderRadius={"25px"}>TOPS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JEMSUITES</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>SHORTS</Button>
@@ -109,11 +125,19 @@ console.log(e.target.value)
         <Button mt={2} h="30px" borderRadius={"25px"}>JEANS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>ACTIVEWEAR</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JACKETS</Button>
+<<<<<<< HEAD
       </SimpleGrid>
       <hr />
       <Box  mb={2} bgColor="#EEEEEE">
       <SimpleGrid   w={["95%","90%","90%","85%"]} m="auto" p={2} columns={[2,3,4,6]} spacing={[5]}>
       <Select  _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+=======
+      </Flex>
+      <hr />
+      <Box  mb={2} bgColor="#EEEEEE">
+      <SimpleGrid   w="85%" m="auto" p={2} columns={6} spacing={5}>
+      <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+>>>>>>> 7960daf (productpage adde)
   <option value=''>Sort</option>
  
   <option value='asc'>Price Low to high</option>
@@ -126,7 +150,11 @@ console.log(e.target.value)
   <option value='lowtohigh'>Up to 75%</option>
   <option value='hightolow'>Up to 100%</option>
 </Select>
+<<<<<<< HEAD
 <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+=======
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+>>>>>>> 7960daf (productpage adde)
   <option value=''>Category</option>
   <option value='shoes'>shoes</option>
   <option value='boot'>Boot</option>
@@ -191,11 +219,16 @@ console.log(e.target.value)
 </Select>
         </SimpleGrid>
        
+<<<<<<< HEAD
       </Box></>
       }
     
       
       <SimpleGrid columns={[2,2,3,4]} w="85%" m={"auto"} spacing={3} p={0}>
+=======
+      </Box>
+      <SimpleGrid columns={4} w="85%" m={"auto"} spacing={3} p={0}>
+>>>>>>> 7960daf (productpage adde)
      {
       products.length>0 && products.map((item)=>
       <>

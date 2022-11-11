@@ -9,7 +9,10 @@ import {
   Collapse,
   Flex,
   Heading,
+<<<<<<< HEAD
   Image,
+=======
+>>>>>>> 7960daf (productpage adde)
   Select,
   SimpleGrid,
   Tag,
@@ -24,6 +27,7 @@ import { loadProduct, loadProductWithQuery } from "../../Redux/App/action";
 import { ProductList } from "./productList";
 export const WomenDresses = () => {
   const [show, setShow] = useState(false);
+<<<<<<< HEAD
   const dispatch = useDispatch();
   const products = useSelector((state) => state.AppReducer.products);
   console.log(products);
@@ -46,6 +50,25 @@ export const WomenDresses = () => {
         <Image src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
         </Flex> :<>
         <Box w="85%" m="auto" mt={3} mb={3}>
+=======
+  const dispatch=useDispatch();
+  const products  = useSelector((state) => state.AppReducer.products);
+console.log(products)
+  useEffect(() => {
+    // = (type,page,limt)
+    // dispatch(loadProduct("women","one peace"));
+    dispatch( loadProductWithQuery("women",3,12));
+  }, [dispatch]);
+
+  const handleToggle = () => setShow(!show);
+const HandleSort=(e)=>{
+  dispatch(loadProduct("women","sale"));
+console.log(e.target.value)
+}
+  return (
+    <Box mb={10}>
+      <Box w="85%" m="auto" mt={3} mb={3}>
+>>>>>>> 7960daf (productpage adde)
         <Breadcrumb
           spacing="8px"
           separator={<ChevronRightIcon color="gray.500" />}
@@ -66,7 +89,11 @@ export const WomenDresses = () => {
       <hr />
       <Box w="85%" m="auto" mt={5}>
         <Center>
+<<<<<<< HEAD
           <Heading size={"md"}>Women's Dresses</Heading>
+=======
+          <Heading size={"md"}>Women's Sale</Heading>
+>>>>>>> 7960daf (productpage adde)
         </Center>
         <VStack w="80%" m={"auto"} mt={4}>
           <Collapse startingHeight={20} in={show}>
@@ -101,6 +128,7 @@ export const WomenDresses = () => {
         </VStack>
       </Box>
       <hr />
+<<<<<<< HEAD
       <SimpleGrid
         columns={[4, 6, 6, 10]}
         p={[5, 5, 5, 5]}
@@ -309,5 +337,113 @@ export const WomenDresses = () => {
   </>
 }
       </Box>
+=======
+      <Flex justifyContent={"space-between"} w="85%" m="auto" mb={2}>
+        <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>TOPS</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>JEMSUITES</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>SHORTS</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>SHOES</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>BEACHWEAR</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}> TROUSERS</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>JEANS</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>ACTIVEWEAR</Button>
+        <Button mt={2} h="30px" borderRadius={"25px"}>JACKETS</Button>
+      </Flex>
+      <hr />
+      <Box  mb={2} bgColor="#EEEEEE">
+      <SimpleGrid   w="85%" m="auto" p={2} columns={6} spacing={5}>
+      <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Sort</option>
+ 
+  <option value='asc'>Price Low to high</option>
+  <option value='desc'>Price High to Low</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Discount %</option>
+  <option value='option2'>Up to 20%</option>
+  <option value='option3'>Up to 50%</option>
+  <option value='lowtohigh'>Up to 75%</option>
+  <option value='hightolow'>Up to 100%</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Category</option>
+  <option value='shoes'>shoes</option>
+  <option value='boot'>Boot</option>
+  <option value='one peace'>One Peace</option>
+  <option value='jacket'>Jackets</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Product Type</option>
+  <option value='shoes'>shoes</option>
+  <option value='boot'>Boot</option>
+  <option value='one peace'>One Peace</option>
+  <option value='jacket'>Jackets</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Style</option>
+  <option value='shoes'>Other</option>
+  <option value='boot'>Regular</option>
+  <option value='one peace'>Fit</option>
+  <option value='jacket'>Cut Out</option>
+  <option value='jacket'>Wrap</option>
+</Select>
+
+<Select  _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Brand</option>
+  <option value='shoes'>ASOS 4505</option>
+  <option value='boot'>ASOS Curve</option>
+  <option value='one peace'>ASOS Design</option>
+  <option value='jacket'>ASOS Edition</option>
+  <option value='jacket'>ASOS Luxe</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Color</option>
+  <option value='shoes'>RED</option>
+  <option value='boot'>BLACK</option>
+  <option value='one peace'>WHITE</option>
+  <option value='jacket'>MULTI</option>
+  <option value='jacket'>BROWN</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Body Fit</option>
+  <option value='shoes'>RED</option>
+  <option value='boot'>BLACK</option>
+  <option value='one peace'>WHITE</option>
+  <option value='jacket'>MULTI</option>
+  <option value='jacket'>BROWN</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Size</option>
+  <option value='shoes'>RED</option>
+  <option value='boot'>BLACK</option>
+  <option value='one peace'>WHITE</option>
+  <option value='jacket'>MULTI</option>
+  <option value='jacket'>BROWN</option>
+</Select>
+<Select _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+  <option value=''>Price Range</option>
+  <option value='shoes'>RED</option>
+  <option value='boot'>BLACK</option>
+  <option value='one peace'>WHITE</option>
+  <option value='jacket'>MULTI</option>
+  <option value='jacket'>BROWN</option>
+</Select>
+        </SimpleGrid>
+       
+      </Box>
+      <SimpleGrid columns={4} w="85%" m={"auto"} spacing={3} p={0}>
+     {
+      products.length>0 && products.map((item)=>
+      <>
+        <ProductList data={item} />
+        
+        
+        </>
+    )
+     }
+      </SimpleGrid>
+    </Box>
+>>>>>>> 7960daf (productpage adde)
   );
 };
