@@ -118,6 +118,7 @@ dispatch(getaddcartdata())
 >>>>>>> 7960daf (productpage adde)
               <Flex alignItems={"center"}>
                 <Popover>
+<<<<<<< HEAD
                   <PopoverTrigger>
                     <Button
                       mr={-5}
@@ -187,6 +188,35 @@ dispatch(getaddcartdata())
                 </Popover>
 <<<<<<< HEAD
                
+=======
+  <PopoverTrigger>
+ 
+    <Button mr={-5} bgColor={"transparent"} _hover={{bgColor:"transparent"}}><HiOutlineUser size={30} /></Button>
+    </PopoverTrigger>
+  <PopoverContent color="black">
+    <PopoverArrow />
+    <PopoverCloseButton />
+    <PopoverHeader bgColor={"#ddd"}>
+        <Link to="/signin">Sign In</Link>
+           |   <Link to="/signup">Join</Link>
+    </PopoverHeader>
+    <PopoverBody>
+        <Flex _hover={{color:"#0770cf"}} mt={2} ml={2} alignItems={"center"}>
+        <HiOutlineUser size={30} /> <Text ml={2}> My Account</Text>
+        </Flex>
+        <Flex _hover={{color:"#0770cf"}} mt={5} ml={2} alignItems={"center"}>
+        <FiShoppingBag size={25} /><Text ml={2}> My Orders</Text>
+        </Flex>
+        <Flex _hover={{color:"#0770cf"}} mt={5} ml={2} alignItems={"center"}>
+        <RepeatClockIcon fontSize={"25px"} /><Text ml={2}> Returns Information</Text>
+        </Flex>
+        <Flex _hover={{color:"#0770cf"}} mt={5} ml={2} alignItems={"center"}>
+        <GrContact size={25}  /><Text ml={2}> Contact Preference</Text>
+        </Flex>
+    </PopoverBody>
+  </PopoverContent>
+</Popover>
+>>>>>>> 6808b6d (added signup and signin page)
                 <Link to="/wishlist">
                   <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
                 </Link>

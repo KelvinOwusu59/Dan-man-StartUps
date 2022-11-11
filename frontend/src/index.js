@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6808b6d (added signup and signin page)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -7,6 +10,7 @@ import "./fonts/FuturaPTCondBook.otf";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
+<<<<<<< HEAD
 =======
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -41,6 +45,14 @@ root.render(
         <App />
       </Provider>
     </BrowserRouter>
+=======
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <ChakraProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+>>>>>>> 6808b6d (added signup and signin page)
   </ChakraProvider>
 );
 

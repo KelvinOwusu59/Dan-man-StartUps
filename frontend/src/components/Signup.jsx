@@ -10,11 +10,15 @@ import {
   InputRightElement,
   Radio,
   RadioGroup,
+<<<<<<< HEAD
   Spinner,
+=======
+>>>>>>> 6808b6d (added signup and signin page)
   Stack,
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { useToast } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { DiApple } from "react-icons/di";
@@ -85,6 +89,16 @@ export default function Signup() {
     }
   }
 
+=======
+import { DiApple } from "react-icons/di";
+import { FcGoogle } from "react-icons/fc";
+import { IoLogoFacebook } from "react-icons/io";
+
+export default function Signup() {
+  const [show, setShow] = useState(false);
+  const handleClick = () => setShow(!show);
+  const [password, setPassword] = useState("");
+>>>>>>> 6808b6d (added signup and signin page)
   return (
     <Box style={{ fontFamily: "sans-serif" }}>
       <Text textAlign={"center"} fontSize={"20px"} mt={"30px"} fontWeight={600}>
@@ -146,7 +160,11 @@ export default function Signup() {
         OR SIGN UP WITH EMAIL
       </Text>
 
+<<<<<<< HEAD
       <FormControl w={["95%", "75%", "65%"]} margin={"auto"}>
+=======
+      <FormControl w={"65%"} margin={"auto"}>
+>>>>>>> 6808b6d (added signup and signin page)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -155,12 +173,16 @@ export default function Signup() {
         >
           EMAIL ADDRESS :
         </FormLabel>
+<<<<<<< HEAD
         <Input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           size="lg"
           type="email"
         />
+=======
+        <Input size="lg" type="email" />
+>>>>>>> 6808b6d (added signup and signin page)
         <FormHelperText>We'll send your order confirmation here</FormHelperText>
         <FormLabel
           color={"gray"}
@@ -170,12 +192,16 @@ export default function Signup() {
         >
           FIRST NAME :
         </FormLabel>
+<<<<<<< HEAD
         <Input
           value={firstname}
           onChange={(e) => setFirstName(e.target.value)}
           size="lg"
           type="text"
         />
+=======
+        <Input size="lg" type="text" />
+>>>>>>> 6808b6d (added signup and signin page)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -184,12 +210,16 @@ export default function Signup() {
         >
           LAST NAME :
         </FormLabel>
+<<<<<<< HEAD
         <Input
           value={lastname}
           onChange={(e) => setLastName(e.target.value)}
           size="lg"
           type="text"
         />
+=======
+        <Input size="lg" type="text" />
+>>>>>>> 6808b6d (added signup and signin page)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -223,12 +253,16 @@ export default function Signup() {
         >
           DATE OF BIRTH :
         </FormLabel>
+<<<<<<< HEAD
         <Input
           value={dob}
           onChange={(e) => setDob(e.target.value)}
           size="lg"
           type="date"
         />
+=======
+        <Input size="lg" type="date" />
+>>>>>>> 6808b6d (added signup and signin page)
         <FormHelperText>You need to be 16 or over to use ASOS</FormHelperText>
         <FormLabel
           color={"gray"}
@@ -239,6 +273,7 @@ export default function Signup() {
         >
           MOSTLY INTERESTED IN :
         </FormLabel>
+<<<<<<< HEAD
         <RadioGroup
           value={interest}
           onChange={(e) => setInterest(e)}
@@ -250,10 +285,20 @@ export default function Signup() {
             </Radio>
             <Radio size="lg" colorScheme="blue" value="Menswear">
               Menswear
+=======
+        <RadioGroup defaultValue="2">
+          <Stack spacing={5} direction="row">
+            <Radio size='lg' mr={'50px'} colorScheme="blue" value="1">
+            Womenswear
+            </Radio>
+            <Radio  size='lg' colorScheme="blue" value="2">
+            Menswear
+>>>>>>> 6808b6d (added signup and signin page)
             </Radio>
           </Stack>
         </RadioGroup>
       </FormControl>
+<<<<<<< HEAD
       <Box w={"65%"} margin={"auto"} mt={"50px"} mb={"20px"}>
         <Button
           onClick={sendSignupRequest}
@@ -262,6 +307,11 @@ export default function Signup() {
           color={"white"}
         >
           {isLooding ? <Spinner /> : "JOIN FASHION WORLD"}
+=======
+      <Box w={"65%"} margin={"auto"} mt={'50px'} mb={'20px'}>
+        <Button w={"100%"} bg={'#2d2d2d'} color={'white'}>
+          JOIN ASOS
+>>>>>>> 6808b6d (added signup and signin page)
         </Button>
       </Box>
     </Box>

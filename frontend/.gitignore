@@ -127,5 +127,9 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
+<<<<<<< HEAD
 .pnp.*
 .vercel
+=======
+.pnp.*
+>>>>>>> 6808b6d (added signup and signin page)

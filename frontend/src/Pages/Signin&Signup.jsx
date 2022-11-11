@@ -10,6 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+<<<<<<< HEAD
 import Signin from "../components/Signin";
 import Signup from "../components/Signup";
 import { useLocation, useNavigate } from "react-router-dom"
@@ -31,6 +32,32 @@ export default function SigninandSignup() {
               JOIN
             </Tab>
             <Tab onClick={()=> navigate('/signin')} fontSize={"17px"} w={"50%"}>
+=======
+import { useState } from "react";
+import { useEffect } from "react";
+import Signin from "../components/Signin";
+import Signup from "../components/Signup";
+
+export default function SigninandSignup() {
+
+  console.log(window.location.pathname)
+  return (
+    <Box bg={"#efefef"}>
+      <Box h={"80px"}></Box>
+      <Box bg={"#efefef"} w={"100%"} mb={"30px"}>
+        <Image
+          margin={"auto"}
+          src={"https://my.asos.com/Content/images/asos-logo-2022-93x28.png"}
+        />
+      </Box>
+      <Box w={"650px"} margin={"auto"} bg={"white"}>
+        <Tabs defaultIndex={window.location.pathname === '/signin' ? 1 : 0}>
+          <TabList w={"100%"} h={"100px"}>
+            <Tab fontSize={"17px"} w={"50%"}>
+              JOIN
+            </Tab>
+            <Tab fontSize={"17px"} w={"50%"}>
+>>>>>>> 6808b6d (added signup and signin page)
               SIGN IN
             </Tab>
           </TabList>
@@ -54,4 +81,8 @@ export default function SigninandSignup() {
       </Flex>
     </Box>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6808b6d (added signup and signin page)

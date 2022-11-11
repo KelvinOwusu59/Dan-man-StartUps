@@ -16,11 +16,15 @@ export const Navbar = () => {
       <TopBanner />
       <MiddleNav />
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* <SubNav /> */}
       {/* HiOutlineUser */}
 =======
       
 >>>>>>> 7960daf (productpage adde)
+=======
+      <BottomBanner />
+>>>>>>> 6808b6d (added signup and signin page)
     </Box>
     </Desktop>
     <Tablet >
