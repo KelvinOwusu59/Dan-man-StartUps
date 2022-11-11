@@ -93,12 +93,30 @@ export default function Signup() {
 import { DiApple } from "react-icons/di";
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoFacebook } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { SignupReq } from "../Redux/Auth/action";
 
 export default function Signup() {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
   const [password, setPassword] = useState("");
+<<<<<<< HEAD
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+  const [email, setEmail] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [dob, setDob] = useState("");
+  const [interest, setInterest] = useState("Womenswear");
+  const dispatch = useDispatch()
+
+  function sendSignupRequest() {
+    dispatch(
+    SignupReq({ email, password, firstname, lastname, dob, interest })
+  )
+}
+
+>>>>>>> c67e613 (add authreducr function)
   return (
     <Box style={{ fontFamily: "sans-serif" }}>
       <Text textAlign={"center"} fontSize={"20px"} mt={"30px"} fontWeight={600}>
@@ -174,15 +192,21 @@ export default function Signup() {
           EMAIL ADDRESS :
         </FormLabel>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c67e613 (add authreducr function)
         <Input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           size="lg"
           type="email"
         />
+<<<<<<< HEAD
 =======
         <Input size="lg" type="email" />
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+>>>>>>> c67e613 (add authreducr function)
         <FormHelperText>We'll send your order confirmation here</FormHelperText>
         <FormLabel
           color={"gray"}
@@ -193,15 +217,21 @@ export default function Signup() {
           FIRST NAME :
         </FormLabel>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c67e613 (add authreducr function)
         <Input
           value={firstname}
           onChange={(e) => setFirstName(e.target.value)}
           size="lg"
           type="text"
         />
+<<<<<<< HEAD
 =======
         <Input size="lg" type="text" />
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+>>>>>>> c67e613 (add authreducr function)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -211,15 +241,21 @@ export default function Signup() {
           LAST NAME :
         </FormLabel>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c67e613 (add authreducr function)
         <Input
           value={lastname}
           onChange={(e) => setLastName(e.target.value)}
           size="lg"
           type="text"
         />
+<<<<<<< HEAD
 =======
         <Input size="lg" type="text" />
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+>>>>>>> c67e613 (add authreducr function)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -254,15 +290,21 @@ export default function Signup() {
           DATE OF BIRTH :
         </FormLabel>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c67e613 (add authreducr function)
         <Input
           value={dob}
           onChange={(e) => setDob(e.target.value)}
           size="lg"
           type="date"
         />
+<<<<<<< HEAD
 =======
         <Input size="lg" type="date" />
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+>>>>>>> c67e613 (add authreducr function)
         <FormHelperText>You need to be 16 or over to use ASOS</FormHelperText>
         <FormLabel
           color={"gray"}
@@ -274,11 +316,15 @@ export default function Signup() {
           MOSTLY INTERESTED IN :
         </FormLabel>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c67e613 (add authreducr function)
         <RadioGroup
           value={interest}
           onChange={(e) => setInterest(e)}
           defaultValue="1"
         >
+<<<<<<< HEAD
           <Stack spacing={5} direction="row">
             <Radio size="lg" mr={"50px"} colorScheme="blue" value="Womenswear">
               Womenswear
@@ -287,18 +333,28 @@ export default function Signup() {
               Menswear
 =======
         <RadioGroup defaultValue="2">
+=======
+>>>>>>> c67e613 (add authreducr function)
           <Stack spacing={5} direction="row">
-            <Radio size='lg' mr={'50px'} colorScheme="blue" value="1">
-            Womenswear
+            <Radio size="lg" mr={"50px"} colorScheme="blue" value="Womenswear">
+              Womenswear
             </Radio>
+<<<<<<< HEAD
             <Radio  size='lg' colorScheme="blue" value="2">
             Menswear
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+            <Radio size="lg" colorScheme="blue" value="Menswear">
+              Menswear
+>>>>>>> c67e613 (add authreducr function)
             </Radio>
           </Stack>
         </RadioGroup>
       </FormControl>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c67e613 (add authreducr function)
       <Box w={"65%"} margin={"auto"} mt={"50px"} mb={"20px"}>
         <Button
           onClick={sendSignupRequest}
@@ -306,10 +362,13 @@ export default function Signup() {
           bg={"#2d2d2d"}
           color={"white"}
         >
+<<<<<<< HEAD
           {isLooding ? <Spinner /> : "JOIN FASHION WORLD"}
 =======
       <Box w={"65%"} margin={"auto"} mt={'50px'} mb={'20px'}>
         <Button w={"100%"} bg={'#2d2d2d'} color={'white'}>
+=======
+>>>>>>> c67e613 (add authreducr function)
           JOIN ASOS
 >>>>>>> 6808b6d (added signup and signin page)
         </Button>

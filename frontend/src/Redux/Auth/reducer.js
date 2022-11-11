@@ -1,5 +1,6 @@
 import { SIGNIN_FAILURE_REQUEST, SIGNIN_LOODING_REQUEST, SIGNIN_SUCCESS_REQUEST, SIGNOUT_REQUEST, SIGNUP_FAILURE_REQUEST, SIGNUP_LOODING_REQUEST, SIGNUP_SUCCESS_REQUEST } from "./actionTypes"
 
+<<<<<<< HEAD
 const user = JSON.parse(localStorage.getItem('userdata'))
 
 const userData = {
@@ -11,6 +12,14 @@ const userData = {
     isErrorData:"",
     u_Data: [] || user.data,
     msg:""
+=======
+const userData = {
+    token: '',
+    isAuth: false,
+    isLooding: false,
+    isError: false,
+    u_Data: []
+>>>>>>> c67e613 (add authreducr function)
 }
 
 export function AuthReducer(state = userData,action){
@@ -20,20 +29,35 @@ export function AuthReducer(state = userData,action){
             ...state,isLooding: true
         }
         case SIGNUP_SUCCESS_REQUEST : return {
+<<<<<<< HEAD
             ...state,isLooding: false, signup_status: true,msg:payload
         }
         case SIGNUP_FAILURE_REQUEST : return {
             ...state, isLooding: false, isError: true,isErrorData:payload,signup_status:false
+=======
+            ...state,isLooding: false, token: payload.token, u_Data: payload.data, isAuth: true 
+        }
+        case SIGNUP_FAILURE_REQUEST : return {
+            ...state,isLooding: false, isError: true
+>>>>>>> c67e613 (add authreducr function)
         }
         case SIGNIN_LOODING_REQUEST : return {
             ...state,isLooding: true
         }
+<<<<<<< HEAD
         case SIGNIN_SUCCESS_REQUEST :
         return {
             ...state,isLooding: false, token: payload.token, u_Data: payload.data,msg:payload.msg, isAuth: true 
         }
         case SIGNIN_FAILURE_REQUEST : return {
             ...state,isLooding: false, isError: true,isErrorData:payload
+=======
+        case SIGNIN_SUCCESS_REQUEST : return {
+            ...state,isLooding: false, token: payload.token, u_Data: payload.data, isAuth: true 
+        }
+        case SIGNIN_FAILURE_REQUEST : return {
+            ...state,isLooding: false, isError: true
+>>>>>>> c67e613 (add authreducr function)
         }
         case SIGNOUT_REQUEST : return {
             ...state

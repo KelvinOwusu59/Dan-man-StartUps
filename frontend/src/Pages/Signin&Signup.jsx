@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Signin from "../components/Signin";
 import Signup from "../components/Signup";
 import { useLocation, useNavigate } from "react-router-dom"
@@ -35,12 +36,14 @@ export default function SigninandSignup() {
 =======
 import { useState } from "react";
 import { useEffect } from "react";
+=======
+>>>>>>> c67e613 (add authreducr function)
 import Signin from "../components/Signin";
 import Signup from "../components/Signup";
+import { useNavigate } from "react-router-dom"
 
 export default function SigninandSignup() {
-
-  console.log(window.location.pathname)
+  const navigate = useNavigate()
   return (
     <Box bg={"#efefef"}>
       <Box h={"80px"}></Box>
@@ -53,11 +56,15 @@ export default function SigninandSignup() {
       <Box w={"650px"} margin={"auto"} bg={"white"}>
         <Tabs defaultIndex={window.location.pathname === '/signin' ? 1 : 0}>
           <TabList w={"100%"} h={"100px"}>
-            <Tab fontSize={"17px"} w={"50%"}>
+            <Tab onClick={()=> navigate('/signup')} fontSize={"17px"} w={"50%"}>
               JOIN
             </Tab>
+<<<<<<< HEAD
             <Tab fontSize={"17px"} w={"50%"}>
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+            <Tab onClick={()=> navigate('/signin')} fontSize={"17px"} w={"50%"}>
+>>>>>>> c67e613 (add authreducr function)
               SIGN IN
             </Tab>
           </TabList>
@@ -82,7 +89,11 @@ export default function SigninandSignup() {
     </Box>
   );
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+}
+>>>>>>> c67e613 (add authreducr function)

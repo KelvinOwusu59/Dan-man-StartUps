@@ -11,6 +11,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -46,11 +47,17 @@ root.render(
       </Provider>
     </BrowserRouter>
 =======
+=======
+import { Provider } from "react-redux";
+import { store } from "./Redux/store";
+>>>>>>> c67e613 (add authreducr function)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider>
     <BrowserRouter>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </BrowserRouter>
 >>>>>>> 6808b6d (added signup and signin page)
   </ChakraProvider>
