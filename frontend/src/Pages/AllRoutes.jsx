@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import Maincartpage from "../components/Addtocart/Maincartpage";
 import { Navbar } from "../components/Navbar/Navbar";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import Footer from "./Footer";
 
@@ -18,6 +19,9 @@ import { CheckOut } from "./CheckOut";
 
 =======
 >>>>>>> dd34221 (Mens Page added)
+=======
+import { CheckOut } from "./CheckOut";
+>>>>>>> 57ffffd (add)
 import { MenAccessoris } from "./Menproduct/MenAcceseoris";
 import { MenAutumn } from "./Menproduct/MenAutumn";
 import { MenBrand } from "./Menproduct/MenBrand";
@@ -171,7 +175,8 @@ export const AllRoutes = () => {
 >>>>>>> 7960daf (productpage adde)
 =======
         <Route path="/womenhome" element={<h1>women</h1>} />
-
+        {/* <Route path="/checkout" element={<CheckOut />} /> */}
+        <Route path="/wishlist" element={<CheckOut />} />
         <Route path="/womensale" element={<WomenSale />} />
         <Route path="/womentopshop" element={<WomenTopShop />} />
         <Route path="/womenbrand" element={<WomenBrand />} />

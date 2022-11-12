@@ -161,6 +161,7 @@ export const loadProduct = (type,cate) => {
 
 export const loadProductWithQuery = (type,page,limt) => {
     return function (dispatch) {
+        // https://asos-backend.onrender.com/?product_name=${shs}&category=sale
         axios.get(`https://asos-backend.onrender.com/${type}product?page=${page}&limit=${limt}`,
         {
             headers:{

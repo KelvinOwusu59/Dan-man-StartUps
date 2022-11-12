@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
     Alert,
   AlertDescription,
@@ -100,15 +101,38 @@ const ClearCart=()=>{
         mt={"20px"}
         mr="20px"
        
+=======
+import { Box, Button, Flex, FormLabel, Heading, Image, Input, Text } from "@chakra-ui/react";
+import React from "react";
+import { Link } from "react-router-dom";
+import digicImg from "../data/digicert.svg";
+export const CheckOut = () => {
+  return (
+    <Box w="60%" m="auto">
+      <Flex
+        mb={5}
+        alignItems={"center"}
+        justifyContent={"space-between"}
+        mt={"20px"}
+        mr="20px"
+>>>>>>> 57ffffd (add)
       >
         <Box>
           {" "}
           <Link to="/womenhome">
+<<<<<<< HEAD
             <Heading className="font-face-pt" size={"xl"}>Fashion World</Heading>
           </Link>
         </Box>
         <Box>
           <Heading className="font-face-pt" color={"grey"} size={"xl"}>
+=======
+            <Heading size={"xl"}>Fashion World</Heading>
+          </Link>
+        </Box>
+        <Box>
+          <Heading color={"grey"} size={"xl"}>
+>>>>>>> 57ffffd (add)
             CHECKOUT
           </Heading>
         </Box>
@@ -117,6 +141,7 @@ const ClearCart=()=>{
         </Box>
       </Flex>
 
+<<<<<<< HEAD
       <Flex gap={2}  flexDirection={["column-reverse","row","row"]} >
         <Box w={["100%","100%","60%","60%"]}>
           <Box p={5} boxShadow="lg" h="130px">
@@ -337,6 +362,42 @@ const ClearCart=()=>{
       <Text mb={10} mt={10}>
       By placing your order you agree to our Terms & Conditions, privacy and returns policies . You also consent to some of your data being stored by ASOS, which may be used to make future shopping experiences better for you.
       </Text>
+=======
+      <Flex gap={2}>
+        <Box w="60%"><Box p={5} boxShadow="lg" h="130px" >
+            <Heading size={"md"}>DELIVERY COUNTRY:</Heading>
+          <Flex mt={5}alignItems={"center"}><Image
+
+_hover={{ border: "1px solid #0770cf", borderRadius: "50%" }}
+            cursor={"pointer"}
+            w={"40px"}
+            src="https://assets.asosservices.com/storesa/images/flags/in.png"
+            alt="https://assets.asosservices.com/storesa/images/flags/in.png"
+          ></Image>
+          <Text ml={3}> India</Text>
+          <Button ml={"60%"} >CHANGE</Button>
+          
+            </Flex>
+
+        </Box>
+        <Box p={3} boxShadow="lg" h="160px" >
+        <Heading size={"sm"}>PROMO/STUDENT CODE OR VOUCHERS</Heading>
+        <Input mt={5} />
+        <Button mt={5}>APPLY</Button>
+        </Box>
+        <Box p={5} boxShadow="lg" h="100px" >
+        <Heading size={"md"}>EMAIL ADDRESS</Heading>
+       <Text mt={2}>agodse9@gmail.com</Text>
+        </Box>
+        <Box p={5} boxShadow="lg"  >
+        <Heading size={"md"}>DELIVERY ADDRESS</Heading>
+        <FormLabel mt={2}>Email address</FormLabel>
+       <Input mt={1} placeholder={"ad"} />        </Box>
+        </Box>
+        
+        <Box h="400px" border={"1px solid red"} w="40%"></Box>
+      </Flex>
+>>>>>>> 57ffffd (add)
     </Box>
   );
 };
