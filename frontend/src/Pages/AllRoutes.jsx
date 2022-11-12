@@ -34,6 +34,7 @@ import { MenSportWear } from "./Menproduct/MenSportwear";
 import { MenTopShop } from "./Menproduct/MenTopShop";
 import SigninandSignup from "./Signin&Signup";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import WomenPage from "./WomenPage";
 import MenPage from "./MenPage";
@@ -42,6 +43,9 @@ import SinglePageProduct from "./SinglePageProduct";
 
 =======
 >>>>>>> dd34221 (Mens Page added)
+=======
+import SinglePageProduct from "./SinglePageProduct";
+>>>>>>> 35f801b (singlepage)
 import { WomenAccessoris } from "./womenProduct/WomenAcceseoris";
 import { WomenAutumn } from "./womenProduct/WomenAutumn";
 import { WomenBrand } from "./womenProduct/WomenBrand";
@@ -198,7 +202,11 @@ export const AllRoutes = () => {
         <Route path="/menaccessories" element={<MenAccessoris />} />
         <Route path="/menautumn" element={<MenAutumn />} />
         <Route path="/mengifting" element={<MenGifting />} />
+<<<<<<< HEAD
         <Route path="/cart" element={<Maincartpage/>}/>
+=======
+        <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
+>>>>>>> 35f801b (singlepage)
       </Routes>
     </Box>
   );

@@ -6,6 +6,7 @@ const initialState={
     Gridproducts:[],
     product:{},
 <<<<<<< HEAD
+<<<<<<< HEAD
     loading:false,
     cart:[],
     searchProd:[],
@@ -13,6 +14,10 @@ const initialState={
 =======
     loading:true
 >>>>>>> 7960daf (productpage adde)
+=======
+    loading:true,
+    cart:[]
+>>>>>>> 35f801b (singlepage)
 }
 
 
@@ -26,11 +31,15 @@ const reducers=(state=initialState,action)=>{
                 loading:false
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 35f801b (singlepage)
         case types.CART:
             return {
                 ...state,
                 cart:action.payload,
             }
+<<<<<<< HEAD
             case types.SEARCH_ITEM:
             return {
                 ...state,
@@ -44,6 +53,8 @@ const reducers=(state=initialState,action)=>{
             
 =======
            
+=======
+>>>>>>> 35f801b (singlepage)
         
 >>>>>>> 7960daf (productpage adde)
         default:

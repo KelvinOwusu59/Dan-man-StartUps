@@ -181,6 +181,7 @@ export const loadProductWithQuery = (type,page,limt) => {
 >>>>>>> 7960daf (productpage adde)
 =======
 
+
 export const SwitchTab=(type)=>{
     loadProduct(type)
 }
