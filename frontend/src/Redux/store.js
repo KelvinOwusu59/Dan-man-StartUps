@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 020c3b9 (pulling)
 import { legacy_createStore, applyMiddleware } from "redux";
@@ -16,10 +17,18 @@ const middleware = [thunk]
 const store = legacy_createStore(rootreducer, applyMiddleware(...middleware));
 export default store;
 =======
+=======
+import { legacy_createStore, applyMiddleware } from "redux";
+// import logger from "redux-logger";
+import thunk from "redux-thunk";
+
+import rootreducer from "./rootReducer";
+>>>>>>> dd34221 (Mens Page added)
 const middleware= [thunk]
 const store = legacy_createStore(rootreducer, applyMiddleware(...middleware));
 
 export default store;
+<<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
 =======
 =======
@@ -37,6 +46,8 @@ export const store = legacy_createStore(rootRuducer,composeEnhancers(applyMiddle
 =======
 const middleware = [thunk];
 const store = legacy_createStore(rootreducer, applyMiddleware(...middleware));
+=======
+>>>>>>> dd34221 (Mens Page added)
 
 export default store;
 

@@ -17,6 +17,7 @@ export const Navbar = () => {
       <MiddleNav />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* <SubNav /> */}
       {/* HiOutlineUser */}
 =======
@@ -25,6 +26,10 @@ export const Navbar = () => {
 =======
       <BottomBanner />
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+
+
+>>>>>>> dd34221 (Mens Page added)
     </Box>
     </Desktop>
     <Tablet >

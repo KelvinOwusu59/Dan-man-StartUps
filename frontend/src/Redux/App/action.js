@@ -151,7 +151,7 @@ export const loadProduct = (type,cate) => {
         ).then(res => {
             // console.log("RESPONSE", res.data.data)
             dispatch(getProduct(res.data.data))
-            dispatch({type: "CART", payload: "earrings"})
+            // dispatch({type: "CART", payload: "earrings"})
         }).catch(er => {
             console.log("ERROR",er)
         })
@@ -170,11 +170,18 @@ export const loadProductWithQuery = (type,page,limt) => {
         ).then(res => {
             // console.log("RESPONSE", res.data.data)
             dispatch(getProduct(res.data.data))
-            dispatch({type: "CART", payload: "earrings"})
+            // dispatch({type: "CART", payload: "earrings"})
         }).catch(er => {
             console.log("ERROR",er)
         })
     }
 
 }
+<<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
+=======
+
+export const SwitchTab=(type)=>{
+    loadProduct(type)
+}
+>>>>>>> dd34221 (Mens Page added)

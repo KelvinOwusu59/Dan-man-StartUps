@@ -34,6 +34,7 @@ import SubNav from "./subMenu";
 import SubNav from "./WomensubMenu";
 import MenSubNav from "./MenSubNav";
 import { BottomBanner } from "./BottomBanner";
+<<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
 export const MiddleNav = () => {
   const Navigate=useNavigate()
@@ -48,6 +49,12 @@ Navigate("/signin")
   useEffect(()=>{
 dispatch(getaddcartdata())
   },[])
+=======
+import { useDispatch } from "react-redux";
+import { SwitchTab } from "../../Redux/App/action";
+export const MiddleNav = () => {
+  const dispatch=useDispatch();
+>>>>>>> dd34221 (Mens Page added)
   const HandleTab=(type)=>{
     dispatch(SwitchTab(type))
   }
@@ -79,7 +86,7 @@ dispatch(getaddcartdata())
 =======
           >
             <Box mr="20px" fontWeight={"bold"}>
-              <Link to="/">
+              <Link to="/womenhome">
                 <Heading size={"xl"}>Fashion World</Heading>
               </Link>
             </Box>
@@ -91,6 +98,7 @@ dispatch(getaddcartdata())
               h="100%"
               fontWeight={"bold"}
 <<<<<<< HEAD
+<<<<<<< HEAD
              
             >
                 <Link to={"/womenhome"}> WOMEN</Link>
@@ -98,6 +106,11 @@ dispatch(getaddcartdata())
             >
                 <Link to={"/women"}> WOMEN</Link>
 >>>>>>> 7960daf (productpage adde)
+=======
+             
+            >
+                <Link to={"/womenhome"}> WOMEN</Link>
+>>>>>>> dd34221 (Mens Page added)
             </Tab>
 
         <Tab
@@ -108,6 +121,7 @@ dispatch(getaddcartdata())
               fontWeight={"bold"}
             >
 <<<<<<< HEAD
+<<<<<<< HEAD
              <Link to={"/menhome"}> MEN</Link>
             </Tab>
           
@@ -115,6 +129,9 @@ dispatch(getaddcartdata())
             <Box ml={5}>
 =======
              <Link to={"/men"}> MEN</Link>
+=======
+             <Link to={"/menhome"}> MEN</Link>
+>>>>>>> dd34221 (Mens Page added)
             </Tab>
           
             <SearchInput />
@@ -272,9 +289,14 @@ dispatch(getaddcartdata())
           <BottomBanner />
         </TabPanel>
         <TabPanel p="0" w="100%">
+<<<<<<< HEAD
         <SubNav />
 <<<<<<< HEAD
           {/* <MenSubNav /> */}
+=======
+        {/* <SubNav /> */}
+          <MenSubNav />
+>>>>>>> dd34221 (Mens Page added)
           <BottomBanner />
         </TabPanel>
       </TabPanels>

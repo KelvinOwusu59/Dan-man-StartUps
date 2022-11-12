@@ -9,7 +9,10 @@ import {
   Collapse,
   Flex,
   Heading,
+<<<<<<< HEAD
   Image,
+=======
+>>>>>>> dd34221 (Mens Page added)
   Select,
   SimpleGrid,
   Tag,
@@ -40,11 +43,14 @@ console.log(e.target.value)
 }
   return (
     <Box mb={10}>
+<<<<<<< HEAD
        {
         products.length===0 ? 
         <Flex justifyContent={"center"}>
         <Image src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
         </Flex> :<> 
+=======
+>>>>>>> dd34221 (Mens Page added)
       <Box w="85%" m="auto" mt={3} mb={3}>
         <Breadcrumb
           spacing="8px"
@@ -55,18 +61,30 @@ console.log(e.target.value)
           </BreadcrumbItem>
 
           <BreadcrumbItem>
+<<<<<<< HEAD
             <BreadcrumbLink href="#">Men</BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink href="#">Outlet</BreadcrumbLink>
+=======
+            <BreadcrumbLink href="#">Women</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem isCurrentPage>
+            <BreadcrumbLink href="#">Dresses</BreadcrumbLink>
+>>>>>>> dd34221 (Mens Page added)
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>
       <hr />
       <Box w="85%" m="auto" mt={5}>
         <Center>
+<<<<<<< HEAD
           <Heading size={"md"}>Men's Outlet</Heading>
+=======
+          <Heading size={"md"}>Women's Sale</Heading>
+>>>>>>> dd34221 (Mens Page added)
         </Center>
         <VStack w="80%" m={"auto"} mt={4}>
           <Collapse startingHeight={20} in={show}>
@@ -101,8 +119,13 @@ console.log(e.target.value)
         </VStack>
       </Box>
       <hr />
+<<<<<<< HEAD
       <SimpleGrid columns={[4,6,6,10]} p={[5,5,5,5]}  spacing={[5,5,5,5]} mb={2}>
          <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
+=======
+      <Flex justifyContent={"space-between"} w="85%" m="auto" mb={2}>
+        <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
+>>>>>>> dd34221 (Mens Page added)
         <Button mt={2} h="30px" borderRadius={"25px"}>TOPS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JEMSUITES</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>SHORTS</Button>
@@ -112,11 +135,18 @@ console.log(e.target.value)
         <Button mt={2} h="30px" borderRadius={"25px"}>JEANS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>ACTIVEWEAR</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JACKETS</Button>
+<<<<<<< HEAD
       </SimpleGrid>
       <hr />
       <Box  mb={2} bgColor="#EEEEEE">
       <SimpleGrid   w={["95%","90%","90%","85%"]} m="auto" p={2} columns={[2,3,4,6]} spacing={[5]}>
      
+=======
+      </Flex>
+      <hr />
+      <Box  mb={2} bgColor="#EEEEEE">
+      <SimpleGrid   w="85%" m="auto" p={2} columns={6} spacing={5}>
+>>>>>>> dd34221 (Mens Page added)
       <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
   <option value=''>Sort</option>
  
@@ -196,7 +226,11 @@ console.log(e.target.value)
         </SimpleGrid>
        
       </Box>
+<<<<<<< HEAD
       <SimpleGrid columns={[2,2,3,4]} w="85%" m={"auto"} spacing={3} p={0}>
+=======
+      <SimpleGrid columns={4} w="85%" m={"auto"} spacing={3} p={0}>
+>>>>>>> dd34221 (Mens Page added)
      {
       products.length>0 && products.map((item)=>
       <>
@@ -207,8 +241,11 @@ console.log(e.target.value)
     )
      }
       </SimpleGrid>
+<<<<<<< HEAD
     </>
 }
+=======
+>>>>>>> dd34221 (Mens Page added)
     </Box>
   );
 };
