@@ -36,7 +36,10 @@ import Footer from "./Pages/Footer";
 import "./App.css";
 import { Box} from "@chakra-ui/react";
 import "./App.css";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6c776a1 (single page)
 // import { Navbar } from "./components/Navbar/Navbar";
 // import Footer from "./Pages/Footer";
 // import MenPage from "./Pages/MenPage";
@@ -58,6 +61,7 @@ function App() {
 >>>>>>> 6808b6d (added signup and signin page)
 =======
 
+<<<<<<< HEAD
 >>>>>>> dd34221 (Mens Page added)
     </Box>
 >>>>>>> 7960daf (productpage adde)
@@ -66,6 +70,13 @@ function App() {
      {/* <WomenPage/> */}
      <MenPage/>
      <Footer/>
+=======
+     
+
+
+     <AllRoutes />
+
+>>>>>>> 6c776a1 (single page)
     </Box>
     </>
 >>>>>>> f83085a (women data)

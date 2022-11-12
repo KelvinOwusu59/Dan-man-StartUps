@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6c776a1 (single page)
 import {
   Box,
   Button,
@@ -27,6 +31,7 @@ import { Link } from "react-router-dom";
 import { RepeatClockIcon } from "@chakra-ui/icons";
 import { SearchInput } from "./SearchInput";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { HiOutlineUser, HiOutlineHeart } from "react-icons/hi";
 import { IoBagOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
@@ -47,6 +52,24 @@ import SubNav from "./subMenu";
 import SubNav from "./WomensubMenu";
 import MenSubNav from "./MenSubNav";
 <<<<<<< HEAD
+=======
+
+import {HiOutlineUser ,HiOutlineHeart} from "react-icons/hi";
+import {IoBagOutline} from "react-icons/io5";
+import {FiShoppingBag} from "react-icons/fi";
+import {GrContact} from "react-icons/gr"
+// import { ProductPageNav } from "./ProductPageNav";
+// import styles from "./nav.module.css";
+import SubNav from "./WomensubMenu";
+import MenSubNav from "./MenSubNav";
+// import { BottomBanner } from "./BottomBanner";
+
+
+import { ProductPageNav } from "./ProductPageNav";
+import styles from "./nav.module.css";
+
+
+>>>>>>> 6c776a1 (single page)
 import { BottomBanner } from "./BottomBanner";
 <<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
@@ -304,6 +327,7 @@ export const MiddleNav = () => {
     </TabPanel>
   </TabPanels>
 </Tabs>
+<<<<<<< HEAD
 =======
       </TabList>
       <TabPanels>
@@ -332,5 +356,10 @@ export const MiddleNav = () => {
        </TabPanels> 
     </Tabs> 
 >>>>>>> 020c3b9 (pulling)
+=======
+
+     
+
+>>>>>>> 6c776a1 (single page)
   );
 };

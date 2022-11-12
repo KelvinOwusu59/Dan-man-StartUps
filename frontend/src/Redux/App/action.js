@@ -182,6 +182,18 @@ export const loadProductWithQuery = (type,page,limt) => {
 >>>>>>> 7960daf (productpage adde)
 =======
 
+export const Addtocart=(data)=>(dispatch)=>{
+    console.log(data)
+    // return  axios.post("https://asos-backend.onrender.com/cart",data,{
+    //     headers:{
+    //         Authorization:`Bearer ${token}`
+    //     }
+    //  }).then((r)=>console.log("data added")).catch((err)=>{
+    //     console.log(err)
+    //  })
+
+}
+
 
 export const SwitchTab=(type)=>{
     loadProduct(type)

@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import { TopBanner } from "./TopBanner";
 import { MiddleNav } from "./MiddleNav";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import SubNav from "./subMenu";
 =======
 import SubNav from "./WomensubMenu";
+=======
+
+>>>>>>> 6c776a1 (single page)
 import { BottomBanner } from "./BottomBanner";
 >>>>>>> 7960daf (productpage adde)
 export const Navbar = () => {
@@ -15,6 +19,7 @@ export const Navbar = () => {
       <Box>
       <TopBanner />
       <MiddleNav />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,6 +33,9 @@ export const Navbar = () => {
 >>>>>>> 6808b6d (added signup and signin page)
 =======
 
+=======
+       <BottomBanner/>
+>>>>>>> 6c776a1 (single page)
 
 >>>>>>> dd34221 (Mens Page added)
     </Box>
