@@ -21,6 +21,7 @@ import { IoLogoFacebook } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import { SigninReq } from "../Redux/Auth/action";
 import { useEffect } from "react";
+<<<<<<< HEAD
 import { useLocation, useNavigate } from "react-router-dom";
 =======
   Text,
@@ -38,6 +39,9 @@ import { DiApple } from "react-icons/di";
 import { IoLogoFacebook } from "react-icons/io";
 import { useDispatch } from "react-redux";
 >>>>>>> c67e613 (add authreducr function)
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> 3bc0099 (added)
 
 export default function Signin() {
   const [show, setShow] = useState(false);
@@ -46,6 +50,7 @@ export default function Signin() {
 <<<<<<< HEAD
 <<<<<<< HEAD
   const [email, setEmail] = useState("");
+<<<<<<< HEAD
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -83,6 +88,23 @@ export default function Signin() {
       window.location.reload();
     }
   }, [isAuth]);
+=======
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const isAuth = useSelector(e => e.AuthReducer.isAuth)
+  
+  function sendSigninRequest() {
+    dispatch(
+      SigninReq({email,password})
+      )
+    }
+
+    useEffect(()=>{
+      if(isAuth){
+        navigate('/')
+      }
+    },[isAuth])
+>>>>>>> 3bc0099 (added)
 
   return (
     <Box style={{ fontFamily: "sans-serif" }}>

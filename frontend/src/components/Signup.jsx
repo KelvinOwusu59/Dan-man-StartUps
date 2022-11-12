@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useToast } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { DiApple } from "react-icons/di";
@@ -90,11 +91,15 @@ export default function Signup() {
   }
 
 =======
+=======
+import { useEffect } from "react";
+>>>>>>> 3bc0099 (added)
 import { DiApple } from "react-icons/di";
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoFacebook } from "react-icons/io";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { SignupReq } from "../Redux/Auth/action";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const [show, setShow] = useState(false);
@@ -109,14 +114,32 @@ export default function Signup() {
   const [dob, setDob] = useState("");
   const [interest, setInterest] = useState("Womenswear");
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
-  function sendSignupRequest() {
-    dispatch(
+  const status = useSelector(e => e.AuthReducer.signup_status)
+  const isError = useSelector(e => e.AuthReducer.isError)
+
+  async function sendSignupRequest() {
+    await dispatch(
     SignupReq({ email, password, firstname, lastname, dob, interest })
   )
 }
 
+<<<<<<< HEAD
 >>>>>>> c67e613 (add authreducr function)
+=======
+useEffect(()=>{
+  if(status){
+    console.log("status",status)
+    navigate("/signin")
+    alert('Sign Up Success Now Time Login')
+    window.location.reload()
+  }else if(isError){
+    alert('Plz fill all correct input')
+  }
+},[status,isError])
+
+>>>>>>> 3bc0099 (added)
   return (
     <Box style={{ fontFamily: "sans-serif" }}>
       <Text textAlign={"center"} fontSize={"20px"} mt={"30px"} fontWeight={600}>

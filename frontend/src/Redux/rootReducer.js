@@ -22,6 +22,7 @@ export default rootreducer;
 =======
 import {combineReducers} from "redux"
 import {reducers as AppReducer} from "./App/reducer"
+<<<<<<< HEAD
 =======
 import { combineReducers } from "redux";
 import { reducers as AppReducer } from "./App/reducer";
@@ -38,6 +39,15 @@ const rootreducer = combineReducers({
 });
 
 <<<<<<< HEAD
+=======
+import { AuthReducer } from "./Auth/reducer";
+// import {reducer as CartReducer} from "../Cartreducer/reducer"
+
+const rootreducer=combineReducers({
+    AppReducer,
+    AuthReducer
+    // CartReducer,
+>>>>>>> 3bc0099 (added)
 })
 
 export default rootreducer;

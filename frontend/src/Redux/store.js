@@ -23,10 +23,13 @@ import { legacy_createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 import rootreducer from "./rootReducer";
+<<<<<<< HEAD
 >>>>>>> dd34221 (Mens Page added)
 const middleware= [thunk]
+=======
+const middleware = [thunk]
+>>>>>>> 3bc0099 (added)
 const store = legacy_createStore(rootreducer, applyMiddleware(...middleware));
-
 export default store;
 <<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
