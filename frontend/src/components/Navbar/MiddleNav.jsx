@@ -53,10 +53,14 @@ dispatch(getaddcartdata())
   }
   return (
     <Tabs variant="unstyled">
+<<<<<<< HEAD
       <TabList>
 <<<<<<< HEAD
         <Box  h="60px" w="100%" bgColor={"#2d2d2d"}>
 =======
+=======
+       <TabList>
+>>>>>>> 020c3b9 (pulling)
         <Box h="60px" w="100%" bgColor={"#2d2d2d"}>
 >>>>>>> 7960daf (productpage adde)
           <Flex
@@ -214,7 +218,8 @@ dispatch(getaddcartdata())
         <GrContact size={25}  /><Text ml={2}> Contact Preference</Text>
         </Flex>
     </PopoverBody>
-  </PopoverContent>
+                </PopoverContent>
+                
 </Popover>
 >>>>>>> 6808b6d (added signup and signin page)
                 <Link to="/wishlist">
@@ -262,11 +267,19 @@ dispatch(getaddcartdata())
         </TabPanel>
         <TabPanel p="0" w="100%">
         <SubNav />
+<<<<<<< HEAD
           {/* <MenSubNav /> */}
           <BottomBanner />
         </TabPanel>
       </TabPanels>
     </Tabs>
 >>>>>>> 7960daf (productpage adde)
+=======
+          <MenSubNav /> 
+          <BottomBanner /> 
+         </TabPanel> 
+       </TabPanels> 
+    </Tabs> 
+>>>>>>> 020c3b9 (pulling)
   );
 };
