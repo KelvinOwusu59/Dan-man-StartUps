@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import { Box, HStack, VStack, Text, Image, Divider, Center, Flex, Button, Badge } from '@chakra-ui/react';
+=======
+import { Box, HStack, VStack, Text, Image, Divider, Center, Flex, Button } from '@chakra-ui/react';
+>>>>>>> 7de8bd9 (addtocart)
 import {useDispatch} from "react-redux"
 import styles from "./Cartsingleitem.module.css";
 import {CloseIcon} from "@chakra-ui/icons"
@@ -38,6 +42,7 @@ const Cartsingleitem = ({ el }) => {
   return (
       <div className={styles.sci_mainbox}>
           <div >
+<<<<<<< HEAD
           <HStack h="180px"  w="95%" margin="auto">
             <Box w="180px" h="90%" border="1px solid pink " overflow="hidden">
               <Image src={el?.product_details?.product_img}></Image>
@@ -56,6 +61,22 @@ const Cartsingleitem = ({ el }) => {
                   <HStack w="95%" justify="space-between">
                     <Box>
                   <Badge borderRadius="full" px="2">{ el?.product_details?.product_color}</Badge>
+=======
+          <HStack h="200px" justify="space-between" border="1px solid black">
+            <Box w="120px" h="90%">
+              <Image src="https://images.asos-media.com/products/weekday-relaxed-cord-shirt-in-brown/204014823-1-brown"></Image>
+            </Box>
+            <Box textAlign="start">
+            <VStack  w="95%">
+            <HStack w="95%" justify="space-between" >
+                <Box > <Text fontSize="20px" fontWeight="bold" >${ el?.product_details?.product_price}</Text></Box>
+              <Box onClick={()=>handledelete(el)}><CloseIcon/></Box></HStack>
+              <Box w="95%"> <Text>{ el?.product_details?.product_name}</Text></Box>
+                
+                  <HStack w="50%" justify="space-between">
+                    <Box>
+                  <Text>{ el?.product_details?.product_color.toUpperCase()}</Text>
+>>>>>>> 7de8bd9 (addtocart)
                      
                     </Box>
                     <Center height='40px'>
@@ -67,7 +88,11 @@ const Cartsingleitem = ({ el }) => {
                   {
                     el.size ? ( <HStack>
                       <Text>Size</Text>
+<<<<<<< HEAD
                       <Box as="button"> <select name="size" value={state.size} onChange={handlechange}>
+=======
+                      <Box> <select name="size" value={state.size} onChange={handlechange}>
+>>>>>>> 7de8bd9 (addtocart)
                             <option value="xs">XS</option>
                             <option value="x">S</option>
                             <option value="m">M</option>
@@ -84,7 +109,11 @@ const Cartsingleitem = ({ el }) => {
                     <Box>
                       <HStack>
                     <Text>Qty</Text>
+<<<<<<< HEAD
                         <Box as="button">
+=======
+                        <Box>
+>>>>>>> 7de8bd9 (addtocart)
                         <select name="item_no" value={state.item_no} onChange={handlechange}>
                           <option value={1}>1</option>
                           <option value={2}>2</option>
@@ -113,6 +142,7 @@ const Cartsingleitem = ({ el }) => {
       </div>
       {
         flag ? <div>
+<<<<<<< HEAD
           <Divider orientation='horizontal'></Divider>
           <HStack justify="space-evenly" h="70px">
             <Box width="60%"></Box>
@@ -122,6 +152,13 @@ const Cartsingleitem = ({ el }) => {
         </div> : <div>
             <Divider orientation='horizontal'></Divider>
           </div>
+=======
+          <HStack>
+            <Button onClick={handlecancel}>Cancel</Button>
+            <Button onClick={()=>handleupdate(el)}>Update</Button>
+          </HStack>
+          </div>:<div></div>
+>>>>>>> 7de8bd9 (addtocart)
       }
     </div>
   )

@@ -1,13 +1,20 @@
 .ordersumbox{
+<<<<<<< HEAD
     width: 97%;
     top: 0;
     margin: auto;
     position: sticky;
    margin-top: 10px;
+=======
+    width: 400px;
+    top: 0;
+    position: sticky;
+>>>>>>> 7de8bd9 (addtocart)
     
    
 }
 .ordersum_mainbox{
+<<<<<<< HEAD
     background-color: rgb(255, 255, 255);
    width: 100%;
    border-radius: 5px;
@@ -18,10 +25,24 @@
 
 }
 /* @media screen and (max-width:900px) {
+=======
+  
+
+    border: 1px solid rgb(183, 34, 34);
+    
+    
+
+}
+@media screen and (max-width:900px) {
+>>>>>>> 7de8bd9 (addtocart)
     .ordersumbox{
         width: 100%;
     }
     .ordersum_mainbox{
         width: 500px;
     }
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 7de8bd9 (addtocart)

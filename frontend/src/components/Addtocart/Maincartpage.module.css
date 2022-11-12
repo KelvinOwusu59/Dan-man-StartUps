@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .addtocartbox{
     /* width: 100vw; */
     margin:auto;
@@ -15,10 +16,20 @@
     justify-content: space-evenly;
   
     
+=======
+.maincartpage{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 70%;
+    margin: auto;
+    gap:30px;
+    border:1px solid orange;
+>>>>>>> 7de8bd9 (addtocart)
 
 
    
 }
+<<<<<<< HEAD
 .cartitemcomp{
  width: 60%;
 }
@@ -41,8 +52,20 @@
 }
 
 /* @media  screen and (max-width:900px){
+=======
+@media screen  and(max-width:1000px){
+    .maincartpage{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:900px){
+>>>>>>> 7de8bd9 (addtocart)
     .maincartpage{
         width: 100%;
         margin:0;
     }
+<<<<<<< HEAD
 }  */
+=======
+}
+>>>>>>> 7de8bd9 (addtocart)

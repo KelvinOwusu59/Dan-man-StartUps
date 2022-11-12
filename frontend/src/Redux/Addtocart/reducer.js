@@ -24,7 +24,11 @@ export const reducer = (state = initialstate, { type, payload }) => {
       return {
         ...state,
         err: true,
+<<<<<<< HEAD
         loading: true,
+=======
+        loading: false,
+>>>>>>> 7de8bd9 (addtocart)
         data: [],
       };
     }
@@ -70,6 +74,7 @@ export const reducer = (state = initialstate, { type, payload }) => {
       };
     }
     case types.UPDATE_CART_SUCCESS: {
+<<<<<<< HEAD
       const { el, id } = payload;
       const newdata = state.data.map((e) =>
         e.product_id == id ? { ...e, item_no: el.item_no, size: el.size } : e
@@ -78,6 +83,10 @@ export const reducer = (state = initialstate, { type, payload }) => {
       return {
         ...state,
         data: newdata,
+=======
+      return {
+        ...state,
+>>>>>>> 7de8bd9 (addtocart)
         loading: false,
       };
     }

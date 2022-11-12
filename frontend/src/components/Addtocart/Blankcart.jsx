@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Box, Center, Flex, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { IoBagOutline } from 'react-icons/io5'
@@ -15,6 +16,13 @@ const Blankcart = () => {
     </VStack>
     </Center>
 
+=======
+import React from 'react'
+
+const Blankcart = () => {
+  return (
+    <div>Blankcart</div>
+>>>>>>> 7de8bd9 (addtocart)
   )
 }
 

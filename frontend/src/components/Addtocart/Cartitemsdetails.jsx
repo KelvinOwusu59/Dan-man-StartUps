@@ -11,6 +11,7 @@ const Cartitemsdetails = ({data}) => {
   // useEffect(() => {
   //  dispatch(getaddcartdata()) 
   // }, [])
+<<<<<<< HEAD
   
   
   return (
@@ -23,6 +24,20 @@ const Cartitemsdetails = ({data}) => {
           </HStack>
         </Box>
         <Divider orientation="horizontal"></Divider>
+=======
+  console.log(data)
+  
+  return (
+    <div className={styles.cartitem_d_mainbox}>
+      <VStack w="100%">
+        <Box>
+          <HStack w="100%" h="60px" spacing="20" border="1px solid black">
+            <Text  fontWeight="bold" fontSize="1xl">MY BAG</Text>
+            <Text>Items are reversed for 60 minutes</Text>
+          </HStack>
+        </Box>
+        
+>>>>>>> 7de8bd9 (addtocart)
       </VStack>
       <div>
         {

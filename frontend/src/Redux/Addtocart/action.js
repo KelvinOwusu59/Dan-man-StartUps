@@ -1,11 +1,18 @@
 import axios from "axios";
 import * as types from "./actionTypes";
 // let usertoken = JSON.parse(localStorage.getItem("token")) || "";
+<<<<<<< HEAD
 
 let userData = JSON.parse(localStorage.getItem("userdata")) || [];
 let usertoken = userData.token;
 
 export const getaddcartdata = () => dispatch => {
+=======
+var usertoken =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmE3MjNkOWU3OTFhNTViN2M2NmZlMSIsImVtYWlsIjoiYWJoaXNoZWtAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiYWJoaXNoZWsiLCJsYXN0bmFtZSI6ImFkaXR5YSIsInBhc3N3b3JkIjoiJDJiJDA0JFE1anBwWS5JOUdreXBLWmNiNC9DTXVDekJweDZWMUI1ckIzUXdwZTlvYTAwalE3NDhQRXh5IiwiZG9iIjoiMjQtMDItMjAwMyIsImludGVyZXN0Ijoid29tZW53ZWFyIiwiX192IjowfSwiaWF0IjoxNjY4MjYzNjg3fQ.FJjvmyg1IwYnAkWYj6-z8-t8l2v4Wu3GhmMfziQwO7k";
+
+export const getaddcartdata = () => (dispatch) => {
+>>>>>>> 7de8bd9 (addtocart)
   dispatch({ type: types.GET_CARTDATA_REQUEST });
 
   return axios
@@ -15,7 +22,11 @@ export const getaddcartdata = () => dispatch => {
       },
     })
     .then((r) => {
+<<<<<<< HEAD
      
+=======
+      console.log(r.data.data);
+>>>>>>> 7de8bd9 (addtocart)
       dispatch({ type: types.GET_CARTDATA_SUCCESS, payload: r.data.data });
     })
     .catch((err) => {
@@ -27,6 +38,10 @@ export const deletecartdata = (id) => (dispatch) => {
   return axios
     .delete(`https://asos-backend.onrender.com/cart/${id}`, {
       headers: {
+<<<<<<< HEAD
+=======
+        "Content-Type": "application/json",
+>>>>>>> 7de8bd9 (addtocart)
         Authorization: `Bearer ${usertoken}`,
       },
     })
@@ -44,15 +59,22 @@ export const updatecartdata = (el, id) => (dispatch) => {
       },
     })
     .then((r) => {
+<<<<<<< HEAD
     
       // getaddcartdata();
       dispatch({ type: types.UPDATE_CART_SUCCESS, payload: { el, id } });
+=======
+      console.log(r);
+      getaddcartdata();
+      dispatch({ type: types.UPDATE_CART_SUCCESS });
+>>>>>>> 7de8bd9 (addtocart)
     })
     .catch((err) => {
       console.log(err);
       dispatch({ type: types.UPDATE_CART_FAIL });
     });
 };
+<<<<<<< HEAD
 
 export const CleanCart=()=>dispatch=>{
   return axios
@@ -64,3 +86,5 @@ export const CleanCart=()=>dispatch=>{
     getaddcartdata()
   })
 }
+=======
+>>>>>>> 7de8bd9 (addtocart)

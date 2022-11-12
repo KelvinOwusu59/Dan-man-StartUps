@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Box, HStack, Text, VStack,Image,Button, Divider } from '@chakra-ui/react'
+=======
+import { Box, HStack, Text, VStack,Image,Button } from '@chakra-ui/react'
+>>>>>>> 7de8bd9 (addtocart)
 import {
   Menu,
   MenuButton,
@@ -9,10 +13,16 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from '@chakra-ui/react'
+<<<<<<< HEAD
 import {ChevronDownIcon, InfoIcon} from "@chakra-ui/icons"
 import React, { useState } from 'react'
 import styles from "./Ordersummary.module.css"
 import { Link } from 'react-router-dom'
+=======
+import {ChevronDownIcon} from "@chakra-ui/icons"
+import React, { useState } from 'react'
+import styles from "./Ordersummary.module.css"
+>>>>>>> 7de8bd9 (addtocart)
 const Ordersummary = ({data}) => {
 
   
@@ -23,6 +33,7 @@ const Ordersummary = ({data}) => {
     return prev+Number(curr.product_details.product_price)
   },0)
 
+<<<<<<< HEAD
  
   let totalsum = sum * quantity;
 
@@ -76,6 +87,63 @@ const Ordersummary = ({data}) => {
 </Link>
        </Box>
        
+=======
+ console.log(quantity,sum)
+  let totalsum = sum * quantity;
+  console.log(totalsum)
+  console.log(data)
+  return (
+    <div className={styles.ordersumbox}>
+    <div className={styles.ordersum_mainbox}>
+      <VStack>
+        <Box >
+        <Text fontSize="3xl">TOTAL</Text>
+        </Box>
+        <Box>
+          <HStack>
+            <Text>Sub-total</Text>
+            <Text>{ totalsum}</Text>
+          </HStack>
+        </Box>
+        <Box>
+          <HStack>
+            <Text>Delivery</Text>
+          </HStack>
+        </Box>
+        <Box>
+        <Menu>
+  <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+    Your Cats
+  </MenuButton>
+  <MenuList>
+    <MenuItem minH='48px'>
+      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://placekitten.com/100/100'
+        alt='Fluffybuns the destroyer'
+        mr='12px'
+      />
+      <span>Fluffybuns the Destroyer</span>
+    </MenuItem>
+    <MenuItem minH='40px'>
+      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://placekitten.com/120/120'
+        alt='Simon the pensive'
+        mr='12px'
+      />
+      <span>Simon the pensive</span>
+    </MenuItem>
+  </MenuList>
+</Menu>
+        </Box>
+        <Box>
+               <Button color="white" w="200px"bg="
+#008849">CHECKOUT</Button>
+        </Box>
+>>>>>>> 7de8bd9 (addtocart)
         <Box>
           <VStack>
             <Text>WE ACCEPT</Text>
