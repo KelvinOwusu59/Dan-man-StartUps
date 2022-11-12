@@ -9,9 +9,13 @@
     margin: auto ;
     display:flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
     gap: 2rem;
 =======
 >>>>>>> f83085a (women data)
+=======
+    gap: 2rem;
+>>>>>>> b8362dc (responsive landing page)
     justify-content: space-between;
 }
 .seconddiv > div{
@@ -61,6 +65,7 @@ padding: 10px;
     justify-content:space-evenly
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* .bimg
 {
     width: 16%;
@@ -71,6 +76,12 @@ padding: 10px;
     width: 16%;
 }
 >>>>>>> f83085a (women data)
+=======
+/* .bimg
+{
+    width: 16%;
+} */
+>>>>>>> b8362dc (responsive landing page)
 /* media queries */
 
 @media all and (max-width: 600px) {

@@ -2,7 +2,11 @@
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 6c776a1 (single page)
+=======
+// import { Box, Button, Flex, Heading,Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Text } from "@chakra-ui/react";
+>>>>>>> b8362dc (responsive landing page)
 import {
   Box,
   Button,
@@ -54,6 +58,7 @@ import MenSubNav from "./MenSubNav";
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 import {HiOutlineUser ,HiOutlineHeart} from "react-icons/hi";
 import {IoBagOutline} from "react-icons/io5";
 import {FiShoppingBag} from "react-icons/fi";
@@ -63,6 +68,8 @@ import {GrContact} from "react-icons/gr"
 import SubNav from "./WomensubMenu";
 import MenSubNav from "./MenSubNav";
 // import { BottomBanner } from "./BottomBanner";
+=======
+>>>>>>> b8362dc (responsive landing page)
 
 
 import { ProductPageNav } from "./ProductPageNav";
@@ -328,6 +335,7 @@ export const MiddleNav = () => {
   </TabPanels>
 </Tabs>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       </TabList>
       <TabPanels>
@@ -361,5 +369,8 @@ export const MiddleNav = () => {
      
 
 >>>>>>> 6c776a1 (single page)
+=======
+
+>>>>>>> b8362dc (responsive landing page)
   );
 };

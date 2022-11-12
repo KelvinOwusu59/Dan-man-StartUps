@@ -23,6 +23,7 @@ export const Navbar = () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* <SubNav /> */}
       {/* HiOutlineUser */}
 =======
@@ -38,6 +39,9 @@ export const Navbar = () => {
 >>>>>>> 6c776a1 (single page)
 
 >>>>>>> dd34221 (Mens Page added)
+=======
+      <BottomBanner/>
+>>>>>>> b8362dc (responsive landing page)
     </Box>
     </Desktop>
     <Tablet >

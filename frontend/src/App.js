@@ -1,12 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { Box, Text } from "@chakra-ui/react";
 =======
+=======
+
+import "./App.css";
+>>>>>>> b8362dc (responsive landing page)
 import { Box} from "@chakra-ui/react";
 >>>>>>> f83085a (women data)
 import "./App.css";
+<<<<<<< HEAD
 
 import { Navbar } from "./components/Navbar/Navbar";
 <<<<<<< HEAD
@@ -43,11 +49,14 @@ import "./App.css";
 // import { Navbar } from "./components/Navbar/Navbar";
 // import Footer from "./Pages/Footer";
 // import MenPage from "./Pages/MenPage";
+=======
+>>>>>>> b8362dc (responsive landing page)
 import { AllRoutes } from "./Pages/AllRoutes";
 function App() {
   return (
     <>
     <Box className="font-face-pt ">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      <AllRoutes />
@@ -77,6 +86,10 @@ function App() {
      <AllRoutes />
 
 >>>>>>> 6c776a1 (single page)
+=======
+     <AllRoutes />
+     
+>>>>>>> b8362dc (responsive landing page)
     </Box>
     </>
 >>>>>>> f83085a (women data)

@@ -12,6 +12,7 @@ import Maincartpage from "../components/Addtocart/Maincartpage";
 import { Navbar } from "../components/Navbar/Navbar";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import Footer from "./Footer";
 
@@ -22,6 +23,9 @@ import { CheckOut } from "./CheckOut";
 =======
 import { CheckOut } from "./CheckOut";
 >>>>>>> 57ffffd (add)
+=======
+import Footer from "./Footer";
+>>>>>>> b8362dc (responsive landing page)
 import { MenAccessoris } from "./Menproduct/MenAcceseoris";
 import { MenAutumn } from "./Menproduct/MenAutumn";
 import { MenBrand } from "./Menproduct/MenBrand";
@@ -39,6 +43,7 @@ import { MenTopShop } from "./Menproduct/MenTopShop";
 import SigninandSignup from "./Signin&Signup";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import WomenPage from "./WomenPage";
 import MenPage from "./MenPage";
@@ -50,6 +55,10 @@ import SinglePageProduct from "./SinglePageProduct";
 =======
 import SinglePageProduct from "./SinglePageProduct";
 >>>>>>> 35f801b (singlepage)
+=======
+import WomenPage from "./WomenPage";
+import MenPage from "./MenPage";
+>>>>>>> b8362dc (responsive landing page)
 import { WomenAccessoris } from "./womenProduct/WomenAcceseoris";
 import { WomenAutumn } from "./womenProduct/WomenAutumn";
 import { WomenBrand } from "./womenProduct/WomenBrand";
@@ -103,6 +112,10 @@ export const AllRoutes = () => {
         <Route path="/signup" element={<SigninandSignup />} />
         <Route path="/signin" element={<SigninandSignup />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <Route path="/womenhome" element={<WomenPage/>} />
+>>>>>>> b8362dc (responsive landing page)
 
         <Route path="/womenhome" element={<WomenPage />} />
         <Route path="/" element={<WomenPage />} />
@@ -191,7 +204,7 @@ export const AllRoutes = () => {
         <Route path="/womenaccessories" element={<WomenAccessoris />} />
         <Route path="/womenautumn" element={<WomenAutumn />} />
         <Route path="/womengifting" element={<WomenGifting />} />
-        <Route path="/menhome" element={<h1>men</h1>} />
+        <Route path="/menhome" element={<MenPage/>} />
 
         <Route path="/mensale" element={<MenSale />} />
         <Route path="/mentopshop" element={<MenTopShop />} />
@@ -208,11 +221,17 @@ export const AllRoutes = () => {
         <Route path="/menautumn" element={<MenAutumn />} />
         <Route path="/mengifting" element={<MenGifting />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/cart" element={<Maincartpage/>}/>
 =======
         <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
 >>>>>>> 35f801b (singlepage)
+=======
+        
+>>>>>>> b8362dc (responsive landing page)
       </Routes>
+
+      <Footer/>
     </Box>
   );
 };
