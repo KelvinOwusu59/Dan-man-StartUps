@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useEffect } from "react";
+=======
+import React from "react";
+>>>>>>> fabae54 (men page)
 import offer from "../Images/offer.png"
 import selfcare from "../Images/selfcare.png"
 import gofor from "../Images/gofor.png"
@@ -14,6 +18,7 @@ import topshop from "../Brands/topshop.png"
 import weekday from "../Brands/weekday.png"
 import getgift from "../Brands/getgift.png"
 import "../style/LandingPage.css";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import{Box, Grid, GridItem, Image, Text} from "@chakra-ui/react"
 import { getaddcartdata } from "../Redux/Addtocart/action";
@@ -80,11 +85,61 @@ const WomenPage = () => {
         <p className="h2">GIVE WINTER THE COLD SHOULDER </p>
         <p style={{"fontSize":"10px"}}>Limited time only.Selected styles marked down as shown</p>
         </Link>
+=======
+
+
+
+const WomenPage = () => {
+  return (
+    <div>
+      <div className="maindiv" >
+      <a href="https://www.asos.com/customer-care/"   >
+     <img style={{"width":"100%"}} src={offer}alt="offer"/>
+     </a>
+      </div>
+      <br />
+      <br />
+      {/* 2nd div */}
+      <div className="seconddiv">
+        <div style={{ width: "24%"}}>
+          <img src={selfcare} alt="selfcare"/>
+          <p  className="secondheading">SELF CARE MOMENT </p>
+          <p>It's treats Yourself Time</p>
+        </div>
+
+        <div style={{ width: "24%"}}>
+        <img src={label} alt="label"/>
+          <h3 className="secondheading"> LABEL LOVE </h3>
+          <p>It's treats Yourself Time</p>
+        </div>
+
+        <div style={{ width: "24%"}}>
+          <img src={inhouse} alt="inhouse"/>
+          <h3 className="secondheading"> IN-HOUSE BRNDS</h3>
+          <p>It's treats Yourself Time</p>
+        </div>
+
+        <div style={{ width: "24%"}}>
+          <img src={gofor} alt="gofor"/>
+          <h3 className="secondheading"> GO FOR GLAM </h3>
+          <p>It's treats Yourself Time</p>
+        </div>
+      </div>
+<br />
+<br />
+      {/* 3rd div */}
+
+      <div className="thirdmaindiv"> 
+        <p className="h2">UPTO 50% OFF COSY GEAR! </p>
+        <p className="h2">GIVE WINTER THE COLD SHOULDER </p>
+        <p style={{"fontSize":"10px"}}>Limited time only.Selected styles marked down as shown</p>
+>>>>>>> fabae54 (men page)
       </div>
        <br />
       <br />
 
       {/* after offer page 2 div */}
+<<<<<<< HEAD
       <Grid gridTemplateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",
       lg:"repeat(2,1fr)"}} margin={"auto"}
        gap={"30px"} width={"80%"} justifyContent={"space-around"} >
@@ -103,16 +158,39 @@ const WomenPage = () => {
           <GridItem >
         <Link to={"/womenshoe"}>
           <img src={collussion} alt="collussion"/></Link>
+=======
+      <div className="afteroffer">
+        <div style={{ width: "40%"}}>
+          <img src={treat}alt="treat"/>
+          <div style={{"textAlign":"center"}}>
+          <h3 className="h3">TREAT YO,SELF BRANDS </h3>
+          <p>Cos deserve the best</p>
+          <br />
+          <button className="btn"> SHOP NOW</button>
+          </div>
+        </div>
+
+        <div style={{ width: "40%"}}>
+          <img src={collussion} alt="collussion"/>
+>>>>>>> fabae54 (men page)
           <div style={{"textAlign":"center"}}>
           <h3 className="h3"> COLLUSIONS </h3>
           <p>POV:the club in 2062</p>
           <br />
+<<<<<<< HEAD
           <Link to={"/womenshoe"}>
           <button className="btn"> SHOP THE BRAND</button></Link>
         </div>
         </GridItem>
 
       </Grid>
+=======
+          <button className="btn"> SHOP THE BRAND</button>
+        </div>
+        </div>
+
+      </div>
+>>>>>>> fabae54 (men page)
       
 <br />
 <br />
@@ -124,6 +202,7 @@ const WomenPage = () => {
 <br />
 <br />
 <br />
+<<<<<<< HEAD
 <br />
 {/* trending brands */}
 <Grid 
@@ -149,6 +228,17 @@ lg:"repeat(6,1fr)"}} margin={"auto"}
 <Image className="bimg" src={weekday} alt="weekday"/>
 </Link>
 </Grid>  
+=======
+{/* trending brands */}
+<div className="brands"> 
+<img className="bimg"  src={monkl} alt="monkl"/>
+<img className="bimg" src={never} alt="never"/>
+<img className="bimg" src={topshop} alt="topshop"/>
+<img className="bimg" src={reclaimed} alt="reclaimed"/>
+<img className="bimg" src={collusionlogo} alt="collusionlogo"/>
+<img className="bimg" src={weekday} alt="weekday"/>
+</div>    
+>>>>>>> fabae54 (men page)
 <br />
 <br />
 <hr />

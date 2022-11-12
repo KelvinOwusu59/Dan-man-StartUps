@@ -10,6 +10,7 @@ import "./App.css";
 
 import { Navbar } from "./components/Navbar/Navbar";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { AllRoutes } from "./Pages/AllRoutes";
 <<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
@@ -22,6 +23,11 @@ import All_Route from "./Pages/All_Route";
 =======
 import Footer from "./components/Footer";
 import WomenPage from "./components/WomenPage";
+=======
+import Footer from "./Pages/Footer";
+// import WomenPage from "./Pages/WomenPage";
+ import MenPage from "./Pages/MenPage";
+>>>>>>> fabae54 (men page)
 
 >>>>>>> f83085a (women data)
 
@@ -57,7 +63,8 @@ function App() {
 >>>>>>> 7960daf (productpage adde)
 =======
       <Navbar />
-      <WomenPage/>
+     {/* <WomenPage/> */}
+     <MenPage/>
      <Footer/>
     </Box>
     </>
