@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   Box,
   Button,
@@ -13,6 +14,9 @@ import {
   PopoverTrigger,
   Text,
 } from "@chakra-ui/react";
+=======
+import { Box, Button, Flex, Heading,Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, Text } from "@chakra-ui/react";
+>>>>>>> f83085a (women data)
 import React from "react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 <<<<<<< HEAD
@@ -22,6 +26,7 @@ import { Link } from "react-router-dom";
 >>>>>>> 7960daf (productpage adde)
 import { RepeatClockIcon } from "@chakra-ui/icons";
 import { SearchInput } from "./SearchInput";
+<<<<<<< HEAD
 import { HiOutlineUser, HiOutlineHeart } from "react-icons/hi";
 import { IoBagOutline } from "react-icons/io5";
 import { FiShoppingBag } from "react-icons/fi";
@@ -29,13 +34,25 @@ import { GrContact } from "react-icons/gr";
 import { ProductPageNav } from "./ProductPageNav";
 import styles from "./nav.module.css";
 <<<<<<< HEAD
+=======
+import {HiOutlineUser ,HiOutlineHeart} from "react-icons/hi";
+import {IoBagOutline} from "react-icons/io5";
+import {FiShoppingBag} from "react-icons/fi";
+import {GrContact} from "react-icons/gr"
+// import { ProductPageNav } from "./ProductPageNav";
+// import styles from "./nav.module.css";
+>>>>>>> f83085a (women data)
 import SubNav from "./subMenu";
 =======
 import SubNav from "./WomensubMenu";
 import MenSubNav from "./MenSubNav";
+<<<<<<< HEAD
 import { BottomBanner } from "./BottomBanner";
 <<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
+=======
+// import { BottomBanner } from "./BottomBanner";
+>>>>>>> f83085a (women data)
 export const MiddleNav = () => {
   const Navigate=useNavigate()
   const dispatch=useDispatch();
@@ -276,8 +293,14 @@ export const MiddleNav = () => {
     <TabPanel p="0"  w="100%">
     <SubNav />
     </TabPanel>
+<<<<<<< HEAD
     <TabPanel>
       <p>two!</p>
+=======
+    <TabPanel p="0"  w="100%">
+    <MenSubNav / >
+      
+>>>>>>> f83085a (women data)
     </TabPanel>
   </TabPanels>
 </Tabs>
