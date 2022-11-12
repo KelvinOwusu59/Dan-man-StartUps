@@ -40,8 +40,12 @@ console.log(products)
   useEffect(() => {
     // = (type,page,limt)
     // dispatch(loadProduct("women","one peace"));
+<<<<<<< HEAD
     dispatch( loadProductWithQuery("men",2,12));
 >>>>>>> dd34221 (Mens Page added)
+=======
+    dispatch( loadProductWithQuery("men",4,12));
+>>>>>>> 568ed80 (Mens Page added)
   }, [dispatch]);
 
   const handleToggle = () => setShow(!show);

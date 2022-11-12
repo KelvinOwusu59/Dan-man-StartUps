@@ -39,9 +39,14 @@ export const MenFaceBody = () => {
 console.log(products)
   useEffect(() => {
     // = (type,page,limt)
+<<<<<<< HEAD
     // dispatch(loadProduct("women","Wowen_giftforher"));
     dispatch( loadProductWithQuery("men",8,12));
 >>>>>>> dd34221 (Mens Page added)
+=======
+    dispatch(loadProduct("men",""));
+    // dispatch( loadProductWithQuery("men",8,12));
+>>>>>>> 568ed80 (Mens Page added)
   }, [dispatch]);
 
   const handleToggle = () => setShow(!show);

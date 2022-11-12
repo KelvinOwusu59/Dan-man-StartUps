@@ -40,8 +40,12 @@ export const MenTopShop = () => {
 console.log(products)
   useEffect(() => {
     // = (type,page,limt)
+<<<<<<< HEAD
     dispatch(loadProduct("men","jeans"));
 >>>>>>> dd34221 (Mens Page added)
+=======
+    dispatch(loadProduct("men","Tshirt"));
+>>>>>>> 568ed80 (Mens Page added)
     // dispatch( loadProductWithQuery("women",7,12));
   }, [dispatch]);
 

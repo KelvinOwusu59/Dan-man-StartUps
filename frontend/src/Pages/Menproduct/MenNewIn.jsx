@@ -33,10 +33,14 @@ console.log(products)
   useEffect(() => {
     // = (type,page,limt)
 <<<<<<< HEAD
+<<<<<<< HEAD
     dispatch( loadProductWithQuery("men",3,12));
 =======
     dispatch( loadProductWithQuery("men",2,12));
 >>>>>>> dd34221 (Mens Page added)
+=======
+    dispatch( loadProductWithQuery("men",3,12));
+>>>>>>> 568ed80 (Mens Page added)
   }, [dispatch]);
 
   const handleToggle = () => setShow(!show);

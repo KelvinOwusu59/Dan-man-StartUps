@@ -61,10 +61,14 @@ console.log(e.target.value)
 
           <BreadcrumbItem>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <BreadcrumbLink href="#">men</BreadcrumbLink>
 =======
             <BreadcrumbLink href="#">Women</BreadcrumbLink>
 >>>>>>> dd34221 (Mens Page added)
+=======
+            <BreadcrumbLink href="#">men</BreadcrumbLink>
+>>>>>>> 568ed80 (Mens Page added)
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
@@ -76,10 +80,14 @@ console.log(e.target.value)
       <Box w="85%" m="auto" mt={5}>
         <Center>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Heading size={"md"}>Men's Sale</Heading>
 =======
           <Heading size={"md"}>Women's Sale</Heading>
 >>>>>>> dd34221 (Mens Page added)
+=======
+          <Heading size={"md"}>Men's Sale</Heading>
+>>>>>>> 568ed80 (Mens Page added)
         </Center>
         <VStack w="80%" m={"auto"} mt={4}>
           <Collapse startingHeight={20} in={show}>

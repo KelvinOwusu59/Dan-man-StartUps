@@ -247,7 +247,9 @@ const MenSubNav = () => {
               justifyContent={"center"} 
               h="49px"
             >
+              <Link className={styles.Link} to="/menclothing">
               <Text>Clothing</Text>
+              </Link>
             </Flex>
             <div className={styles.megaBox}>
               <div className={styles.content}>
@@ -399,7 +401,9 @@ const MenSubNav = () => {
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/mendresses">
               <Text>Dresses</Text>
+              </Link>
             </Flex>
             <div className={styles.megaBox}>
               <div className={styles.content}>
@@ -569,7 +573,9 @@ const MenSubNav = () => {
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/menshoe">
               <Text>Shoes</Text>
+              </Link>
             </Flex>
             <Box className={styles.megaBox}>
               <Box className={styles.content}>
@@ -669,7 +675,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/mensportwear">
               <Text>Sportwear</Text>
+              </Link>
               <div className={styles.megaBox}>
               <div className={styles.content}>
                 <div className={styles.row}>
@@ -839,7 +847,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/menaccessories">
               <Text>Accessories</Text>
+              </Link>
               <Box className={styles.megaBox}>
               <Box className={styles.content}>
                 <div className={styles.row}>
@@ -906,8 +916,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/menautumn">
               <Text>Autunm</Text>
-              
+              </Link>
             </Flex>
           </li>
           <li>
@@ -919,7 +930,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/mengifting">
               <Text>Gifting</Text>
+              </Link>
               <div className={styles.megaBox}>
               <div className={styles.content}>
                 <div className={styles.row}>
@@ -1089,7 +1102,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/mentopshop">
               <Text>Topshop</Text>
+              </Link>
             </Flex>
           </li>
           <li>
@@ -1101,7 +1116,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
-              <Text>Face + Body</Text>
+              <Link className={styles.Link} to="/menfacebody">
+              <Text w="80px">Face + Body</Text>
+              </Link>
               <Box className={styles.megaBox}>
               <Box className={styles.content}>
                 <div className={styles.row}>
@@ -1168,8 +1185,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
               mr={2}
-            >
+            ><Link className={styles.Link} to="/menbrand">
               <Text>Brands</Text>
+              </Link>
             </Flex>
           </li>
           <li>
@@ -1184,12 +1202,14 @@ Loafers
               mr="10px"
               h="49px"
             >
+              <Link className={styles.Link} to="/menoutlet">
               <Text
                 transform={"skew(10deg)"}
                 _hover={{ transform: "skew(0deg)" }}
               >
                 Outlet
               </Text>
+              </Link>
             </Flex>
             <div className={styles.megaBox}>
               <div className={styles.content}>
@@ -1359,7 +1379,9 @@ Loafers
               justifyContent={"center"}
               h="49px"
             >
+              <Link className={styles.Link} to="/menmarketplace">
               <Text>Marketplace</Text>
+</Link>
               <div className={styles.megaBox}>
               <div className={styles.content}>
                 <div className={styles.row}>
