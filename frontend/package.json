@@ -34,6 +34,7 @@
 <<<<<<< HEAD
     "reduxt": "^0.0.5",
     "thunk": "^0.0.1",
+<<<<<<< HEAD
 =======
 >>>>>>> 7960daf (productpage adde)
 =======
@@ -43,6 +44,8 @@
     "reduxt": "^0.0.5",
     "thunk": "^0.0.1",
 >>>>>>> 020c3b9 (pulling)
+=======
+>>>>>>> ded4f72 (Google button added)
     "web-vitals": "^2.1.4"
   },
   "scripts": {
