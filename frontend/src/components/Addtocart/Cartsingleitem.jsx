@@ -169,6 +169,7 @@ const Cartsingleitem = ({ el }) => {
         </div> : <div>
             <Divider orientation='horizontal'></Divider>
           </div>
+<<<<<<< HEAD
 =======
           <HStack>
 =======
@@ -180,6 +181,8 @@ const Cartsingleitem = ({ el }) => {
           </HStack>
           </div>:<div></div>
 >>>>>>> 7de8bd9 (addtocart)
+=======
+>>>>>>> b032edd (addtocartstyling complte)
       }
     </div>
   )

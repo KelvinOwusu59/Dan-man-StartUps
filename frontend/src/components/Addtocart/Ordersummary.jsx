@@ -18,12 +18,16 @@ import {
   MenuDivider,
 } from '@chakra-ui/react'
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {ChevronDownIcon, InfoIcon} from "@chakra-ui/icons"
 import React, { useState } from 'react'
 import styles from "./Ordersummary.module.css"
 import { Link } from 'react-router-dom'
 =======
 import {ChevronDownIcon} from "@chakra-ui/icons"
+=======
+import {ChevronDownIcon, InfoIcon} from "@chakra-ui/icons"
+>>>>>>> b032edd (addtocartstyling complte)
 import React, { useState } from 'react'
 import styles from "./Ordersummary.module.css"
 >>>>>>> 7de8bd9 (addtocart)
@@ -104,17 +108,23 @@ const Ordersummary = ({data}) => {
         <Text fontSize="3xl" fontWeight="bold">TOTAL</Text>
           </Box>
           <Divider orientation='horizontal'></Divider>
-        <Box>
-          <HStack>
-            <Text>Sub-total</Text>
-            <Text>{ totalsum}</Text>
+          <Box w="100%">
+          
+          <HStack w="100%" justify="space-around">
+            <Text fontWeight="bold">Sub-total</Text>
+            <Text fontWeight="bold" color="red.300">${ totalsum}</Text>
+            </HStack>
+            
+          </Box>
+          <Divider orientation='horizontal'></Divider>
+          <Box w="100%">
+            
+          <HStack justify="space-around">
+              <Text>Delivery</Text>
+              <InfoIcon></InfoIcon>
           </HStack>
-        </Box>
-        <Box>
-          <HStack>
-            <Text>Delivery</Text>
-          </HStack>
-        </Box>
+          </Box>
+          <Divider orientation='horizontal'></Divider>
         <Box>
         <Menu>
   <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
@@ -144,9 +154,9 @@ const Ordersummary = ({data}) => {
   </MenuList>
 </Menu>
         </Box>
-        <Box>
-               <Button color="white" w="200px"bg="
-#008849">CHECKOUT</Button>
+        <Box w="100%" margin="auto">
+               <Button color="white" w="90%"bg="
+#008849" margin="auto">CHECKOUT</Button>
         </Box>
 >>>>>>> 7de8bd9 (addtocart)
         <Box>

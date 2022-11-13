@@ -2,6 +2,7 @@
     width: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   
@@ -23,8 +24,14 @@
 >>>>>>> 7de8bd9 (addtocart)
 =======
    margin: auto;
+=======
+  
+>>>>>>> b032edd (addtocartstyling complte)
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-   
+   margin-top:5px;
+   background-color: rgb(255, 255, 255);
+   border:1px solid rgb(255, 255, 255);
+   margin: auto;
    
    
 }

@@ -4,8 +4,12 @@
     /* width: 100vw; */
 =======
 .addtocartbox{
+<<<<<<< HEAD
     width: 100vw;
 >>>>>>> 5e17292 (styling to addtocart)
+=======
+    /* width: 100vw; */
+>>>>>>> b032edd (addtocartstyling complte)
     margin:auto;
     min-height: 100vmin;
     background-color: rgb(204, 204, 204);

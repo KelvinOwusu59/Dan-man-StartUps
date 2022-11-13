@@ -22,6 +22,7 @@ const getProduct = (products) => ({
 =======
 import * as types from "./acttionTypes";
 import axios from "axios";
+import { getaddcartdata } from "../Addtocart/action";
 
 const getProduct = (products) => ({
   type: types.GET_PRODUCT,
@@ -35,6 +36,7 @@ const getProduct = (products) => ({
 
 // })
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +54,11 @@ let userData= JSON.parse(localStorage.getItem('userdata'))||[];
 let token=userData.token;
 console.log(userData.token)
 >>>>>>> dcab2db (Cart page Added)
+=======
+let userData = JSON.parse(localStorage.getItem("userdata")) || [];
+let token = userData.token;
+console.log(userData.token);
+>>>>>>> b032edd (addtocartstyling complte)
 export const loadProduct = (type, cate) => {
   return function (dispatch) {
 >>>>>>> 1c5616f (addtocart working)
@@ -78,8 +85,12 @@ export const loadProduct = (type, cate) => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const searchProduct = (query) => (dispatch) => {
   dispatch({ type: "REQUEST_PRODUCT" });
+=======
+export const searchProduct = (query) => (dispatch) => {
+>>>>>>> b032edd (addtocartstyling complte)
   axios
     .get(
       `https://asos-backend.onrender.com/womenproduct/?product_name=${query}`,
@@ -96,6 +107,7 @@ export const searchProduct = (query) => (dispatch) => {
         payload: { data: r.data.data, query: query },
       });
     })
+<<<<<<< HEAD
     .catch((e) => {
       console.log(e);
       dispatch({ type: "REQUEST_PRODUCT" });
@@ -115,6 +127,10 @@ axios.get(`https://asos-backend.onrender.com/womenproduct/?product_name=${query}
 
 } 
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+    .catch((e) => console.log(e));
+};
+>>>>>>> b032edd (addtocartstyling complte)
 export const loadProductWithQuery = (type, page, limt) => {
   return function (dispatch) {
     dispatch({ type: "REQUEST_PRODUCT" });
@@ -216,7 +232,9 @@ export const Addtocart = (data) => (dispatch) => {
         Authorization: `Bearer ${token}`,
       },
     })
-    .then((r) => console.log("data added"))
+    .then((r) => {
+      dispatch(getaddcartdata());
+    })
     .catch((err) => {
       console.log(err);
     });
