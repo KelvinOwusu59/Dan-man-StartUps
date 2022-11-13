@@ -11,6 +11,7 @@ const userData = {
     signup_status : false,
     isError: false,
     isErrorData:"",
+<<<<<<< HEAD
     u_Data: [] || user.data,
     msg:""
 =======
@@ -28,6 +29,8 @@ const userData = {
     u_Data: []
 >>>>>>> c67e613 (add authreducr function)
 =======
+=======
+>>>>>>> dcab2db (Cart page Added)
     u_Data: [] || user.data
 >>>>>>> 3bc0099 (added)
 }
@@ -55,8 +58,12 @@ export function AuthReducer(state = userData,action){
             ...state,isLooding: false, signup_status: true
         }
         case SIGNUP_FAILURE_REQUEST : return {
+<<<<<<< HEAD
             ...state, isLooding: false, isError: true
 >>>>>>> 3bc0099 (added)
+=======
+            ...state, isLooding: false, isError: true,isErrorData:payload
+>>>>>>> dcab2db (Cart page Added)
         }
         case SIGNIN_LOODING_REQUEST : return {
             ...state,isLooding: true
@@ -78,8 +85,12 @@ export function AuthReducer(state = userData,action){
             ...state,isLooding: false, token: payload.token, u_Data: payload.data, isAuth: true 
         }
         case SIGNIN_FAILURE_REQUEST : return {
+<<<<<<< HEAD
             ...state,isLooding: false, isError: true
 >>>>>>> c67e613 (add authreducr function)
+=======
+            ...state,isLooding: false, isError: true,isErrorData:payload
+>>>>>>> dcab2db (Cart page Added)
         }
         case SIGNOUT_REQUEST : return {
             ...state

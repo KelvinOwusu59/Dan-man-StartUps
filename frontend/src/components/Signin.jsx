@@ -96,12 +96,14 @@ export default function Signin() {
   function sendSigninRequest() {
     dispatch(
       SigninReq({email,password})
+
       )
     }
 
     useEffect(()=>{
       if(isAuth){
         navigate('/')
+        window.location.reload();
       }
     },[isAuth])
 >>>>>>> 3bc0099 (added)

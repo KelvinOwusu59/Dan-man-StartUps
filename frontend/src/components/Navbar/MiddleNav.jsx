@@ -28,10 +28,14 @@ import { Box, Button, Flex, Heading,Popover, PopoverArrow, PopoverBody, PopoverC
 import React from "react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
 =======
 import { Link } from "react-router-dom";
 >>>>>>> 7960daf (productpage adde)
+=======
+import { Link, useNavigate } from "react-router-dom";
+>>>>>>> dcab2db (Cart page Added)
 import { RepeatClockIcon } from "@chakra-ui/icons";
 import { SearchInput } from "./SearchInput";
 <<<<<<< HEAD
@@ -99,9 +103,24 @@ dispatch(getaddcartdata())
 =======
 import { useDispatch } from "react-redux";
 import { SwitchTab } from "../../Redux/App/action";
+<<<<<<< HEAD
+=======
+import { useState } from "react";
+
+>>>>>>> dcab2db (Cart page Added)
 export const MiddleNav = () => {
+  const Navigate=useNavigate()
   const dispatch=useDispatch();
+<<<<<<< HEAD
 >>>>>>> dd34221 (Mens Page added)
+=======
+  const  [userData,setData]=useState(JSON.parse(localStorage.getItem('userdata')))
+  
+  const handelSignout=()=>{
+    localStorage.removeItem("userdata");
+Navigate("/signin")
+  }
+>>>>>>> dcab2db (Cart page Added)
   const HandleTab=(type)=>{
     dispatch(SwitchTab(type))
   }
@@ -208,11 +227,15 @@ export const MiddleNav = () => {
                     <PopoverCloseButton />
                     <PopoverHeader bgColor={"#ddd"}>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dcab2db (Cart page Added)
                     <Box> { userData?<><Flex><Text>{userData.data.firstname}</Text>
                       &nbsp;|&nbsp; <Text cursor={"pointer"}
                        onClick={handelSignout}>SignOut</Text></Flex></>:
                        <Box>
                      <Link to="/signin"> Sign In</Link>|
+<<<<<<< HEAD
                       <Link to="/signup">Join</Link>
                       </Box>}
                      </Box>
@@ -220,6 +243,11 @@ export const MiddleNav = () => {
                       <Link to="/login">Sign In</Link>|{" "}
                       <Link to="/signup">Join</Link>
 >>>>>>> 7960daf (productpage adde)
+=======
+                      <Link to="/signup">Join</Link>
+                      </Box>}
+                     </Box>
+>>>>>>> dcab2db (Cart page Added)
                     </PopoverHeader>
                     <PopoverBody>
                       <Flex

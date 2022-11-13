@@ -4,6 +4,7 @@
 import { combineReducers } from "redux";
 import { reducers as AppReducer } from "./App/reducer";
 import { reducer as CartReducer } from "./Addtocart/reducer";
+<<<<<<< HEAD
 import {reducer as WishlistReducer} from "./wishlist/reducer"
 import { AuthReducer } from "./Auth/reducer";
 
@@ -29,12 +30,16 @@ import { reducers as AppReducer } from "./App/reducer";
 import { reducer as CartReducer } from "./Addtocart/reducer";
 >>>>>>> 7de8bd9 (addtocart)
 // import {reducer as AuthReducer} from "../Auth/reducer";
+=======
+import { AuthReducer } from "./Auth/reducer";
+
+>>>>>>> dcab2db (Cart page Added)
 // import {reducer as CartReducer} from "../Cartreducer/reducer"
 
 const rootreducer = combineReducers({
   AppReducer,
   CartReducer,
-  // AuthReducer
+  AuthReducer
   // CartReducer,
 });
 

@@ -218,6 +218,7 @@ export const AllRoutes = () => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/womenhome" element={<WomenPage />} />
         <Route path="/" element={<WomenPage />} />
         <Route path="/checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
@@ -297,6 +298,12 @@ export const AllRoutes = () => {
         <Route path="/womensale" element={<WomenSale />} />
 =======
 >>>>>>> d3bf380 (add)
+=======
+        <Route path="/" element={<WomenPage />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        {/* <Route path="/wishlist" element={<CheckOut />} /> */}
+
+>>>>>>> dcab2db (Cart page Added)
         <Route path="/womentopshop" element={<WomenTopShop />} />
         <Route path="/womensale" element={<WomenSale />} />
         <Route path="/womenbrand" element={<WomenBrand />} />
