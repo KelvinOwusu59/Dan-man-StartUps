@@ -366,6 +366,10 @@ export const AllRoutes = () => {
 
       
     </Box>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8164d2f (done)
   );
 <<<<<<< HEAD
 };
