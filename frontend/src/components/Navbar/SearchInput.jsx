@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export const SearchInput = () => {
   const [item,setItem]=useState("")
   const Navigate=useNavigate()
+<<<<<<< HEAD
   const toast=useToast();
   const dispatch=useDispatch();
     const HandleSearch=()=>{
@@ -26,6 +27,14 @@ export const SearchInput = () => {
       
     }
     
+=======
+  const dispatch=useDispatch();
+    const HandleSearch=()=>{
+        dispatch(searchProduct(item))
+        Navigate("/searchproduct")
+    }
+    console.log(item)
+>>>>>>> acfe1b7 (Search Functionality)
   return (
     <Box ml={5} w="50%">
        

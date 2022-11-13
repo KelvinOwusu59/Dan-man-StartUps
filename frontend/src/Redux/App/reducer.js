@@ -16,8 +16,14 @@ const initialState={
 >>>>>>> 7960daf (productpage adde)
 =======
     loading:true,
+<<<<<<< HEAD
     cart:[]
 >>>>>>> 35f801b (singlepage)
+=======
+    cart:[],
+    searchProd:[],
+    searchQuery:""
+>>>>>>> acfe1b7 (Search Functionality)
 }
 
 
@@ -40,6 +46,7 @@ const reducers=(state=initialState,action)=>{
                 cart:action.payload,
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             case types.SEARCH_ITEM:
             return {
                 ...state,
@@ -55,6 +62,13 @@ const reducers=(state=initialState,action)=>{
            
 =======
 >>>>>>> 35f801b (singlepage)
+=======
+            case types.SEARCH_ITEM:
+            return {
+                ...state,
+                searchProd:action.payload.data,searchQuery:action.payload.query
+            }
+>>>>>>> acfe1b7 (Search Functionality)
         
 >>>>>>> 7960daf (productpage adde)
         default:

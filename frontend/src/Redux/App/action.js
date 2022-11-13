@@ -77,6 +77,7 @@ export const loadProduct = (type, cate) => {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const searchProduct = (query) => (dispatch) => {
   dispatch({ type: "REQUEST_PRODUCT" });
   axios
@@ -101,6 +102,19 @@ export const searchProduct = (query) => (dispatch) => {
     });
 };
 
+=======
+export const searchProduct=(query)=>dispatch=>{
+axios.get(`https://asos-backend.onrender.com/womenproduct/?product_name=${query}`,{
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+}).then((r)=>{
+  console.log(r.data)
+ dispatch({type: "SEARCH_ITEM", payload:{data: r.data.data,query:query}})
+}).catch(e=>console.log(e))
+
+} 
+>>>>>>> acfe1b7 (Search Functionality)
 export const loadProductWithQuery = (type, page, limt) => {
   return function (dispatch) {
     dispatch({ type: "REQUEST_PRODUCT" });

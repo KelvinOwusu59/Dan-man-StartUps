@@ -173,6 +173,7 @@ import { WomenShoes } from "./womenProduct/WomenShoes";
 import { WomenSportWear } from "./womenProduct/WomenSportwear";
 import { WomenTopShop } from "./womenProduct/WomenTopShop";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { SearchPage } from "./SearchPage";
 import { RequireAuth } from "../components/RequiredAuth";
 import { WishList } from "./WishList";
@@ -198,6 +199,9 @@ import { WomenTopShop } from './womenProduct/WomenTopShop'
 >>>>>>> 7960daf (productpage adde)
 =======
 >>>>>>> dd34221 (Mens Page added)
+=======
+import { SearchPage } from "./SearchPage";
+>>>>>>> acfe1b7 (Search Functionality)
 
 export const AllRoutes = () => {
   return (
@@ -347,7 +351,12 @@ export const AllRoutes = () => {
 =======
           <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
            <Route path="/cart" element={<Maincartpage/>}></Route>
+<<<<<<< HEAD
 >>>>>>> 1c5616f (addtocart working)
+=======
+           <Route path="/searchproduct" element={<SearchPage />}></Route>
+           
+>>>>>>> acfe1b7 (Search Functionality)
       </Routes>
 
       
