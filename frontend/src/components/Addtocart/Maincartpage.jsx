@@ -40,17 +40,23 @@ const Maincartpage = () => {
   console.log(data)
   return (
       
-    <div style={{width:"100%",margin:"auto"}}>
-      <div className={styles.maincartpage}>
+    <div  className={styles.addtocartbox}>
+      <div >
         {
           loading ? <div>Loading</div> : (<div>
             {
               data.length == 0 ? <div>
                 <Blankcart/>
+<<<<<<< HEAD
               </div> : <div>
               <div><Cartitemsdetails data={data} /></div>
                   <div><Ordersummary data={ data} /></div>
 >>>>>>> 7de8bd9 (addtocart)
+=======
+              </div> : <div className={styles.maincartpageitem}>
+              <div className={styles.cartitemcomp}><Cartitemsdetails data={data} /></div>
+                  <div className={styles.ordersumcomp}><Ordersummary data={ data} /></div>
+>>>>>>> 5e17292 (styling to addtocart)
               </div>
             }
           </div>)

@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .addtocartbox{
     /* width: 100vw; */
+=======
+.addtocartbox{
+    width: 100vw;
+>>>>>>> 5e17292 (styling to addtocart)
     margin:auto;
     min-height: 100vmin;
     background-color: rgb(204, 204, 204);
@@ -8,6 +13,7 @@
 }
 .maincartpageitem{
     /* position: relative; */
+<<<<<<< HEAD
     display: flex;
     flex-wrap:wrap ;
     width: 70%;
@@ -18,18 +24,30 @@
     
 =======
 .maincartpage{
+=======
+>>>>>>> 5e17292 (styling to addtocart)
     display: flex;
     flex-wrap:wrap ;
     width: 70%;
+    margin-top: 10px;
     margin: auto;
+<<<<<<< HEAD
     gap:30px;
     border:1px solid orange;
 >>>>>>> 7de8bd9 (addtocart)
+=======
+    justify-content: space-evenly;
+  
+    
+>>>>>>> 5e17292 (styling to addtocart)
 
 
    
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5e17292 (styling to addtocart)
 .cartitemcomp{
  width: 60%;
 }
@@ -47,6 +65,7 @@
         border:6px solid gray
     }
     .ordersumcomp{
+<<<<<<< HEAD
         width: 100%;
     }
 }
@@ -60,12 +79,23 @@
 }
 @media  screen and (max-width:900px){
 >>>>>>> 7de8bd9 (addtocart)
+=======
+        width: 100%;
+    }
+}
+
+/* @media  screen and (max-width:900px){
+>>>>>>> 5e17292 (styling to addtocart)
     .maincartpage{
         width: 100%;
         margin:0;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }  */
 =======
 }
 >>>>>>> 7de8bd9 (addtocart)
+=======
+}  */
+>>>>>>> 5e17292 (styling to addtocart)

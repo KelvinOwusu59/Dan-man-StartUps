@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Box, HStack, Text, VStack,Image,Button, Divider } from '@chakra-ui/react'
 =======
 import { Box, HStack, Text, VStack,Image,Button } from '@chakra-ui/react'
 >>>>>>> 7de8bd9 (addtocart)
+=======
+import { Box, HStack, Text, VStack,Image,Button, Divider } from '@chakra-ui/react'
+>>>>>>> 5e17292 (styling to addtocart)
 import {
   Menu,
   MenuButton,
@@ -95,10 +99,11 @@ const Ordersummary = ({data}) => {
   return (
     <div className={styles.ordersumbox}>
     <div className={styles.ordersum_mainbox}>
-      <VStack>
-        <Box >
-        <Text fontSize="3xl">TOTAL</Text>
-        </Box>
+      <VStack w="100%">
+        <Box alignItems="baseline">
+        <Text fontSize="3xl" fontWeight="bold">TOTAL</Text>
+          </Box>
+          <Divider orientation='horizontal'></Divider>
         <Box>
           <HStack>
             <Text>Sub-total</Text>
