@@ -380,6 +380,7 @@ export const MiddleNav = () => {
 
      
 
+<<<<<<< HEAD
 >>>>>>> 6c776a1 (single page)
 =======
 =======
@@ -393,6 +394,8 @@ export const MiddleNav = () => {
 </Tabs>
 
 >>>>>>> 1c5616f (addtocart working)
+=======
+>>>>>>> bb059a2 (google pay added)
 
 >>>>>>> b8362dc (responsive landing page)
   );

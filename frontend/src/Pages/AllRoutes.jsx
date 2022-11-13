@@ -216,6 +216,7 @@ export const AllRoutes = () => {
         <Route path="/womenhome" element={<WomenPage/>} />
 >>>>>>> b8362dc (responsive landing page)
 
+<<<<<<< HEAD
         <Route path="/womenhome" element={<WomenPage />} />
         <Route path="/" element={<WomenPage />} />
         <Route path="/checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
@@ -287,6 +288,9 @@ export const AllRoutes = () => {
 >>>>>>> 7960daf (productpage adde)
 =======
         <Route path="/womenhome" element={<h1>women</h1>} />
+=======
+        <Route path="/" element={<WomenSale />} />
+>>>>>>> bb059a2 (google pay added)
         {/* <Route path="/checkout" element={<CheckOut />} /> */}
         <Route path="/wishlist" element={<CheckOut />} />
         <Route path="/womensale" element={<WomenSale />} />
