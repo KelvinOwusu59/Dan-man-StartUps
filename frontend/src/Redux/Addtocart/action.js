@@ -22,8 +22,12 @@ let userData = JSON.parse(localStorage.getItem("userdata")) || [];
 let usertoken = userData.token;
 >>>>>>> b032edd (addtocartstyling complte)
 
+<<<<<<< HEAD
 export const getaddcartdata = () => (dispatch) => {
 >>>>>>> 7de8bd9 (addtocart)
+=======
+export const getaddcartdata = () => dispatch => {
+>>>>>>> f1f1624 (Final Work)
   dispatch({ type: types.GET_CARTDATA_REQUEST });
 
   return axios

@@ -58,6 +58,7 @@ const Cartsingleitem = ({ el }) => {
 <<<<<<< HEAD
                 <Box > <Text fontSize="20px" fontWeight="bold" >${el?.product_details?.product_price}</Text>
                   <Text as="s" color="red.300">${ Number(el?.product_details?.product_price)+100}</Text></Box>
+<<<<<<< HEAD
 
               <Box onClick={()=>handledelete(el)} as="button"><CloseIcon/></Box></HStack>
               <Box w="95%"> <Text fontStyle="oblique">{el?.product_details?.product_name}</Text>
@@ -86,10 +87,16 @@ const Cartsingleitem = ({ el }) => {
                   <Text as="s" color="red.300">${ Number(el?.product_details?.product_price)+100}</Text></Box>
               <Box onClick={()=>handledelete(el)} as="button"><CloseIcon/></Box></HStack>
               <Box w="95%"> <Text fontStyle="oblique">{el?.product_details?.product_name}</Text>
+=======
+              <Box onClick={()=>handledelete(el)}><CloseIcon/></Box></HStack>
+              <Box w="95%"> 
+              <Text fontStyle="oblique">{el?.product_details?.product_name}</Text>
+>>>>>>> f1f1624 (Final Work)
               </Box>
                 
                   <HStack w="95%" justify="space-between">
                     <Box>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                   <Text>{ el?.product_details?.product_color.toUpperCase()}</Text>
@@ -100,6 +107,9 @@ const Cartsingleitem = ({ el }) => {
 =======
                   <Badge borderRadius="full" px="2">{ el?.product_details?.product_color}</Badge>
 >>>>>>> b9182eb (addtocart)
+=======
+                  <Badge borderRadius="full" px="2">{ el?.product_details?.product_color}</Badge>
+>>>>>>> f1f1624 (Final Work)
                      
                     </Box>
                     <Center height='40px'>
