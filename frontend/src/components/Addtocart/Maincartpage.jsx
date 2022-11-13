@@ -14,6 +14,7 @@ const Maincartpage = () => {
   useEffect(() => {
     dispatch(getaddcartdata())
   }, [getaddcartdata])
+<<<<<<< HEAD
   console.log(data)
   return (
       
@@ -37,6 +38,8 @@ const Maincartpage = () => {
   useEffect(() => {
     dispatch(getaddcartdata())
   }, [])
+=======
+>>>>>>> 6ea9c7a (addtocart)
   console.log(data)
   return (
       
