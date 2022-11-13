@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import * as types from "./acttionTypes";
 import axios from "axios";
 import { getaddcartdata } from "../Addtocart/action";
@@ -18,6 +19,15 @@ const getProduct = (products) => ({
     payload: products
 })
 >>>>>>> 7960daf (productpage adde)
+=======
+import * as types from "./acttionTypes";
+import axios from "axios";
+
+const getProduct = (products) => ({
+  type: types.GET_PRODUCT,
+  payload: products,
+});
+>>>>>>> 1c5616f (addtocart working)
 
 // const getGrid=(Gridproducts)=>({
 //     type:types.GET_GRID,
@@ -26,12 +36,19 @@ const getProduct = (products) => ({
 // })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 let userData = JSON.parse(localStorage.getItem("userdata")) || [];
 let token = userData.token;
 console.log(userData.token);
 export const loadProduct = (type, cate) => {
   return function (dispatch) {
     dispatch({ type: "REQUEST_PRODUCT" });
+=======
+let token =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmRmNGM1MWI1OTFkOWY1NmY3MWVlNSIsImVtYWlsIjoiYW1vbEBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJhbW9sIiwibGFzdG5hbWUiOiJnb2RzZSIsInBhc3N3b3JkIjoiJDJiJDA0JGZncm5YcC42ZS96QXhrMGt3T2w4NE9Tb3J3bkdQTzI4QVhrVXU3dU51OE1KckQ5SzVQVVZ1IiwiZG9iIjoiMjQtMy0yMDIyIiwiaW50ZXJlc3QiOiJ5ZXMiLCJfX3YiOjB9LCJpYXQiOjE2NjgxNTQxMTh9.zn0YdLwze8q1fwwCFd07YQmRGyfjLCM9rFJOHkTcrOw";
+export const loadProduct = (type, cate) => {
+  return function (dispatch) {
+>>>>>>> 1c5616f (addtocart working)
     axios
       .get(`https://asos-backend.onrender.com/${type}product/${cate}`, {
         headers: {
@@ -45,11 +62,15 @@ export const loadProduct = (type, cate) => {
       })
       .catch((er) => {
         console.log("ERROR", er);
+<<<<<<< HEAD
         dispatch({ type: "REQUEST_PRODUCT" });
+=======
+>>>>>>> 1c5616f (addtocart working)
       });
   };
 };
 
+<<<<<<< HEAD
 export const searchProduct = (query) => (dispatch) => {
   dispatch({ type: "REQUEST_PRODUCT" });
   axios
@@ -77,10 +98,15 @@ export const searchProduct = (query) => (dispatch) => {
 export const loadProductWithQuery = (type, page, limt) => {
   return function (dispatch) {
     dispatch({ type: "REQUEST_PRODUCT" });
+=======
+export const loadProductWithQuery = (type, page, limt) => {
+  return function (dispatch) {
+>>>>>>> 1c5616f (addtocart working)
     // https://asos-backend.onrender.com/?product_name=${shs}&category=sale
     axios
       .get(
         `https://asos-backend.onrender.com/${type}product?page=${page}&limit=${limt}`,
+<<<<<<< HEAD
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -143,22 +169,40 @@ let token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmRmNGM1
 export const loadProduct = (type,cate) => {
     return function (dispatch) {
         axios.get(`https://asos-backend.onrender.com/${type}product/${cate}`,
+=======
+>>>>>>> 1c5616f (addtocart working)
         {
-            headers:{
-                'Authorization':`Bearer ${token}`
-            }
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
-        ).then(res => {
-            // console.log("RESPONSE", res.data.data)
-            dispatch(getProduct(res.data.data))
-            // dispatch({type: "CART", payload: "earrings"})
-        }).catch(er => {
-            console.log("ERROR",er)
-        })
-    }
+      )
+      .then((res) => {
+        // console.log("RESPONSE", res.data.data)
+        dispatch(getProduct(res.data.data));
+        // dispatch({type: "CART", payload: "earrings"})
+      })
+      .catch((er) => {
+        console.log("ERROR", er);
+      });
+  };
+};
 
-}
+export const Addtocart = (data) => (dispatch) => {
+  console.log("addtocart", data);
+  axios
+    .post("https://asos-backend.onrender.com/cart/addcart", data, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
+    .then((r) => console.log("data added"))
+    .catch((err) => {
+      console.log(err);
+    });
+};
 
+<<<<<<< HEAD
 export const loadProductWithQuery = (type,page,limt) => {
     return function (dispatch) {
         // https://asos-backend.onrender.com/?product_name=${shs}&category=sale
@@ -199,3 +243,8 @@ export const SwitchTab=(type)=>{
     loadProduct(type)
 }
 >>>>>>> dd34221 (Mens Page added)
+=======
+export const SwitchTab = (type) => {
+  loadProduct(type);
+};
+>>>>>>> 1c5616f (addtocart working)

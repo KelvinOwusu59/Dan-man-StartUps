@@ -108,6 +108,7 @@ export const MiddleNav = () => {
   return (
     <Tabs variant="unstyled">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <TabList>
 <<<<<<< HEAD
         <Box  h="60px" w="100%" bgColor={"#2d2d2d"}>
@@ -115,6 +116,9 @@ export const MiddleNav = () => {
 =======
        <TabList>
 >>>>>>> 020c3b9 (pulling)
+=======
+      <TabList>
+>>>>>>> 1c5616f (addtocart working)
         <Box h="60px" w="100%" bgColor={"#2d2d2d"}>
 >>>>>>> 7960daf (productpage adde)
           <Flex
@@ -259,6 +263,7 @@ export const MiddleNav = () => {
                 </Popover>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                
 =======
   <PopoverTrigger>
@@ -304,6 +309,8 @@ export const MiddleNav = () => {
 =======
 =======
 >>>>>>> ea90062 (productpage added)
+=======
+>>>>>>> 1c5616f (addtocart working)
                 <Link to="/wishlist">
                   <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
                 </Link>
@@ -317,11 +324,16 @@ export const MiddleNav = () => {
           </Flex>
         </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c5616f (addtocart working)
     
   </TabList>
   <TabPanels>
     <TabPanel p="0"  w="100%">
     <SubNav />
+<<<<<<< HEAD
     </TabPanel>
 <<<<<<< HEAD
     <TabPanel>
@@ -370,6 +382,17 @@ export const MiddleNav = () => {
 
 >>>>>>> 6c776a1 (single page)
 =======
+=======
+
+    </TabPanel>
+    <TabPanel p="0"  w="100%">
+    <MenSubNav / >
+      
+    </TabPanel>
+  </TabPanels>
+</Tabs>
+
+>>>>>>> 1c5616f (addtocart working)
 
 >>>>>>> b8362dc (responsive landing page)
   );
