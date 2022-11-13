@@ -12,7 +12,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { CART } from '../Redux/App/acttionTypes';
 import { useState } from 'react';
 import { Addtocart } from '../Redux/App/action';
+<<<<<<< HEAD
 import axios from 'axios';
+=======
+import Footer from './Footer';
+>>>>>>> e85ef42 (singlepage)
 const SinglePageProduct = () => {
     const [size,setSize]= useState("")
     const [show, setShow] =useState(false)
@@ -31,6 +35,7 @@ const SinglePageProduct = () => {
     const [singleProduct, setSingleProduct]= useState({})
     const [imgSrc,setImgSrc]=useState("")
 
+<<<<<<< HEAD
     var temp=[];
     
     // console.log(temp)
@@ -39,6 +44,16 @@ const SinglePageProduct = () => {
        await axios.get(`https://asos-backend.onrender.com/${type}product/?product_id=${typeid}`, {
         headers: {
             Authorization:`Bearer ${token}`
+=======
+    var temp;
+    useEffect(()=>{
+        if(typeid ){
+          // eslint-disable-next-line react-hooks/exhaustive-deps
+          temp = products?.find( product => product._id ===(typeid));
+          // eslint-disable-next-line no-unused-vars
+          handleAddtobag(temp)
+          temp && setSingleProduct(temp);
+>>>>>>> e85ef42 (singlepage)
         }
     }).then((r)=>{setSingleProduct(r.data.data[0])
         setImgSrc(r.data.data[0].mainImage||r.data.data[0].mainimage)}).catch((err)=>console.log(err))
@@ -95,7 +110,12 @@ const SinglePageProduct = () => {
     
     return (
         // main box
+<<<<<<< HEAD
         <Box className="Box" width={"60%"}   margin={"auto"} marginTop={"5px"} padding={"10px"}> 
+=======
+        <>
+        <Box className="Box" width={"60%"} height={"600px"}  margin={"auto"} marginTop={"5px"} padding={"10px"}> 
+>>>>>>> e85ef42 (singlepage)
           
           
           <HStack className="Box" width={"100%"} height={"100%"}  marginLeft={"5px"} >
@@ -290,11 +310,11 @@ const SinglePageProduct = () => {
         Show {show ? 'Less' : 'More'}
       </Button>
 
-{/*       
-      <Divider border={"2px solid green"} orientation='horizontal' /> */}
         
                    
         </Box>
+        
+        </>
     )
 }
 

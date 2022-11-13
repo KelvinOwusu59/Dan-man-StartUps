@@ -341,6 +341,7 @@ export const AllRoutes = () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/cart" element={<Maincartpage/>}/>
 =======
         <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
@@ -357,6 +358,10 @@ export const AllRoutes = () => {
            <Route path="/searchproduct" element={<SearchPage />}></Route>
            
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+          <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
+
+>>>>>>> e85ef42 (singlepage)
       </Routes>
 
       
