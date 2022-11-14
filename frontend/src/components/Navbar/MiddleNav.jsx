@@ -147,12 +147,16 @@ Navigate("/signin")
             h="100%"
             m={"auto"}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ecca77a (Final Touch up)
           > <Link to="/womenhome">
             <Box  mr="20px" fontWeight={"bold"}>
              
                 <Text className={styles.Heading} lineHeight="22px">FASHION WORLD</Text>
               
             </Box></Link>
+<<<<<<< HEAD
 =======
           >
             <Box mr="20px" fontWeight={"bold"}>
@@ -161,6 +165,8 @@ Navigate("/signin")
               </Link>
             </Box>
 >>>>>>> 7960daf (productpage adde)
+=======
+>>>>>>> ecca77a (Final Touch up)
             <Tab
               borderLeft={"1px solid grey"}
               _selected={{ color: "white", bg: "#525050" }}
@@ -197,6 +203,7 @@ Navigate("/signin")
           
             <SearchInput />
             <Box ml={5}>
+<<<<<<< HEAD
 =======
              <Link to={"/men"}> MEN</Link>
 =======
@@ -207,6 +214,8 @@ Navigate("/signin")
             <SearchInput />
             <Box ml={10}>
 >>>>>>> 7960daf (productpage adde)
+=======
+>>>>>>> ecca77a (Final Touch up)
               <Flex alignItems={"center"}>
                 <Popover>
 <<<<<<< HEAD

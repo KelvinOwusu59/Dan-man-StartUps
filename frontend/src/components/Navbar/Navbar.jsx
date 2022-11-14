@@ -12,13 +12,20 @@ import SubNav from "./WomensubMenu";
 
 >>>>>>> 6c776a1 (single page)
 import { BottomBanner } from "./BottomBanner";
+<<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
+=======
+import { Desktop, Mobile, Tablet } from "../../Responsiveness/Responsive";
+import { TabNavbar } from "./TabSizeNav/TabNavbar";
+import { MobileNavbar } from "./MobileNav/MobileNav";
+>>>>>>> ecca77a (Final Touch up)
 export const Navbar = () => {
   return (<>
     <Desktop>
       <Box>
       <TopBanner />
       <MiddleNav />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,6 +49,8 @@ export const Navbar = () => {
 =======
       <BottomBanner/>
 >>>>>>> b8362dc (responsive landing page)
+=======
+>>>>>>> ecca77a (Final Touch up)
     </Box>
     </Desktop>
     <Tablet >

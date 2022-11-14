@@ -176,6 +176,7 @@ import { WomenTopShop } from "./womenProduct/WomenTopShop";
 <<<<<<< HEAD
 import { SearchPage } from "./SearchPage";
 import { RequireAuth } from "../components/RequiredAuth";
+<<<<<<< HEAD
 import { WishList } from "./WishList";
 =======
 import { Box } from '@chakra-ui/react'
@@ -202,6 +203,8 @@ import { WomenTopShop } from './womenProduct/WomenTopShop'
 =======
 import { SearchPage } from "./SearchPage";
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+>>>>>>> ecca77a (Final Touch up)
 
 export const AllRoutes = () => {
   return (
@@ -304,14 +307,21 @@ export const AllRoutes = () => {
 >>>>>>> d3bf380 (add)
 =======
         <Route path="/" element={<WomenPage />} />
-        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
         {/* <Route path="/wishlist" element={<CheckOut />} /> */}
 
+<<<<<<< HEAD
 >>>>>>> dcab2db (Cart page Added)
         <Route path="/womentopshop" element={<WomenTopShop />} />
         <Route path="/womensale" element={<WomenSale />} />
         <Route path="/womenbrand" element={<WomenBrand />} />
         <Route path="/womenoutlet" element={<WomenOulet />} />
+=======
+        <Route path="/womentopshop" element={<RequireAuth><WomenTopShop /></RequireAuth>} />
+        <Route path="/womensale" element={<RequireAuth><WomenSale /></RequireAuth>} />
+        <Route path="/womenbrand" element={<RequireAuth><WomenBrand /></RequireAuth>} />
+        <Route path="/womenoutlet" element={<RequireAuth><WomenOulet /></RequireAuth>} />
+>>>>>>> ecca77a (Final Touch up)
         <Route path="/womenmarketplace" element={<WomenMarketPlace />} />
         <Route path="/womenfacebody" element={<WomenFaceBody />} />
         <Route path="/womennewin" element={<WomenNewIn />} />
@@ -324,7 +334,7 @@ export const AllRoutes = () => {
         <Route path="/womengifting" element={<WomenGifting />} />
         <Route path="/menhome" element={<MenPage/>} />
 
-        <Route path="/mensale" element={<MenSale />} />
+        <Route path="/mensale" element={<RequireAuth><MenSale /></RequireAuth>} />
         <Route path="/mentopshop" element={<MenTopShop />} />
         <Route path="/menbrand" element={<MenBrand />} />
         <Route path="/menoutlet" element={<MenOulet />} />
@@ -342,6 +352,7 @@ export const AllRoutes = () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/cart" element={<Maincartpage/>}/>
 =======
         <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
@@ -351,6 +362,9 @@ export const AllRoutes = () => {
 >>>>>>> b8362dc (responsive landing page)
 =======
           <Route path="/productdetails/:id" element={<SinglePageProduct/>}/>
+=======
+        <Route path="/productdetails/:id" element={<RequireAuth><SinglePageProduct /></RequireAuth>} />
+>>>>>>> ecca77a (Final Touch up)
            <Route path="/cart" element={<Maincartpage/>}></Route>
 <<<<<<< HEAD
 >>>>>>> 1c5616f (addtocart working)

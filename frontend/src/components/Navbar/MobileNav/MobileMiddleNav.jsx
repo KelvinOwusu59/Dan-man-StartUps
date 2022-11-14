@@ -20,7 +20,10 @@ import {
     Tabs,
     Text,
     useDisclosure,
+<<<<<<< HEAD
     useToast,
+=======
+>>>>>>> ecca77a (Final Touch up)
     VStack,
   } from "@chakra-ui/react";
   import React, { useRef, useState } from "react";
@@ -40,19 +43,28 @@ import {
   import { FiShoppingBag } from "react-icons/fi";
   import { GrContact } from "react-icons/gr";
   import { IoBagOutline } from "react-icons/io5";
+<<<<<<< HEAD
 // import { MobileSearch } from "./MobileSearch";
 import { useDispatch, useSelector } from "react-redux";
+=======
+import { MobileSearch } from "./MobileSearch";
+import { useDispatch } from "react-redux";
+>>>>>>> ecca77a (Final Touch up)
 import { searchProduct } from "../../../Redux/App/action";
   export const MobileMiddleNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
+<<<<<<< HEAD
     const { data, loading, error } = useSelector((state) => state.CartReducer);
   
+=======
+>>>>>>> ecca77a (Final Touch up)
     const [userData, setData] = useState(
       JSON.parse(localStorage.getItem("userdata"))
     );
     const Navigate = useNavigate();
     const [item,setItem]=useState("")
+<<<<<<< HEAD
     const toast=useToast()
     const dispatch=useDispatch();
       const HandleSearch=()=>{
@@ -68,6 +80,13 @@ import { searchProduct } from "../../../Redux/App/action";
           dispatch(searchProduct(item))
           Navigate("/searchproduct")
         }
+=======
+    
+    const dispatch=useDispatch();
+      const HandleSearch=()=>{
+          dispatch(searchProduct(item))
+          Navigate("/searchproduct")
+>>>>>>> ecca77a (Final Touch up)
       }
     const handelSignout = () => {
       localStorage.removeItem("userdata");
@@ -118,12 +137,19 @@ import { searchProduct } from "../../../Redux/App/action";
                   </PopoverHeader>
                   <PopoverBody>
                   <InputGroup size='md'>
+<<<<<<< HEAD
         <Input onChange={(e)=>setItem(e.target.value)} 
         borderRadius={"25px"} color="black"  bgColor="white" type={"text"}
          placeholder="Search for items and brand" />
       <InputRightElement width='4.5rem'>
        
           <Search2Icon color={"black"} cursor={"pointer"} mr={-5} onClick={HandleSearch}/>
+=======
+        <Input onChange={(e)=>setItem(e.target.value)} borderRadius={"25px"} color="black"  bgColor="white" type={"text"} placeholder="Search for items and brand" />
+      <InputRightElement width='4.5rem'>
+       
+          <Search2Icon color={"black"} cursor={"pointer"} mr={-10} onClick={HandleSearch}/>
+>>>>>>> ecca77a (Final Touch up)
       
       </InputRightElement>
     </InputGroup>
@@ -206,6 +232,7 @@ import { searchProduct } from "../../../Redux/App/action";
               <Link to="/wishlist">
                 <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
               </Link>
+<<<<<<< HEAD
               <Box position={"relative"} mr={3}>
             <Link to={"/cart"}>
                   {" "}
@@ -214,6 +241,12 @@ import { searchProduct } from "../../../Redux/App/action";
                   <Text position={"absolute"} right="3" top="1.5">{data.length}</Text>
                 </Link>
                 </Box>
+=======
+              <Link to={"/cart"}>
+                {" "}
+                <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
+              </Link>
+>>>>>>> ecca77a (Final Touch up)
             </Flex>
           </Box>
         </Flex>
@@ -240,7 +273,11 @@ import { searchProduct } from "../../../Redux/App/action";
                     fontWeight="bold"
                   >
                     {" "}
+<<<<<<< HEAD
                     <Link to="/womenhome" >Women</Link>{" "}
+=======
+                    <Link to="/womenhome">Women</Link>{" "}
+>>>>>>> ecca77a (Final Touch up)
                   </Tab>
                   <Tab
                     w="40%"
@@ -248,7 +285,11 @@ import { searchProduct } from "../../../Redux/App/action";
                     borderRadius="0px"
                     fontWeight="bold"
                   >
+<<<<<<< HEAD
                     <Link to="/menhome" >Men</Link>
+=======
+                    <Link to="/menhome">Men</Link>
+>>>>>>> ecca77a (Final Touch up)
                   </Tab>
                 </TabList>
                 <TabPanels>
@@ -265,7 +306,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="50px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womenhome" onClick={onClose}> Home </Link>
+=======
+                        <Link to="/womenhome"> Home </Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -278,7 +323,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="80px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womendresses" onClick={onClose}>
+=======
+                        <Link to="/womendresses">
+>>>>>>> ecca77a (Final Touch up)
                           {" "}
                           25% OFF ALL DRESSES
                           <br />
@@ -297,7 +346,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="80px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womendresses" onClick={onClose}> SALE: UP TO 80% OFF</Link>
+=======
+                        <Link to="/womendresses"> SALE: UP TO 80% OFF</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -311,7 +364,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womennewin" onClick={onClose}> NEW IN</Link>
+=======
+                        <Link to="/womennewin"> NEW IN</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -325,7 +382,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womenclothing" onClick={onClose}> CLOTHING</Link>
+=======
+                        <Link to="/womenclothing"> CLOTHING</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -339,7 +400,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womendresses" onClick={onClose}> DRESSES</Link>
+=======
+                        <Link to="/womendresses"> DRESSES</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -353,7 +418,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womenshoe" onClick={onClose}>SHOES</Link>
+=======
+                        <Link to="/womenshoe">SHOES</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -367,7 +436,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/womensportwear" onClick={onClose}>SPORTWEAR</Link>
+=======
+                        <Link to="/womensportwear">SPORTWEAR</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                     </VStack>
                   </TabPanel>
@@ -384,7 +457,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="50px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/menhome" onClick={onClose}> Home </Link>
+=======
+                        <Link to="/menhome"> Home </Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -397,7 +474,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="80px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/mendresses" onClick={onClose}>
+=======
+                        <Link to="/mendresses">
+>>>>>>> ecca77a (Final Touch up)
                           {" "}
                           25% OFF ALL DRESSES
                           <br />
@@ -416,7 +497,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="80px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/mendresses" onClick={onClose}> SALE: UP TO 80% OFF</Link>
+=======
+                        <Link to="/mendresses"> SALE: UP TO 80% OFF</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -430,7 +515,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/mennewin" onClick={onClose}> NEW IN</Link>
+=======
+                        <Link to="/mennewin"> NEW IN</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -444,7 +533,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/menclothing" onClick={onClose}> CLOTHING</Link>
+=======
+                        <Link to="/menclothing"> CLOTHING</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -458,7 +551,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/mendresses" onClick={onClose}> DRESSES</Link>
+=======
+                        <Link to="/mendresses"> DRESSES</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -472,7 +569,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/menshoe" onClick={onClose}>SHOES</Link>
+=======
+                        <Link to="/menshoe">SHOES</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                       <Flex
                         alignItems={"center"}
@@ -486,7 +587,11 @@ import { searchProduct } from "../../../Redux/App/action";
                         h="100px"
                         w="100%"
                       >
+<<<<<<< HEAD
                         <Link to="/mensportwear" onClick={onClose}>SPORTWEAR</Link>
+=======
+                        <Link to="/mensportwear">SPORTWEAR</Link>
+>>>>>>> ecca77a (Final Touch up)
                       </Flex>
                     </VStack>
                   </TabPanel>

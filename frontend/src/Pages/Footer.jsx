@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ecca77a (Final Touch up)
 import React from "react";
 import american from "../Brands/american.png";
 import mastercard from "../Brands/mastercard.png";
@@ -9,6 +12,7 @@ import insta from "../Images/insta.png";
 import fb from "../Images/fb.png";
 import snapchat from "../Images/snapchat.png";
 import india from "../Brands/india.png";
+<<<<<<< HEAD
 import "../style/Footer.css";
 import {
   Grid,
@@ -40,6 +44,22 @@ import "../style/Footer.css";
 >>>>>>> fabae54 (men page)
 =======
 import { Grid, GridItem, Image ,Text,Link} from '@chakra-ui/react'
+=======
+import "../style/Footer.css";
+import {
+  Grid,
+  GridItem,
+  Image,
+  Text,
+  Link,
+  SimpleGrid,
+  Box,
+  Flex,
+} from "@chakra-ui/react";
+import { AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
+import { FaCcVisa } from "react-icons/fa";
+import { BsSnapchat } from "react-icons/bs";
+>>>>>>> ecca77a (Final Touch up)
 // import { Link } from 'react-router-dom'
 >>>>>>> b8362dc (responsive landing page)
 // style={{"display":"flex","width":"95%"}}
@@ -48,6 +68,9 @@ const Footer = () => {
     <div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ecca77a (Final Touch up)
       <hr style={{ marginBottom: "20px" }} />{" "}
       <SimpleGrid  w="60%" m="auto" columns={[4,4,6,8]} spacing={5}>
         <Flex
@@ -186,6 +209,7 @@ const Footer = () => {
           </Text> */}
            
           </GridItem>
+<<<<<<< HEAD
         </Grid>
       </Box>{" "}
       <br />
@@ -291,3 +315,13 @@ export default Footer;
 
 export default Footer
 >>>>>>> fabae54 (men page)
+=======
+        </Grid>
+      </Box>{" "}
+      <br />
+    </div>
+  );
+};
+
+export default Footer;
+>>>>>>> ecca77a (Final Touch up)

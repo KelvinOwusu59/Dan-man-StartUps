@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Navigate, useLocation } from 'react-router-dom'
+<<<<<<< HEAD
 import { useToast } from '@chakra-ui/react'
 export const RequireAuth = ({children}) => {
  const auth=JSON.parse(localStorage.getItem('userdata'))||false;
@@ -16,6 +17,13 @@ export const RequireAuth = ({children}) => {
         position:"top"
       })
  }
+=======
+
+export const RequireAuth = ({children}) => {
+ const auth=JSON.parse(localStorage.getItem('userdata'))||false;
+ 
+ const location =useLocation();
+>>>>>>> ecca77a (Final Touch up)
  
  if(!auth){
 return <Navigate  to="/signin" replace state={{data:location.pathname,}} />

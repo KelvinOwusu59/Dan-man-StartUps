@@ -20,11 +20,15 @@
     "react-redux": "^8.0.5",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-responsive": "^9.0.0",
 =======
 >>>>>>> 7960daf (productpage adde)
 =======
 >>>>>>> c67e613 (add authreducr function)
+=======
+    "react-responsive": "^9.0.0",
+>>>>>>> ecca77a (Final Touch up)
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
