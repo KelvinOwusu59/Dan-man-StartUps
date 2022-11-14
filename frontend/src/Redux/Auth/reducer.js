@@ -12,6 +12,7 @@ const userData = {
     isError: false,
     isErrorData:"",
 <<<<<<< HEAD
+<<<<<<< HEAD
     u_Data: [] || user.data,
     msg:""
 =======
@@ -33,6 +34,10 @@ const userData = {
 >>>>>>> dcab2db (Cart page Added)
     u_Data: [] || user.data
 >>>>>>> 3bc0099 (added)
+=======
+    u_Data: [] || user.data,
+    msg:""
+>>>>>>> 6421fbc (Media query)
 }
 
 export function AuthReducer(state = userData,action){

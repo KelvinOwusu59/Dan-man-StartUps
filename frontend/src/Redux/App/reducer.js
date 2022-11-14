@@ -7,6 +7,9 @@ const initialState={
     product:{},
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6421fbc (Media query)
     loading:false,
     cart:[],
     searchProd:[],
@@ -66,11 +69,20 @@ const reducers=(state=initialState,action)=>{
             case types.SEARCH_ITEM:
             return {
                 ...state,
-                searchProd:action.payload.data,searchQuery:action.payload.query
+                searchProd:action.payload.data,searchQuery:action.payload.query,loading:false
             }
+<<<<<<< HEAD
 >>>>>>> acfe1b7 (Search Functionality)
         
 >>>>>>> 7960daf (productpage adde)
+=======
+            case types.REQUEST_PRODUCT:
+                return {
+                    ...state,
+                   loading:true,
+                }
+            
+>>>>>>> 6421fbc (Media query)
         default:
             return state
     }

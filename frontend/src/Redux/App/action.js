@@ -61,7 +61,12 @@ console.log(userData.token);
 >>>>>>> b032edd (addtocartstyling complte)
 export const loadProduct = (type, cate) => {
   return function (dispatch) {
+<<<<<<< HEAD
 >>>>>>> 1c5616f (addtocart working)
+=======
+    
+    dispatch({type: "REQUEST_PRODUCT"})
+>>>>>>> 6421fbc (Media query)
     axios
       .get(`https://asos-backend.onrender.com/${type}product/${cate}`, {
         headers: {
@@ -76,9 +81,13 @@ export const loadProduct = (type, cate) => {
       .catch((er) => {
         console.log("ERROR", er);
 <<<<<<< HEAD
+<<<<<<< HEAD
         dispatch({ type: "REQUEST_PRODUCT" });
 =======
 >>>>>>> 1c5616f (addtocart working)
+=======
+        dispatch({type: "REQUEST_PRODUCT"})
+>>>>>>> 6421fbc (Media query)
       });
   };
 };
@@ -119,6 +128,7 @@ export const searchProduct = (query) => (dispatch) => {
 =======
 export const SortProduct = (type, cate) => {
   return function (dispatch) {
+    dispatch({type: "REQUEST_PRODUCT"})
     axios
       .get(`https://asos-backend.onrender.com/${type}product/${cate}`, {
         headers: {
@@ -131,6 +141,7 @@ export const SortProduct = (type, cate) => {
         // dispatch({type: "CART", payload: "earrings"})
       })
       .catch((er) => {
+        dispatch({type: "REQUEST_PRODUCT"})
         console.log("ERROR", er);
       });
   };
@@ -138,6 +149,7 @@ export const SortProduct = (type, cate) => {
 
 >>>>>>> a1a7cca (Checkout page)
 export const searchProduct=(query)=>dispatch=>{
+  dispatch({type: "REQUEST_PRODUCT"})
 axios.get(`https://asos-backend.onrender.com/womenproduct/?product_name=${query}`,{
   headers: {
     Authorization: `Bearer ${token}`,
@@ -145,7 +157,8 @@ axios.get(`https://asos-backend.onrender.com/womenproduct/?product_name=${query}
 }).then((r)=>{
   console.log(r.data)
  dispatch({type: "SEARCH_ITEM", payload:{data: r.data.data,query:query}})
-}).catch(e=>console.log(e))
+}).catch((e)=>{console.log(e)
+  dispatch({type: "REQUEST_PRODUCT"})})
 
 } 
 <<<<<<< HEAD
@@ -159,11 +172,15 @@ axios.get(`https://asos-backend.onrender.com/womenproduct/?product_name=${query}
 >>>>>>> a1a7cca (Checkout page)
 export const loadProductWithQuery = (type, page, limt) => {
   return function (dispatch) {
+<<<<<<< HEAD
     dispatch({ type: "REQUEST_PRODUCT" });
 =======
 export const loadProductWithQuery = (type, page, limt) => {
   return function (dispatch) {
 >>>>>>> 1c5616f (addtocart working)
+=======
+    dispatch({type: "REQUEST_PRODUCT"})
+>>>>>>> 6421fbc (Media query)
     // https://asos-backend.onrender.com/?product_name=${shs}&category=sale
     axios
       .get(
@@ -245,6 +262,7 @@ export const loadProduct = (type,cate) => {
         // dispatch({type: "CART", payload: "earrings"})
       })
       .catch((er) => {
+        dispatch({type: "REQUEST_PRODUCT"})
         console.log("ERROR", er);
       });
   };
@@ -252,6 +270,7 @@ export const loadProduct = (type,cate) => {
 
 export const Addtocart = (data) => (dispatch) => {
   console.log("addtocart", data);
+  dispatch({type: "REQUEST_PRODUCT"})
   axios
     .post("https://asos-backend.onrender.com/cart/addcart", data, {
       headers: {
@@ -263,6 +282,7 @@ export const Addtocart = (data) => (dispatch) => {
     })
     .catch((err) => {
       console.log(err);
+      dispatch({type: "REQUEST_PRODUCT"})
     });
 };
 

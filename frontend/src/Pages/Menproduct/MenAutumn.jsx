@@ -82,10 +82,14 @@ console.log(e.target.value)
 
           <BreadcrumbItem isCurrentPage>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <BreadcrumbLink href="#">Autumn</BreadcrumbLink>
 =======
             <BreadcrumbLink href="#">Dresses</BreadcrumbLink>
 >>>>>>> dd34221 (Mens Page added)
+=======
+            <BreadcrumbLink href="#">Autumn</BreadcrumbLink>
+>>>>>>> 6421fbc (Media query)
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>
@@ -93,10 +97,14 @@ console.log(e.target.value)
       <Box w="85%" m="auto" mt={5}>
         <Center>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Heading size={"md"}>Men's Autumn</Heading>
 =======
           <Heading size={"md"}>Women's Sale</Heading>
 >>>>>>> dd34221 (Mens Page added)
+=======
+          <Heading size={"md"}>Men's Autumn</Heading>
+>>>>>>> 6421fbc (Media query)
         </Center>
         <VStack w="80%" m={"auto"} mt={4}>
           <Collapse startingHeight={20} in={show}>
@@ -132,10 +140,14 @@ console.log(e.target.value)
       </Box>
       <hr />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <SimpleGrid columns={[4,6,6,10]} p={[5,5,5,5]}  spacing={[5,5,5,5]} mb={2}>
 =======
       <Flex justifyContent={"space-between"} w="85%" m="auto" mb={2}>
 >>>>>>> dd34221 (Mens Page added)
+=======
+      <SimpleGrid columns={[4,6,6,10]} p={[5,5,5,5]}  spacing={[5,5,5,5]} mb={2}>
+>>>>>>> 6421fbc (Media query)
         <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>TOPS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JEMSUITES</Button>
@@ -147,6 +159,7 @@ console.log(e.target.value)
         <Button mt={2} h="30px" borderRadius={"25px"}>ACTIVEWEAR</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JACKETS</Button>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </SimpleGrid>
       <hr />
       <Box  mb={2} bgColor="#EEEEEE">
@@ -157,6 +170,12 @@ console.log(e.target.value)
       <Box  mb={2} bgColor="#EEEEEE">
       <SimpleGrid   w="85%" m="auto" p={2} columns={6} spacing={5}>
 >>>>>>> dd34221 (Mens Page added)
+=======
+      </SimpleGrid>
+      <hr />
+      <Box  mb={2} bgColor="#EEEEEE">
+      <SimpleGrid   w={["95%","90%","90%","85%"]} m="auto" p={2} columns={[2,3,4,6]} spacing={[5]}>
+>>>>>>> 6421fbc (Media query)
       <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
   <option value=''>Sort</option>
  
@@ -237,10 +256,14 @@ console.log(e.target.value)
        
       </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <SimpleGrid columns={[2,2,3,4]} w="85%" m={"auto"} spacing={3} p={0}>
 =======
       <SimpleGrid columns={4} w="85%" m={"auto"} spacing={3} p={0}>
 >>>>>>> dd34221 (Mens Page added)
+=======
+      <SimpleGrid columns={[2,2,3,4]} w="85%" m={"auto"} spacing={3} p={0}>
+>>>>>>> 6421fbc (Media query)
      {
       products.length>0 && products.map((item)=>
       <>

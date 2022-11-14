@@ -1,5 +1,8 @@
 export const GET_PRODUCT="GET_PRODUCT"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6421fbc (Media query)
 export const REQUEST_PRODUCT="REQUEST_PRODUCT"
 export const SORT_PRODUCT="SORT_PRODUCT"
 export const BUY_PRODUCT="BUY_PRODUCT";
