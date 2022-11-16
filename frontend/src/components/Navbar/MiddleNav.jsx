@@ -60,7 +60,14 @@ import SubNav from "./subMenu";
 import SubNav from "./WomensubMenu";
 import MenSubNav from "./MenSubNav";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+import { BottomBanner } from "./BottomBanner";
+import { useDispatch, useSelector } from "react-redux";
+import { SwitchTab } from "../../Redux/App/action";
+import { useState } from "react";
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
 
 <<<<<<< HEAD
 import {HiOutlineUser ,HiOutlineHeart} from "react-icons/hi";
@@ -93,6 +100,7 @@ export const MiddleNav = () => {
   const  [userData,setData]=useState(JSON.parse(localStorage.getItem('userdata')))
   const { data, loading, error } = useSelector((state) => state.CartReducer);
 
+<<<<<<< HEAD
   const handelSignout=()=>{
     localStorage.removeItem("userdata");
 Navigate("/signin")
@@ -116,6 +124,8 @@ export const MiddleNav = () => {
 =======
   const  [userData,setData]=useState(JSON.parse(localStorage.getItem('userdata')))
   
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
   const handelSignout=()=>{
     localStorage.removeItem("userdata");
 Navigate("/signin")
@@ -305,6 +315,7 @@ Navigate("/signin")
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                
 =======
   <PopoverTrigger>
@@ -352,14 +363,24 @@ Navigate("/signin")
 >>>>>>> ea90062 (productpage added)
 =======
 >>>>>>> 1c5616f (addtocart working)
+=======
+               
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
                 <Link to="/wishlist">
                   <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
                 </Link>
+                <Box position={"relative"}>
                 <Link to={"/cart"}>
                   {" "}
                   <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
+     
+                  <Text position={"absolute"} right="3" top="1.5">{data.length}</Text>
                 </Link>
+<<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)
+=======
+                </Box>
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
               </Flex>
             </Box>
           </Flex>

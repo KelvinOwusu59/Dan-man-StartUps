@@ -10,9 +10,13 @@ import {
   Flex,
   Heading,
 <<<<<<< HEAD
+<<<<<<< HEAD
   Image,
 =======
 >>>>>>> 7960daf (productpage adde)
+=======
+  Image,
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
   Select,
   SimpleGrid,
   Tag,
@@ -42,14 +46,20 @@ console.log(e.target.value)
 }
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
     <Box mb={10}> {
       products.length===0 ? 
       <Flex justifyContent={"center"}>
       <Image src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
       </Flex> :<>
+<<<<<<< HEAD
 =======
     <Box mb={10}>
 >>>>>>> 7960daf (productpage adde)
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
       <Box w="85%" m="auto" mt={3} mb={3}>
         <Breadcrumb
           spacing="8px"
@@ -256,9 +266,13 @@ console.log(e.target.value)
      }
       </SimpleGrid>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </>}
 =======
 >>>>>>> 7960daf (productpage adde)
+=======
+      </>}
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
     </Box>
   );
 };

@@ -51,6 +51,7 @@ import {
 <<<<<<< HEAD
 // import { MobileSearch } from "./MobileSearch";
 import { useDispatch, useSelector } from "react-redux";
+<<<<<<< HEAD
 =======
 import { MobileSearch } from "./MobileSearch";
 =======
@@ -58,15 +59,22 @@ import { MobileSearch } from "./MobileSearch";
 >>>>>>> d3067d5 (Signup responsiveness done)
 import { useDispatch } from "react-redux";
 >>>>>>> ecca77a (Final Touch up)
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
 import { searchProduct } from "../../../Redux/App/action";
   export const MobileMiddleNav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
 <<<<<<< HEAD
+<<<<<<< HEAD
     const { data, loading, error } = useSelector((state) => state.CartReducer);
   
 =======
 >>>>>>> ecca77a (Final Touch up)
+=======
+    const { data, loading, error } = useSelector((state) => state.CartReducer);
+  
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
     const [userData, setData] = useState(
       JSON.parse(localStorage.getItem("userdata"))
     );
@@ -267,6 +275,9 @@ import { searchProduct } from "../../../Redux/App/action";
                 <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
               </Link>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
               <Box position={"relative"} mr={3}>
             <Link to={"/cart"}>
                   {" "}
@@ -275,12 +286,15 @@ import { searchProduct } from "../../../Redux/App/action";
                   <Text position={"absolute"} right="3" top="1.5">{data.length}</Text>
                 </Link>
                 </Box>
+<<<<<<< HEAD
 =======
               <Link to={"/cart"}>
                 {" "}
                 <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
               </Link>
 >>>>>>> ecca77a (Final Touch up)
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
             </Flex>
           </Box>
         </Flex>

@@ -10,9 +10,13 @@ import {
   Flex,
   Heading,
 <<<<<<< HEAD
+<<<<<<< HEAD
   Image,
 =======
 >>>>>>> 7960daf (productpage adde)
+=======
+  Image,
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
   Select,
   SimpleGrid,
   Tag,
@@ -51,6 +55,7 @@ export const WomenDresses = () => {
         <Image src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
         </Flex> :<>
         <Box w="85%" m="auto" mt={3} mb={3}>
+<<<<<<< HEAD
 =======
   const dispatch=useDispatch();
   const products  = useSelector((state) => state.AppReducer.products);
@@ -75,6 +80,8 @@ console.log(products)
     <Box mb={10}>
       <Box w="85%" m="auto" mt={3} mb={3}>
 >>>>>>> 7960daf (productpage adde)
+=======
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
         <Breadcrumb
           spacing="8px"
           separator={<ChevronRightIcon color="gray.500" />}
@@ -533,7 +540,13 @@ console.log(products)
             </>
           ))}
       </SimpleGrid>
+<<<<<<< HEAD
     </Box>
 >>>>>>> 7960daf (productpage adde)
+=======
+  </>
+}
+      </Box>
+>>>>>>> 520db7e (dynamic bag count change accourding to length)
   );
 };
