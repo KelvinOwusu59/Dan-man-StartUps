@@ -55,6 +55,7 @@ const Cartsingleitem = ({ el }) => {
             <Box textAlign="start" w="80%">
             <VStack  w="95%" border="1 px solid red">
               <HStack w="96%" justify="space-between" height="50px" marginBottom="20px">
+<<<<<<< HEAD
                 <Box > <Text fontSize="20px" fontWeight="bold" >${el?.product_details?.product_price}</Text>
                   <Text as="s" color="red.300">${ Number(el?.product_details?.product_price)+100}</Text></Box>
 
@@ -79,20 +80,26 @@ const Cartsingleitem = ({ el }) => {
             <Box textAlign="start" w="80%">
             <VStack  w="95%" border="1 px solid red">
               <HStack w="96%" justify="space-between" height="60px" marginBottom="20px">
+=======
+>>>>>>> b9182eb (addtocart)
                 <Box > <Text fontSize="20px" fontWeight="bold" >${el?.product_details?.product_price}</Text>
                   <Text as="s" color="red.300">${ Number(el?.product_details?.product_price)+100}</Text></Box>
-              <Box onClick={()=>handledelete(el)}><CloseIcon/></Box></HStack>
-              <Box w="95%"> <Text fontStyle="oblique">{el?.product_details?.product_name.toUpperCase()}</Text>
+              <Box onClick={()=>handledelete(el)} as="button"><CloseIcon/></Box></HStack>
+              <Box w="95%"> <Text fontStyle="oblique">{el?.product_details?.product_name}</Text>
               </Box>
                 
                   <HStack w="95%" justify="space-between">
                     <Box>
+<<<<<<< HEAD
 <<<<<<< HEAD
                   <Text>{ el?.product_details?.product_color.toUpperCase()}</Text>
 >>>>>>> 7de8bd9 (addtocart)
 =======
                   <Badge borderRadius="full" px="2">{ el?.product_details?.product_color.toUpperCase()}</Badge>
 >>>>>>> 5e17292 (styling to addtocart)
+=======
+                  <Badge borderRadius="full" px="2">{ el?.product_details?.product_color}</Badge>
+>>>>>>> b9182eb (addtocart)
                      
                     </Box>
                     <Center height='40px'>
@@ -105,10 +112,14 @@ const Cartsingleitem = ({ el }) => {
                     el.size ? ( <HStack>
                       <Text>Size</Text>
 <<<<<<< HEAD
+<<<<<<< HEAD
                       <Box as="button"> <select name="size" value={state.size} onChange={handlechange}>
 =======
                       <Box> <select name="size" value={state.size} onChange={handlechange}>
 >>>>>>> 7de8bd9 (addtocart)
+=======
+                      <Box as="button"> <select name="size" value={state.size} onChange={handlechange}>
+>>>>>>> b9182eb (addtocart)
                             <option value="xs">XS</option>
                             <option value="x">S</option>
                             <option value="m">M</option>
@@ -126,10 +137,14 @@ const Cartsingleitem = ({ el }) => {
                       <HStack>
                     <Text>Qty</Text>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <Box as="button">
 =======
                         <Box>
 >>>>>>> 7de8bd9 (addtocart)
+=======
+                        <Box as="button">
+>>>>>>> b9182eb (addtocart)
                         <select name="item_no" value={state.item_no} onChange={handlechange}>
                           <option value={1}>1</option>
                           <option value={2}>2</option>
@@ -160,6 +175,9 @@ const Cartsingleitem = ({ el }) => {
         flag ? <div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b9182eb (addtocart)
           <Divider orientation='horizontal'></Divider>
           <HStack justify="space-evenly" h="70px">
             <Box width="60%"></Box>

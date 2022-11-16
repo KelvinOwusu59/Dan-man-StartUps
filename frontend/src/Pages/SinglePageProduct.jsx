@@ -63,7 +63,11 @@ const SinglePageProduct = () => {
        
             getdata()
         
+<<<<<<< HEAD
     }, [type,typeid]);
+=======
+    }, []);
+>>>>>>> b9182eb (addtocart)
     // console.log("product",products)
     const handleAddtobag=()=>{
        if(singleProduct?._id){
