@@ -245,6 +245,7 @@ export const AllRoutes = () => {
         <Route path="/womenautumn" element={<RequireAuth><WomenAutumn /></RequireAuth>} />
         <Route path="/womengifting" element={<RequireAuth><WomenGifting /></RequireAuth>} />
         <Route path="/menhome" element={<MenPage />} />
+<<<<<<< HEAD
 
         <Route path="/mensale" element={<RequireAuth><MenSale /></RequireAuth>} />
         <Route path="/mentopshop" element={<RequireAuth><MenTopShop /></RequireAuth>} />
@@ -370,6 +371,26 @@ export const AllRoutes = () => {
 >>>>>>> 1c5616f (addtocart working)
 =======
            <Route path="/searchproduct" element={<SearchPage />}></Route>
+=======
+
+        <Route path="/mensale" element={<RequireAuth><MenSale /></RequireAuth>} />
+        <Route path="/mentopshop" element={<RequireAuth><MenTopShop /></RequireAuth>} />
+        <Route path="/menbrand" element={<RequireAuth><MenBrand /></RequireAuth>} />
+        <Route path="/menoutlet" element={<RequireAuth><MenOulet /></RequireAuth>} />
+        <Route path="/menmarketplace" element={<RequireAuth><MenMarketPlace /></RequireAuth>} />
+        <Route path="/menfacebody" element={<RequireAuth><MenFaceBody /></RequireAuth>} />
+        <Route path="/mennewin" element={<RequireAuth><MenNewIn /></RequireAuth>} />
+        <Route path="/menclothing" element={<RequireAuth><MenCloathing /></RequireAuth>} />
+        <Route path="/mendresses" element={<RequireAuth><MenDresses /></RequireAuth>} />
+        <Route path="/menshoe" element={<RequireAuth><MenShoes /></RequireAuth>} />
+        <Route path="/mensportwear" element={<RequireAuth><MenSportWear /></RequireAuth>} />
+        <Route path="/menaccessories" element={<RequireAuth><MenAccessoris /></RequireAuth>} />
+        <Route path="/menautumn" element={<RequireAuth><MenAutumn /></RequireAuth>} />
+        <Route path="/mengifting" element={<RequireAuth><MenGifting /></RequireAuth>} />
+        <Route path="/productdetails/:id" element={<RequireAuth><SinglePageProduct /></RequireAuth>} />
+           <Route path="/cart" element={<RequireAuth><Maincartpage/></RequireAuth>}></Route>
+           <Route path="/searchproduct" element={<RequireAuth><SearchPage /></RequireAuth>}></Route>
+>>>>>>> 1e40ea7 (dynamic bag count change accourding to length)
            
 >>>>>>> acfe1b7 (Search Functionality)
 =======
