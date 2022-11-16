@@ -130,6 +130,7 @@ Navigate("/signin")
 <<<<<<< HEAD
       <TabList>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Box  h="60px" w="100%" bgColor={"#2d2d2d"}>
 =======
 =======
@@ -140,6 +141,9 @@ Navigate("/signin")
 >>>>>>> 1c5616f (addtocart working)
         <Box h="60px" w="100%" bgColor={"#2d2d2d"}>
 >>>>>>> 7960daf (productpage adde)
+=======
+        <Box  h="60px" w="100%" bgColor={"#2d2d2d"}>
+>>>>>>> d3067d5 (Signup responsiveness done)
           <Flex
             color={"white"}
             alignItems={"center"}

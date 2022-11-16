@@ -9,6 +9,7 @@ export const SearchInput = () => {
   const [item,setItem]=useState("")
   const Navigate=useNavigate()
 <<<<<<< HEAD
+<<<<<<< HEAD
   const toast=useToast();
   const dispatch=useDispatch();
     const HandleSearch=()=>{
@@ -28,10 +29,24 @@ export const SearchInput = () => {
     }
     
 =======
+=======
+  const toast=useToast();
+>>>>>>> d3067d5 (Signup responsiveness done)
   const dispatch=useDispatch();
     const HandleSearch=()=>{
+      if(item===""){
+        toast({
+          title: 'Input is empty',
+          status: 'error',
+          duration: 5000,
+          position:"top",
+          isClosable: true,
+        })
+      }else{
         dispatch(searchProduct(item))
         Navigate("/searchproduct")
+      }
+      
     }
     console.log(item)
 >>>>>>> acfe1b7 (Search Functionality)

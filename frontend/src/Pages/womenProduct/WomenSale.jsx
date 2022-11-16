@@ -65,7 +65,8 @@ console.log(e.target.value)
 >>>>>>> 7960daf (productpage adde)
 =======
       {
-        products.length===0 ? <Flex justifyContent={"center"}>
+        products.length===0 ? 
+        <Flex justifyContent={"center"}>
         <Image  src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
         </Flex> :<>  <Box w="85%" m="auto" mt={3} mb={3}>
 >>>>>>> bb059a2 (google pay added)

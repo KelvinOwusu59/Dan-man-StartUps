@@ -105,12 +105,17 @@ useEffect(() => {
       </Box>
       <hr />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <SimpleGrid columns={[4,6,6,10]} p={[5,5,5,5]}  spacing={[5,5,5,5]} mb={2}>
          <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
 =======
       <Flex justifyContent={"space-between"} w="85%" m="auto" mb={2}>
         <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+      <SimpleGrid columns={[4,6,6,10]} p={[5,5,5,5]}  spacing={[5,5,5,5]} mb={2}>
+         <Button mt={2} h="30px" borderRadius={"25px"} >DRESSES</Button>
+>>>>>>> d3067d5 (Signup responsiveness done)
         <Button mt={2} h="30px" borderRadius={"25px"}>TOPS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JEMSUITES</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>SHORTS</Button>
@@ -120,6 +125,7 @@ useEffect(() => {
         <Button mt={2} h="30px" borderRadius={"25px"}>JEANS</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>ACTIVEWEAR</Button>
         <Button mt={2} h="30px" borderRadius={"25px"}>JACKETS</Button>
+<<<<<<< HEAD
 <<<<<<< HEAD
      </SimpleGrid>
       <hr />
@@ -133,6 +139,13 @@ useEffect(() => {
       <SimpleGrid   w="85%" m="auto" p={2} columns={6} spacing={5}>
       <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+     </SimpleGrid>
+      <hr />
+      <Box  mb={2} bgColor="#EEEEEE">
+      <SimpleGrid   w={["95%","90%","90%","85%"]} m="auto" p={2} columns={[2,3,4,6]} spacing={[5]}>
+        <Select onChange={(e)=>HandleSort(e)} _hover={{color:"#0770cf"}} borderTop={"1px solid black"} borderLeft="none" borderRight="none" borderRadius="0px" borderBottom={"1px solid black"}>
+>>>>>>> d3067d5 (Signup responsiveness done)
   <option value=''>Sort</option>
  
   <option value='asc'>Price Low to high</option>
@@ -215,10 +228,14 @@ useEffect(() => {
     
       
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SimpleGrid columns={[2,2,3,4]} w="85%" m={"auto"} spacing={3} p={0}>
 =======
       <SimpleGrid columns={4} w="85%" m={"auto"} spacing={3} p={0}>
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+    <SimpleGrid columns={[2,2,3,4]} w="85%" m={"auto"} spacing={3} p={0}>
+>>>>>>> d3067d5 (Signup responsiveness done)
      {
       searchProd.length>0 && searchProd.map((item)=>
       <>

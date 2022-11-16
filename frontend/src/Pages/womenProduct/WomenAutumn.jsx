@@ -10,9 +10,13 @@ import {
   Flex,
   Heading,
 <<<<<<< HEAD
+<<<<<<< HEAD
   Image,
 =======
 >>>>>>> 7960daf (productpage adde)
+=======
+  Image,
+>>>>>>> d3067d5 (Signup responsiveness done)
   Select,
   SimpleGrid,
   Tag,
@@ -44,14 +48,20 @@ console.log(e.target.value)
   return (
     <Box mb={10}>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d3067d5 (Signup responsiveness done)
       {
         products.length===0 ? 
         <Flex justifyContent={"center"}>
         <Image  src="https://cdn.dribbble.com/users/1415337/screenshots/10781083/loadingdots2.gif" alt="x" />
         </Flex> :<> <Box w="85%" m="auto" mt={3} mb={3}>
+<<<<<<< HEAD
 =======
       <Box w="85%" m="auto" mt={3} mb={3}>
 >>>>>>> 7960daf (productpage adde)
+=======
+>>>>>>> d3067d5 (Signup responsiveness done)
         <Breadcrumb
           spacing="8px"
           separator={<ChevronRightIcon color="gray.500" />}
@@ -258,12 +268,18 @@ console.log(e.target.value)
     )
      }
 <<<<<<< HEAD
+<<<<<<< HEAD
       </SimpleGrid></>
         }
       
 =======
       </SimpleGrid>
 >>>>>>> 7960daf (productpage adde)
+=======
+      </SimpleGrid></>
+        }
+      
+>>>>>>> d3067d5 (Signup responsiveness done)
     </Box>
   );
 };

@@ -11,16 +11,24 @@ import {
   Radio,
   RadioGroup,
 <<<<<<< HEAD
+<<<<<<< HEAD
   Spinner,
 =======
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+  Spinner,
+>>>>>>> d3067d5 (Signup responsiveness done)
   Stack,
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useToast } from "@chakra-ui/react";
+=======
+import { useToast } from '@chakra-ui/react'
+>>>>>>> d3067d5 (Signup responsiveness done)
 import { useEffect } from "react";
 import { DiApple } from "react-icons/di";
 import { FcGoogle } from "react-icons/fc";
@@ -30,6 +38,7 @@ import { SignupReq } from "../Redux/Auth/action";
 import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
+<<<<<<< HEAD
   const toast = useToast();
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
@@ -102,6 +111,9 @@ import { SignupReq } from "../Redux/Auth/action";
 import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
+=======
+  const toast = useToast()
+>>>>>>> d3067d5 (Signup responsiveness done)
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
   const [password, setPassword] = useState("");
@@ -119,11 +131,25 @@ export default function Signup() {
   const status = useSelector(e => e.AuthReducer.signup_status)
   const isError = useSelector(e => e.AuthReducer.isError)
   const isErrorData = useSelector(e => e.AuthReducer.isErrorData)
-
+  const isLooding= useSelector(e => e.AuthReducer.isLooding)
+  
   async function sendSignupRequest() {
-    await dispatch(
-    SignupReq({ email, password, firstname, lastname, dob, interest })
-  )
+ 
+    if(email==="" || password==="" || firstname===""|| lastname==="" || dob==="" ){
+      toast({
+        title: 'All details must be Filled.',
+        description: "Provide all necessary Details",
+        status: 'error',
+        duration: 5000,
+        position:"top",
+        isClosable: true,
+      })
+    }else{
+      await dispatch(
+        SignupReq({ email, password, firstname, lastname, dob, interest })
+      )
+    }
+
 }
 
 <<<<<<< HEAD
@@ -132,13 +158,26 @@ export default function Signup() {
 useEffect(()=>{
   if(status){
     console.log("status",status)
+    
     navigate("/signin")
-    alert('Sign Up Success Now Time Login')
+    toast({
+      title: 'Sign Up Success Now Time Login',
+      status: 'success',
+      duration: 5000,
+      position:"top",
+      isClosable: true,
+    })
     window.location.reload()
   }else if(isError){
-    alert(isErrorData)
+    toast({
+      title: `Something went wrong!${isErrorData}`,
+      status: 'error',
+      duration: 5000,
+      position:"top",
+      isClosable: true,
+    })
   }
-},[status,isError])
+},[status,isError,isErrorData])
 
 >>>>>>> 3bc0099 (added)
   return (
@@ -203,10 +242,14 @@ useEffect(()=>{
       </Text>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       <FormControl w={["95%", "75%", "65%"]} margin={"auto"}>
 =======
       <FormControl w={"65%"} margin={"auto"}>
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+      <FormControl w={["95%", "75%", "65%"]} margin={"auto"}>
+>>>>>>> d3067d5 (Signup responsiveness done)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -387,6 +430,7 @@ useEffect(()=>{
           color={"white"}
         >
 <<<<<<< HEAD
+<<<<<<< HEAD
           {isLooding ? <Spinner /> : "JOIN FASHION WORLD"}
 =======
       <Box w={"65%"} margin={"auto"} mt={'50px'} mb={'20px'}>
@@ -395,6 +439,9 @@ useEffect(()=>{
 >>>>>>> c67e613 (add authreducr function)
           JOIN ASOS
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+          {isLooding?<Spinner />:"JOIN FASHION WORLD"}
+>>>>>>> d3067d5 (Signup responsiveness done)
         </Button>
       </Box>
     </Box>

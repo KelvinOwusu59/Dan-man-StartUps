@@ -6,6 +6,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import Blankcart from './Blankcart'
 import { getaddcartdata } from '../../Redux/Addtocart/action'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d3067d5 (Signup responsiveness done)
 import { Flex, Image } from '@chakra-ui/react'
 const Maincartpage = () => {
   const dispatch=useDispatch()
@@ -46,7 +49,9 @@ const Maincartpage = () => {
     <div  className={styles.addtocartbox}>
       <div >
         {
-          loading ? <div>Loading</div> : (<div>
+          loading ? <Flex alignItems={"center"} justifyContent={"center"}>
+          <Image mt={20}  src="https://i.stack.imgur.com/MnyxU.gif" alt="x" />
+          </Flex>  : (<div>
             {
               data.length == 0 ? <div>
                 <Blankcart/>

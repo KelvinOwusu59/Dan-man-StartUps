@@ -9,6 +9,9 @@ import {
   InputGroup,
   InputRightElement,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d3067d5 (Signup responsiveness done)
   Spinner,
   Text,
   useToast,
@@ -55,11 +58,15 @@ export default function Signin() {
 <<<<<<< HEAD
   const [email, setEmail] = useState("");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d3067d5 (Signup responsiveness done)
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
   const isAuth = useSelector((e) => e.AuthReducer.isAuth);
   const msg = useSelector((e) => e.AuthReducer.msg);
+<<<<<<< HEAD
   const isLooding = useSelector((e) => e.AuthReducer.isLooding);
   const toast = useToast();
 
@@ -99,12 +106,21 @@ export default function Signin() {
   const isAuth = useSelector(e => e.AuthReducer.isAuth)
   const msg = useSelector(e => e.AuthReducer.msg)
   const comingFrom=location.state?.data||"/";
+=======
+  const isLooding= useSelector(e => e.AuthReducer.isLooding)
+  
+  const comingFrom = location.state?.data || "/";
+>>>>>>> d3067d5 (Signup responsiveness done)
   function sendSigninRequest() {
-    dispatch(
-      SigninReq({email,password})
+    dispatch(SigninReq({ email, password }));
+  }
 
-      )
+  useEffect(() => {
+    if (isAuth) {
+      navigate(comingFrom, { replace: true });
+      window.location.reload();
     }
+<<<<<<< HEAD
 
     useEffect(()=>{
       if(isAuth){
@@ -113,6 +129,9 @@ export default function Signin() {
       }
     },[isAuth])
 >>>>>>> 3bc0099 (added)
+=======
+  }, [isAuth]);
+>>>>>>> d3067d5 (Signup responsiveness done)
 
   return (
     <Box style={{ fontFamily: "sans-serif" }}>
@@ -264,9 +283,19 @@ export default function Signin() {
         <Button w={"100%"} bg={'#2d2d2d'} color={'white'}>
 =======
       <Box w={"65%"} margin={"auto"} mt={"20px"}>
+<<<<<<< HEAD
         <Button onClick={sendSigninRequest} w={"100%"} bg={"#2d2d2d"} color={"white"}>
 >>>>>>> c67e613 (add authreducr function)
           SIGN IN
+=======
+        <Button
+          onClick={sendSigninRequest}
+          w={"100%"}
+          bg={"#2d2d2d"}
+          color={"white"}
+        >
+          {isLooding?<Spinner />: "SIGN IN"}
+>>>>>>> d3067d5 (Signup responsiveness done)
         </Button>
       </Box>
       <Text textAlign={"center"} mt={"15px"}>
@@ -277,7 +306,7 @@ export default function Signin() {
       </Text>
       <Flex
         justifyContent="space-between"
-        w={"90%"}
+        w={"95%"}
         h={"60px"}
         margin={"auto"}
         mt={"40px"}
@@ -305,9 +334,10 @@ export default function Signin() {
         <Flex
           cursor={"pointer"}
           align="center"
+          p={1}
           justifyContent="space-Evenly"
           border={"1px solid gray"}
-          w={"31%"}
+          w={["36%","31%","31%","31%"]}
         >
           <IoLogoFacebook color="#3b5998" size={"25px"} />
           <Text fontWeight={600}>Facebook</Text>
