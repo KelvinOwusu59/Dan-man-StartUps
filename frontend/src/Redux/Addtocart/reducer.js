@@ -25,10 +25,14 @@ export const reducer = (state = initialstate, { type, payload }) => {
         ...state,
         err: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
         loading: true,
 =======
         loading: false,
 >>>>>>> 7de8bd9 (addtocart)
+=======
+        loading: true,
+>>>>>>> 1bd3825 (responsiveness  updated)
         data: [],
       };
     }
