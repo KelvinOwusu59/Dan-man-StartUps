@@ -28,6 +28,7 @@ export const SearchInput = () => {
       
     }
     
+<<<<<<< HEAD
 =======
 =======
   const toast=useToast();
@@ -50,6 +51,8 @@ export const SearchInput = () => {
     }
     console.log(item)
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+>>>>>>> c5b1242 (All Funactionality checked)
   return (
     <Box ml={5} w="50%">
        

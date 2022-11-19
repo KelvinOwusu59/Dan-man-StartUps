@@ -34,6 +34,9 @@ export const MenFaceBody = () => {
   const dispatch=useDispatch();
   const products  = useSelector((state) => state.AppReducer.products);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c5b1242 (All Funactionality checked)
 
   useEffect(() => {
     // = (type,page,limt)
@@ -57,6 +60,9 @@ console.log(products)
 const HandleSort=(e)=>{
   dispatch(loadProduct("women","sale"));
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c5b1242 (All Funactionality checked)
 
 }
   return (

@@ -45,6 +45,9 @@ const Ordersummary = ({data}) => {
   },0)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c5b1242 (All Funactionality checked)
  
   let totalsum = sum * quantity;
 

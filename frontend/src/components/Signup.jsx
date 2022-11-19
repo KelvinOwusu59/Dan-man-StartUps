@@ -157,7 +157,7 @@ export default function Signup() {
 =======
 useEffect(()=>{
   if(status){
-    console.log("status",status)
+   
     
     navigate("/signin")
     toast({

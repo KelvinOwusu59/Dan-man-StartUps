@@ -34,10 +34,14 @@ export const MenMarketPlace = () => {
   const dispatch=useDispatch();
   const products  = useSelector((state) => state.AppReducer.products);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 console.log(products)
 >>>>>>> dd34221 (Mens Page added)
+=======
+
+>>>>>>> c5b1242 (All Funactionality checked)
   useEffect(() => {
     // = (type,page,limt)
     // dispatch(loadProduct("women","sale"));

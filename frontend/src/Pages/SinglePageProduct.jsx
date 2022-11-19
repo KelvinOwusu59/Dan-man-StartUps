@@ -132,13 +132,13 @@ const SinglePageProduct = () => {
   const handleToggle = () => setShow(!show);
   let userData = JSON.parse(localStorage.getItem("userdata")) || [];
   let token = userData.token;
-  console.log(userData.token);
+  
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   // const products  = useSelector((state) => state.AppReducer.products);
   // const cart = useSelector((state) => state.AppReducer.cart);
-  console.log(id);
+  
   let type = id.split("_")[0];
   let typeid = id.split("_")[1];
   const [singleProduct, setSingleProduct] = useState({});
@@ -147,7 +147,7 @@ const SinglePageProduct = () => {
 
   // console.log(temp)
   const getdata = async () => {
-    console.log("inside getdata ", type, typeid, token);
+   
     setLoad(true);
     await axios
       .get(
@@ -164,7 +164,7 @@ const SinglePageProduct = () => {
         setLoad(false);
       })
       .catch((err) => {
-        console.log(err);
+      
         setLoad(true);
       });
   };
@@ -173,7 +173,7 @@ const SinglePageProduct = () => {
   useEffect(() => {
     getdata();
   }, []);
-  console.log("product", load);
+ 
   const handleAddtobag = () => {
     if (singleProduct?._id) {
       let price = singleProduct?.price;
@@ -198,7 +198,7 @@ const SinglePageProduct = () => {
 
       // .split("�")[1]
       // || temp.price.split("£")[1];
-      console.log(price);
+     
       let obj = {
         product_id: singleProduct._id,
         product_details: {
@@ -210,7 +210,7 @@ const SinglePageProduct = () => {
         item_no: 1,
         size: singleProduct?.size,
       };
-      console.log(obj);
+      
 
 <<<<<<< HEAD
 >>>>>>> f1f1624 (Final Work)

@@ -34,10 +34,14 @@ const searchQuery=useSelector((state) => state.AppReducer.searchQuery);
 const HandleSort=(e)=>{
  
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 console.log(e.target.value)
 >>>>>>> acfe1b7 (Search Functionality)
+=======
+
+>>>>>>> c5b1242 (All Funactionality checked)
 }
 
 useEffect(() => {

@@ -46,6 +46,7 @@ export const MenBrand = () => {
   const HandleSort = (e) => {
     dispatch(loadProduct("women", "sale"));
 
+<<<<<<< HEAD
   };
   return (
     <Box mb={10}>
@@ -346,6 +347,8 @@ console.log(products)
   const HandleSort = (e) => {
     dispatch(loadProduct("women", "sale"));
     console.log(e.target.value);
+=======
+>>>>>>> c5b1242 (All Funactionality checked)
   };
   return (
     <Box mb={10}>

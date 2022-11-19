@@ -12,6 +12,9 @@ const Cartitemsdetails = ({data}) => {
   //  dispatch(getaddcartdata()) 
   // }, [])
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c5b1242 (All Funactionality checked)
   
   
   return (
