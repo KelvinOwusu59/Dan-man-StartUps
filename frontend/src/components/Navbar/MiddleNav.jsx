@@ -67,7 +67,12 @@ import { BottomBanner } from "./BottomBanner";
 import { useDispatch, useSelector } from "react-redux";
 import { SwitchTab } from "../../Redux/App/action";
 import { useState } from "react";
+<<<<<<< HEAD
 >>>>>>> 520db7e (dynamic bag count change accourding to length)
+=======
+import { useEffect } from "react";
+import { getaddcartdata } from "../../Redux/Addtocart/action";
+>>>>>>> 2173f42 (WishList Added)
 
 <<<<<<< HEAD
 import {HiOutlineUser ,HiOutlineHeart} from "react-icons/hi";
@@ -108,6 +113,7 @@ Navigate("/signin")
   useEffect(()=>{
 dispatch(getaddcartdata())
   },[])
+<<<<<<< HEAD
 =======
 import { useDispatch } from "react-redux";
 import { SwitchTab } from "../../Redux/App/action";
@@ -131,6 +137,8 @@ export const MiddleNav = () => {
 Navigate("/signin")
   }
 >>>>>>> dcab2db (Cart page Added)
+=======
+>>>>>>> 2173f42 (WishList Added)
   const HandleTab=(type)=>{
     dispatch(SwitchTab(type))
   }
@@ -374,7 +382,7 @@ Navigate("/signin")
                   {" "}
                   <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
      
-                  <Text position={"absolute"} right="3" top="1.5">{data.length}</Text>
+                  <Text position={"absolute"} right="3" top="1.5">{ data.length}</Text>
                 </Link>
 <<<<<<< HEAD
 >>>>>>> 7960daf (productpage adde)

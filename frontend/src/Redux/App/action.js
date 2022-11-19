@@ -23,6 +23,7 @@ const getProduct = (products) => ({
 import * as types from "./acttionTypes";
 import axios from "axios";
 import { getaddcartdata } from "../Addtocart/action";
+import { getWishListdata } from "../wishlist/action";
 
 const getProduct = (products) => ({
   type: types.GET_PRODUCT,

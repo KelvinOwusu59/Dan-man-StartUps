@@ -5,6 +5,9 @@ import { combineReducers } from "redux";
 import { reducers as AppReducer } from "./App/reducer";
 import { reducer as CartReducer } from "./Addtocart/reducer";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2173f42 (WishList Added)
 import {reducer as WishlistReducer} from "./wishlist/reducer"
 import { AuthReducer } from "./Auth/reducer";
 
@@ -15,6 +18,7 @@ const rootreducer = combineReducers({
   CartReducer,
   AuthReducer,
   WishlistReducer
+<<<<<<< HEAD
   // CartReducer,
 });
 
@@ -40,6 +44,8 @@ const rootreducer = combineReducers({
   AppReducer,
   CartReducer,
   AuthReducer
+=======
+>>>>>>> 2173f42 (WishList Added)
   // CartReducer,
 });
 

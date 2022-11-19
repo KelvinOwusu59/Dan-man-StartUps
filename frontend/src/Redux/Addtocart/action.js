@@ -101,6 +101,9 @@ export const updatecartdata = (el, id) => (dispatch) => {
     });
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2173f42 (WishList Added)
 
 export const CleanCart=()=>dispatch=>{
   return axios
@@ -111,6 +114,10 @@ export const CleanCart=()=>dispatch=>{
   }).then((re)=>{
     getaddcartdata()
   })
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 7de8bd9 (addtocart)
+=======
+}
+>>>>>>> 2173f42 (WishList Added)

@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useEffect } from "react";
 =======
 import React from "react";
 >>>>>>> fabae54 (men page)
+=======
+import React, { useEffect } from "react";
+>>>>>>> 2173f42 (WishList Added)
 import offer from "../MenImages/offer.png"
 import selfcare from "../MenImages/selfcare.png"
 import gofor from "../MenImages/gofor.png"

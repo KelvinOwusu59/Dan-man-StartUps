@@ -177,6 +177,7 @@ import { WomenTopShop } from "./womenProduct/WomenTopShop";
 import { SearchPage } from "./SearchPage";
 import { RequireAuth } from "../components/RequiredAuth";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { WishList } from "./WishList";
 =======
 import { Box } from '@chakra-ui/react'
@@ -205,6 +206,9 @@ import { SearchPage } from "./SearchPage";
 >>>>>>> acfe1b7 (Search Functionality)
 =======
 >>>>>>> ecca77a (Final Touch up)
+=======
+import { WishList } from "./WishList";
+>>>>>>> 2173f42 (WishList Added)
 
 export const AllRoutes = () => {
   return (
@@ -229,7 +233,12 @@ export const AllRoutes = () => {
         <Route path="/womenhome" element={<WomenPage />} />
         <Route path="/" element={<WomenPage />} />
         <Route path="/checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
+<<<<<<< HEAD
         <Route path="/wishlist" element={<RequireAuth><WishList /></RequireAuth>} />
+=======
+        <Route path="/wishlist" element={<WishList />} />
+
+>>>>>>> 2173f42 (WishList Added)
         <Route path="/womentopshop" element={<RequireAuth><WomenTopShop /></RequireAuth>} />
         <Route path="/womensale" element={<RequireAuth><WomenSale /></RequireAuth>} />
         <Route path="/womenbrand" element={<RequireAuth><WomenBrand /></RequireAuth>} />

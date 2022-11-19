@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useEffect } from "react";
 =======
 import React from "react";
 >>>>>>> fabae54 (men page)
+=======
+import React, { useEffect } from "react";
+>>>>>>> 2173f42 (WishList Added)
 import offer from "../Images/offer.png"
 import selfcare from "../Images/selfcare.png"
 import gofor from "../Images/gofor.png"
@@ -24,6 +28,7 @@ import { Link } from "react-router-dom";
 import{Box, Grid, GridItem, Image, Text} from "@chakra-ui/react"
 import { getaddcartdata } from "../Redux/Addtocart/action";
 import { useDispatch } from "react-redux";
+<<<<<<< HEAD
 
 
 const WomenPage = () => {
@@ -92,9 +97,15 @@ const WomenPage = () => {
 import { Link } from "react-router-dom";
 import{Box, Grid, GridItem, Image, Text} from "@chakra-ui/react"
 >>>>>>> b8362dc (responsive landing page)
+=======
+>>>>>>> 2173f42 (WishList Added)
 
 
 const WomenPage = () => {
+  const dispatch=useDispatch()
+  useEffect(()=>{
+    dispatch(getaddcartdata())
+      },[])
   return (
     <div>
       <br />

@@ -15,7 +15,11 @@ export const WishList = () => {
   useEffect(() => {
     dispatch(getWishListdata());
   }, []);
+<<<<<<< HEAD
 
+=======
+  console.log(WishListdata);
+>>>>>>> 2173f42 (WishList Added)
   //   console.log(loading)
   return (
     <Box>
