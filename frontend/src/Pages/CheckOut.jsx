@@ -155,7 +155,7 @@ if(coupn==="FS30"){
     setStatus(true)
     const timer = setTimeout(() => {
         onOpen()
-    //   navigate("/")
+    //   navigate("/Asos_clone")
       }, 1000);
       return () => clearTimeout(timer);
   }
@@ -361,6 +361,9 @@ const ClearCart=()=>{
         <ModalContent>
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fc07d23 (Deployment successfully)
           <Link to="/Asos_clone" onClick={ClearCart}><ModalCloseButton /></Link>
           <ModalBody p={50}>
           <Alert

@@ -109,15 +109,19 @@ export default function Signin() {
 =======
   const isLooding= useSelector(e => e.AuthReducer.isLooding)
   
+<<<<<<< HEAD
   const comingFrom = location.state?.data || "/";
 >>>>>>> d3067d5 (Signup responsiveness done)
+=======
+  const comingFrom = location.state?.data || "/Asos_clone";
+>>>>>>> fc07d23 (Deployment successfully)
   function sendSigninRequest() {
     dispatch(SigninReq({ email, password }));
   }
 
   useEffect(() => {
     if (isAuth) {
-      navigate(comingFrom, { replace: true });
+      navigate("/Asos_clone");
       window.location.reload();
     }
 <<<<<<< HEAD

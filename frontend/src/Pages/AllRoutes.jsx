@@ -231,7 +231,12 @@ export const AllRoutes = () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
         <Route path="/womenhome" element={<WomenPage />} />
+<<<<<<< HEAD
         <Route path="/" element={<WomenPage />} />
+=======
+
+        <Route path="/Asos_clone" element={<WomenPage />} />
+>>>>>>> fc07d23 (Deployment successfully)
         <Route path="/checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
 <<<<<<< HEAD
         <Route path="/wishlist" element={<RequireAuth><WishList /></RequireAuth>} />
