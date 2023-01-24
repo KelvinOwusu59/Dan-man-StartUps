@@ -128,8 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 <<<<<<< HEAD
+<<<<<<< HEAD
 .pnp.*
 .vercel
 =======
 .pnp.*
 >>>>>>> 6808b6d (added signup and signin page)
+=======
+.pnp.*
+.vercel
+>>>>>>> 08993e4 (bug fixed)

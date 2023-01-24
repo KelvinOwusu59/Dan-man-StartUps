@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08993e4 (bug fixed)
 import axios from "axios";
 import { storeData_LC } from "../../components/LocalStorage";
 import {
@@ -9,6 +12,7 @@ import {
   SIGNUP_LOODING_REQUEST,
   SIGNUP_SUCCESS_REQUEST,
 } from "./actionTypes";
+<<<<<<< HEAD
 
 export const SignupReq = (e) => (dispatch) => {
   dispatch({ type: SIGNUP_LOODING_REQUEST });
@@ -53,26 +57,31 @@ import axios from 'axios'
 import { storeData_LC } from '../../components/LocalStorage'
 import { SIGNIN_FAILURE_REQUEST, SIGNIN_LOODING_REQUEST, SIGNIN_SUCCESS_REQUEST, SIGNUP_FAILURE_REQUEST, SIGNUP_LOODING_REQUEST, SIGNUP_SUCCESS_REQUEST } from './actionTypes'
 
+=======
+>>>>>>> 08993e4 (bug fixed)
 
 export const SignupReq = (e) => (dispatch) => {
-  dispatch({type: SIGNUP_LOODING_REQUEST})
-    return (
-        axios.post(`https://asos-backend.onrender.com/signup`,e)
-          .then(function (response) {
-            console.log(response.data)
-            dispatch({type: SIGNUP_SUCCESS_REQUEST})
-          })
-          .catch(function (error) {
-            const {response}=error
-            console.log(response)
-            dispatch({type: SIGNUP_FAILURE_REQUEST,payload:"g"})
-          })
-    )
-}
-
-
+  dispatch({ type: SIGNUP_LOODING_REQUEST });
+  return axios
+    .post(`https://asos-backend.onrender.com/signup`, e)
+    .then((response) => {
+      return dispatch({
+        type: SIGNUP_SUCCESS_REQUEST,
+        payload: response.data.msg,
+      });
+    })
+    .catch(function (error) {
+      const { response } = error;
+      console.log(response.data.error, "jjjjj");
+      return dispatch({
+        type: SIGNUP_FAILURE_REQUEST,
+        payload: response.data.error,
+      });
+    });
+};
 
 export const SigninReq = (e) => (dispatch) => {
+<<<<<<< HEAD
     dispatch({type: SIGNIN_LOODING_REQUEST})
     return (
         axios.post(`https://asos-backend.onrender.com/login`,e)
@@ -89,3 +98,22 @@ export const SigninReq = (e) => (dispatch) => {
     )
 }
 >>>>>>> c67e613 (add authreducr function)
+=======
+  dispatch({ type: SIGNIN_LOODING_REQUEST });
+  return axios
+    .post(`https://asos-backend.onrender.com/login`, e)
+    .then(function (response) {
+      storeData_LC("userdata", response.data);
+      return dispatch({
+        type: SIGNIN_SUCCESS_REQUEST,
+        payload: { token: response.data.token, data: response.data.data },
+      });
+    })
+    .catch(function (error) {
+      return dispatch({
+        type: SIGNIN_FAILURE_REQUEST,
+        payload: error.response.data.error,
+      });
+    });
+};
+>>>>>>> 08993e4 (bug fixed)

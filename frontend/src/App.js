@@ -59,6 +59,7 @@ function App() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      <AllRoutes />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,6 +92,10 @@ function App() {
      
 >>>>>>> b8362dc (responsive landing page)
     </Box>
+=======
+     <AllRoutes />
+     </Box>
+>>>>>>> 08993e4 (bug fixed)
     </>
 >>>>>>> f83085a (women data)
   );

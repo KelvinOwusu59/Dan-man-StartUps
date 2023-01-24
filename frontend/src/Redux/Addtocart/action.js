@@ -40,6 +40,7 @@ export const getaddcartdata = () => dispatch => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      
 =======
       console.log(r.data.data);
@@ -50,6 +51,9 @@ export const getaddcartdata = () => dispatch => {
 =======
       console.log("amol:", r.data.data);
 >>>>>>> b032edd (addtocartstyling complte)
+=======
+     
+>>>>>>> 08993e4 (bug fixed)
       dispatch({ type: types.GET_CARTDATA_SUCCESS, payload: r.data.data });
     })
     .catch((err) => {
@@ -86,6 +90,9 @@ export const updatecartdata = (el, id) => (dispatch) => {
     })
     .then((r) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08993e4 (bug fixed)
     
       // getaddcartdata();
       dispatch({ type: types.UPDATE_CART_SUCCESS, payload: { el, id } });

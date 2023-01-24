@@ -49,6 +49,7 @@ export function AuthReducer(state = userData,action){
         case SIGNUP_SUCCESS_REQUEST : return {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             ...state,isLooding: false, signup_status: true,msg:payload
         }
         case SIGNUP_FAILURE_REQUEST : return {
@@ -69,6 +70,12 @@ export function AuthReducer(state = userData,action){
 =======
             ...state, isLooding: false, isError: true,isErrorData:payload
 >>>>>>> dcab2db (Cart page Added)
+=======
+            ...state,isLooding: false, signup_status: true,msg:payload
+        }
+        case SIGNUP_FAILURE_REQUEST : return {
+            ...state, isLooding: false, isError: true,isErrorData:payload,signup_status:false
+>>>>>>> 08993e4 (bug fixed)
         }
         case SIGNIN_LOODING_REQUEST : return {
             ...state,isLooding: true

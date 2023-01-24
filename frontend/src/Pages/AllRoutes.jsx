@@ -232,6 +232,7 @@ export const AllRoutes = () => {
 <<<<<<< HEAD
         <Route path="/womenhome" element={<WomenPage />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path="/" element={<WomenPage />} />
 =======
 
@@ -244,6 +245,11 @@ export const AllRoutes = () => {
         <Route path="/wishlist" element={<WishList />} />
 
 >>>>>>> 2173f42 (WishList Added)
+=======
+        <Route path="/" element={<WomenPage />} />
+        <Route path="/checkout" element={<RequireAuth><CheckOut /></RequireAuth>} />
+        <Route path="/wishlist" element={<RequireAuth><WishList /></RequireAuth>} />
+>>>>>>> 08993e4 (bug fixed)
         <Route path="/womentopshop" element={<RequireAuth><WomenTopShop /></RequireAuth>} />
         <Route path="/womensale" element={<RequireAuth><WomenSale /></RequireAuth>} />
         <Route path="/womenbrand" element={<RequireAuth><WomenBrand /></RequireAuth>} />
