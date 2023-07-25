@@ -562,9 +562,9 @@ export default SinglePageProduct
       </Flex>
     </Box>
   </Collapse>
-  
-  <Center>  <Button  onClick={handleToggle}> Show {show ? "Less" : "More"}</Button></Center>
-
+          <Center> 
+            <Button  onClick={handleToggle}> Show {show ? "Less" : "More"}</Button>
+          </Center>
         </Box>
       )}
     </>
