@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import { Box, Center, Flex, Text,  } from '@chakra-ui/react'
-import React from 'react'
-=======
 import { Box, Center, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
->>>>>>> 568ed80 (Mens Page added)
 
 export const BottomBanner = () => {
   return (
@@ -53,16 +46,5 @@ export const BottomBanner = () => {
         </Link>
       </Flex>
     </Box>
-<<<<<<< HEAD
-    <Box w="100px" cursor={"pointer"} color={"black"} pt={1} pb={1} pl={4} pr={4} border={"2px solid black"}><Text textAlign={"center"}>Men</Text></Box>
-
-
-</Flex>  
-    </Box>
-  )
-}
->>>>>>> 7960daf (productpage adde)
-=======
   );
 };
->>>>>>> 568ed80 (Mens Page added)

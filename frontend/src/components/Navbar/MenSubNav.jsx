@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -1531,4 +1529,3 @@ Loafers
 };
 
 export default MenSubNav;
->>>>>>> 7960daf (productpage adde)

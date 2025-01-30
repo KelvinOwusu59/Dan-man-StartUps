@@ -1,109 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import { Box , HStack,VStack, Image, Text,Select, Button, Collapse} from '@chakra-ui/react'
-=======
-import { Box , HStack,VStack, Image, Text,Select, Button, Collapse, Divider} from '@chakra-ui/react'
->>>>>>> 6c776a1 (single page)
-import React, { useEffect } from 'react';
-import { FaTag , FaClock, FaHeart, FaTruck} from "react-icons/fa";
-import { useNavigate, useParams}  from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { CART } from '../Redux/App/acttionTypes';
-import { useState } from 'react';
-import { Addtocart } from '../Redux/App/action';
-<<<<<<< HEAD
-import axios from 'axios';
-=======
-import Footer from './Footer';
->>>>>>> e85ef42 (singlepage)
-const SinglePageProduct = () => {
-    const [size,setSize]= useState("")
-    const [show, setShow] =useState(false)
-    const handleToggle = () => setShow(!show)
-    let userData= JSON.parse(localStorage.getItem('userdata'))||[];
-    let token=userData.token;
-    console.log(userData.token)
-    const {id}= useParams();
-    const dispatch=useDispatch();
-    const navigate= useNavigate();
-    const products  = useSelector((state) => state.AppReducer.products);
-    const cart = useSelector((state) => state.AppReducer.cart);
-    console.log(id)
-    let type=id.split("_")[0];  
-    let  typeid = id.split("_")[1];
-    const [singleProduct, setSingleProduct]= useState({})
-    const [imgSrc,setImgSrc]=useState("")
-
-<<<<<<< HEAD
-    var temp=[];
-    
-    // console.log(temp)
-    const getdata = async () => {
-    console.log("inside getdata ",type,typeid,token)
-       await axios.get(`https://asos-backend.onrender.com/${type}product/?product_id=${typeid}`, {
-        headers: {
-            Authorization:`Bearer ${token}`
-=======
-    var temp;
-    useEffect(()=>{
-        if(typeid ){
-          // eslint-disable-next-line react-hooks/exhaustive-deps
-          temp = products?.find( product => product._id ===(typeid));
-          // eslint-disable-next-line no-unused-vars
-          handleAddtobag(temp)
-          temp && setSingleProduct(temp);
->>>>>>> e85ef42 (singlepage)
-        }
-    }).then((r)=>{setSingleProduct(r.data.data[0])
-        setImgSrc(r.data.data[0].mainImage||r.data.data[0].mainimage)}).catch((err)=>console.log(err))
-    }
-
-    useEffect(()=>{
-       
-            getdata()
-        
-<<<<<<< HEAD
-<<<<<<< HEAD
-    }, [type,typeid]);
-=======
-    }, []);
->>>>>>> b9182eb (addtocart)
-=======
-    },[] );
->>>>>>> f1f1624 (Final Work)
-    // console.log("product",products)
-    const handleAddtobag=()=>{
-       if(singleProduct?._id){
-        let price=singleProduct?.price;
-        if(singleProduct?.price[0]=="�"){
-            price=  price.split("�")[1]
-        }
-        else if(singleProduct?.price[0]=="£"){
-            price=  price.split("£")[1]
-        }
-        else{
-            price=singleProduct?.price
-        }
-        
-        // .split("�")[1] 
-        // || temp.price.split("£")[1];
-        console.log(price);
-        let obj={
-            
-            product_id:singleProduct._id,
-            product_details:{
-                product_img:singleProduct?.mainImage || singleProduct?.mainimage,
-                product_price:price,
-                product_name:singleProduct?.name,
-                product_color:singleProduct?.color
-            },
-            item_no:1,
-            size:singleProduct?.size
-        };
-        console.log(obj)
-=======
 import {
   Box,
   HStack,
@@ -145,7 +39,7 @@ const SinglePageProduct = () => {
   const [imgSrc, setImgSrc] = useState("");
   const [load, setLoad] = useState(false);
 
-  // console.log(temp)
+
   const getdata = async () => {
    
     setLoad(true);
@@ -156,6 +50,7 @@ const SinglePageProduct = () => {
           headers: {
             Authorization: `Bearer ${token}`,
           },
+
         }
       )
       .then((r) => {
@@ -168,7 +63,6 @@ const SinglePageProduct = () => {
         setLoad(true);
       });
   };
->>>>>>> 1bd3825 (responsiveness  updated)
 
   useEffect(() => {
     getdata();
@@ -184,17 +78,6 @@ const SinglePageProduct = () => {
       } else {
         price = singleProduct?.price;
       }
-<<<<<<< HEAD
-      
-     
-    
-    return (
-<<<<<<< HEAD
-        // main box
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1bd3825 (responsiveness  updated)
 
       // .split("�")[1]
       // || temp.price.split("£")[1];
@@ -212,18 +95,6 @@ const SinglePageProduct = () => {
       };
       
 
-<<<<<<< HEAD
->>>>>>> f1f1624 (Final Work)
-        <Box className="Box" width={"60%"}   margin={"auto"} marginTop={"5px"} padding={"10px"}> 
-=======
-        <>
-        <Box className="Box" width={"60%"} height={"600px"}  margin={"auto"} marginTop={"5px"} padding={"10px"}> 
->>>>>>> e85ef42 (singlepage)
-          
-          
-          <HStack className="Box" width={"100%"} height={"100%"}  marginLeft={"5px"} >
-           
-=======
       dispatch(Addtocart(obj));
       navigate("/cart");
     } else {
@@ -249,7 +120,6 @@ const SinglePageProduct = () => {
             flexDirection={["column", "row", "row"]}
             alignItems="center"
             justifyContent={"center"}
->>>>>>> 1bd3825 (responsiveness  updated)
 
           >
             <Box>
@@ -430,23 +300,6 @@ const SinglePageProduct = () => {
                 </HStack>
               </Box>
             </Box>
-<<<<<<< HEAD
-         </Collapse>
-        <Button size='sm' width={"15%"} fontSize={"15"} fontWeight={"bold"} marginLeft={"22rem"} onClick={handleToggle} mt='1rem'>
-        Show {show ? 'Less' : 'More'}
-      </Button>
-
-        
-                   
-        </Box>
-        
-        </>
-    )
-}
-
-export default SinglePageProduct
->>>>>>> 35f801b (singlepage)
-=======
           </Flex>
           <Collapse startingHeight={20} in={show}>
     <Box
@@ -572,4 +425,3 @@ export default SinglePageProduct
 };
 
 export default SinglePageProduct;
->>>>>>> 1bd3825 (responsiveness  updated)
