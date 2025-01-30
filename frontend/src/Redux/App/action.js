@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import * as types from "./acttionTypes";
 import axios from "axios";
 import { getaddcartdata } from "../Addtocart/action";
@@ -9,27 +7,6 @@ const getProduct = (products) => ({
   type: types.GET_PRODUCT,
   payload: products,
 });
-=======
-
-import * as types from "./acttionTypes"
-import axios from "axios"
-
-const getProduct = (products) => ({
-    type: types.GET_PRODUCT,
-    payload: products
-})
->>>>>>> 7960daf (productpage adde)
-=======
-import * as types from "./acttionTypes";
-import axios from "axios";
-import { getaddcartdata } from "../Addtocart/action";
-import { getWishListdata } from "../wishlist/action";
-
-const getProduct = (products) => ({
-  type: types.GET_PRODUCT,
-  payload: products,
-});
->>>>>>> 1c5616f (addtocart working)
 
 // const getGrid=(Gridproducts)=>({
 //     type:types.GET_GRID,
@@ -37,37 +14,12 @@ const getProduct = (products) => ({
 
 // })
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 let userData = JSON.parse(localStorage.getItem("userdata")) || [];
 let token = userData.token;
 console.log(userData.token);
 export const loadProduct = (type, cate) => {
   return function (dispatch) {
     dispatch({ type: "REQUEST_PRODUCT" });
-=======
-let token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmRmNGM1MWI1OTFkOWY1NmY3MWVlNSIsImVtYWlsIjoiYW1vbEBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJhbW9sIiwibGFzdG5hbWUiOiJnb2RzZSIsInBhc3N3b3JkIjoiJDJiJDA0JGZncm5YcC42ZS96QXhrMGt3T2w4NE9Tb3J3bkdQTzI4QVhrVXU3dU51OE1KckQ5SzVQVVZ1IiwiZG9iIjoiMjQtMy0yMDIyIiwiaW50ZXJlc3QiOiJ5ZXMiLCJfX3YiOjB9LCJpYXQiOjE2NjgxNTQxMTh9.zn0YdLwze8q1fwwCFd07YQmRGyfjLCM9rFJOHkTcrOw";
-=======
-let userData= JSON.parse(localStorage.getItem('userdata'))||[];
-let token=userData.token;
-console.log(userData.token)
->>>>>>> dcab2db (Cart page Added)
-=======
-let userData = JSON.parse(localStorage.getItem("userdata")) || [];
-let token = userData.token;
-console.log(userData.token);
->>>>>>> b032edd (addtocartstyling complte)
-export const loadProduct = (type, cate) => {
-  return function (dispatch) {
-<<<<<<< HEAD
->>>>>>> 1c5616f (addtocart working)
-=======
-    
-    dispatch({type: "REQUEST_PRODUCT"})
->>>>>>> 6421fbc (Media query)
     axios
       .get(`https://asos-backend.onrender.com/${type}product/${cate}`, {
         headers: {
@@ -81,27 +33,13 @@ export const loadProduct = (type, cate) => {
       })
       .catch((er) => {
         console.log("ERROR", er);
-<<<<<<< HEAD
-<<<<<<< HEAD
         dispatch({ type: "REQUEST_PRODUCT" });
-=======
->>>>>>> 1c5616f (addtocart working)
-=======
-        dispatch({type: "REQUEST_PRODUCT"})
->>>>>>> 6421fbc (Media query)
       });
   };
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 export const searchProduct = (query) => (dispatch) => {
   dispatch({ type: "REQUEST_PRODUCT" });
-=======
-export const searchProduct = (query) => (dispatch) => {
->>>>>>> b032edd (addtocartstyling complte)
   axios
     .get(
       `https://asos-backend.onrender.com/womenproduct/?product_name=${query}`,
@@ -118,75 +56,19 @@ export const searchProduct = (query) => (dispatch) => {
         payload: { data: r.data.data, query: query },
       });
     })
-<<<<<<< HEAD
     .catch((e) => {
       console.log(e);
       dispatch({ type: "REQUEST_PRODUCT" });
     });
 };
 
-=======
-=======
-export const SortProduct = (type, cate) => {
-  return function (dispatch) {
-    dispatch({type: "REQUEST_PRODUCT"})
-    axios
-      .get(`https://asos-backend.onrender.com/${type}product/${cate}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then((res) => {
-        // console.log("RESPONSE", res.data.data)
-        dispatch(getProduct(res.data.data));
-        // dispatch({type: "CART", payload: "earrings"})
-      })
-      .catch((er) => {
-        dispatch({type: "REQUEST_PRODUCT"})
-        console.log("ERROR", er);
-      });
-  };
-};
-
->>>>>>> a1a7cca (Checkout page)
-export const searchProduct=(query)=>dispatch=>{
-  dispatch({type: "REQUEST_PRODUCT"})
-axios.get(`https://asos-backend.onrender.com/womenproduct/?product_name=${query}`,{
-  headers: {
-    Authorization: `Bearer ${token}`,
-  },
-}).then((r)=>{
-  console.log(r.data)
- dispatch({type: "SEARCH_ITEM", payload:{data: r.data.data,query:query}})
-}).catch((e)=>{console.log(e)
-  dispatch({type: "REQUEST_PRODUCT"})})
-
-} 
-<<<<<<< HEAD
->>>>>>> acfe1b7 (Search Functionality)
-=======
-    .catch((e) => console.log(e));
-};
->>>>>>> b032edd (addtocartstyling complte)
-=======
-
->>>>>>> a1a7cca (Checkout page)
 export const loadProductWithQuery = (type, page, limt) => {
   return function (dispatch) {
-<<<<<<< HEAD
     dispatch({ type: "REQUEST_PRODUCT" });
-=======
-export const loadProductWithQuery = (type, page, limt) => {
-  return function (dispatch) {
->>>>>>> 1c5616f (addtocart working)
-=======
-    dispatch({type: "REQUEST_PRODUCT"})
->>>>>>> 6421fbc (Media query)
     // https://asos-backend.onrender.com/?product_name=${shs}&category=sale
     axios
       .get(
         `https://asos-backend.onrender.com/${type}product?page=${page}&limit=${limt}`,
-<<<<<<< HEAD
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -244,92 +126,3 @@ export const AddtoWishList = (data) => (dispatch) => {
 export const SwitchTab = (type) => {
   loadProduct(type);
 };
-=======
-let token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNmRmNGM1MWI1OTFkOWY1NmY3MWVlNSIsImVtYWlsIjoiYW1vbEBnbWFpbC5jb20iLCJmaXJzdG5hbWUiOiJhbW9sIiwibGFzdG5hbWUiOiJnb2RzZSIsInBhc3N3b3JkIjoiJDJiJDA0JGZncm5YcC42ZS96QXhrMGt3T2w4NE9Tb3J3bkdQTzI4QVhrVXU3dU51OE1KckQ5SzVQVVZ1IiwiZG9iIjoiMjQtMy0yMDIyIiwiaW50ZXJlc3QiOiJ5ZXMiLCJfX3YiOjB9LCJpYXQiOjE2NjgxNTQxMTh9.zn0YdLwze8q1fwwCFd07YQmRGyfjLCM9rFJOHkTcrOw"
-export const loadProduct = (type,cate) => {
-    return function (dispatch) {
-        axios.get(`https://asos-backend.onrender.com/${type}product/${cate}`,
-=======
->>>>>>> 1c5616f (addtocart working)
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      )
-      .then((res) => {
-        // console.log("RESPONSE", res.data.data)
-        dispatch(getProduct(res.data.data));
-        // dispatch({type: "CART", payload: "earrings"})
-      })
-      .catch((er) => {
-        dispatch({type: "REQUEST_PRODUCT"})
-        console.log("ERROR", er);
-      });
-  };
-};
-
-export const Addtocart = (data) => (dispatch) => {
-  console.log("addtocart", data);
-  dispatch({type: "REQUEST_PRODUCT"})
-  axios
-    .post("https://asos-backend.onrender.com/cart/addcart", data, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    })
-    .then((r) => {
-      dispatch(getaddcartdata());
-    })
-    .catch((err) => {
-      console.log(err);
-      dispatch({type: "REQUEST_PRODUCT"})
-    });
-};
-
-<<<<<<< HEAD
-export const loadProductWithQuery = (type,page,limt) => {
-    return function (dispatch) {
-        // https://asos-backend.onrender.com/?product_name=${shs}&category=sale
-        axios.get(`https://asos-backend.onrender.com/${type}product?page=${page}&limit=${limt}`,
-        {
-            headers:{
-                'Authorization':`Bearer ${token}`
-            }
-        }
-        ).then(res => {
-            // console.log("RESPONSE", res.data.data)
-            dispatch(getProduct(res.data.data))
-            // dispatch({type: "CART", payload: "earrings"})
-        }).catch(er => {
-            console.log("ERROR",er)
-        })
-    }
-
-}
-<<<<<<< HEAD
->>>>>>> 7960daf (productpage adde)
-=======
-
-export const Addtocart=(data)=>(dispatch)=>{
-    console.log(data)
-    // return  axios.post("https://asos-backend.onrender.com/cart",data,{
-    //     headers:{
-    //         Authorization:`Bearer ${token}`
-    //     }
-    //  }).then((r)=>console.log("data added")).catch((err)=>{
-    //     console.log(err)
-    //  })
-
-}
-
-
-export const SwitchTab=(type)=>{
-    loadProduct(type)
-}
->>>>>>> dd34221 (Mens Page added)
-=======
-export const SwitchTab = (type) => {
-  loadProduct(type);
-};
->>>>>>> 1c5616f (addtocart working)

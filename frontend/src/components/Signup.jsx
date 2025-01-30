@@ -10,29 +10,12 @@ import {
   InputRightElement,
   Radio,
   RadioGroup,
-<<<<<<< HEAD
-<<<<<<< HEAD
   Spinner,
-=======
->>>>>>> 6808b6d (added signup and signin page)
-=======
-  Spinner,
->>>>>>> d3067d5 (Signup responsiveness done)
   Stack,
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { useToast } from "@chakra-ui/react";
-=======
-import { useToast } from '@chakra-ui/react'
->>>>>>> d3067d5 (Signup responsiveness done)
-=======
-import { useToast } from "@chakra-ui/react";
->>>>>>> 08993e4 (bug fixed)
 import { useEffect } from "react";
 import { DiApple } from "react-icons/di";
 import { FcGoogle } from "react-icons/fc";
@@ -42,10 +25,6 @@ import { SignupReq } from "../Redux/Auth/action";
 import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 08993e4 (bug fixed)
   const toast = useToast();
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
@@ -57,7 +36,6 @@ export default function Signup() {
   const [interest, setInterest] = useState("Womenswear");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-<<<<<<< HEAD
 
   const status = useSelector((state) => state.AuthReducer.signup_status);
   const isError = useSelector((state) => state.AuthReducer.isError);
@@ -107,116 +85,6 @@ export default function Signup() {
     }
   }
 
-=======
-=======
-import { useEffect } from "react";
->>>>>>> 3bc0099 (added)
-import { DiApple } from "react-icons/di";
-import { FcGoogle } from "react-icons/fc";
-import { IoLogoFacebook } from "react-icons/io";
-import { useDispatch, useSelector } from "react-redux";
-import { SignupReq } from "../Redux/Auth/action";
-import { useNavigate } from "react-router-dom";
-
-export default function Signup() {
-=======
-  const toast = useToast()
->>>>>>> d3067d5 (Signup responsiveness done)
-  const [show, setShow] = useState(false);
-  const handleClick = () => setShow(!show);
-  const [password, setPassword] = useState("");
-<<<<<<< HEAD
->>>>>>> 6808b6d (added signup and signin page)
-=======
-  const [email, setEmail] = useState("");
-  const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
-  const [dob, setDob] = useState("");
-  const [interest, setInterest] = useState("Womenswear");
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
-=======
->>>>>>> 08993e4 (bug fixed)
-
-  const status = useSelector((state) => state.AuthReducer.signup_status);
-  const isError = useSelector((state) => state.AuthReducer.isError);
-  const isErrorData = useSelector((state) => state.AuthReducer.isErrorData);
-  const isLooding = useSelector((state) => state.AuthReducer.isLooding);
-
-  function sendSignupRequest() {
-    if (
-      email === "" ||
-      password === "" ||
-      firstname === "" ||
-      lastname === "" ||
-      dob === ""
-    ) {
-      toast({
-        title: "All details must be Filled.",
-        description: "Provide all necessary Details",
-        status: "error",
-        duration: 5000,
-        position: "top",
-        isClosable: true,
-      });
-    } else {
-      dispatch(
-        SignupReq({ email, password, firstname, lastname, dob, interest })
-      ).then((res) => {
-        if (res.type == "SIGNUP_FAILURE_REQUEST") {
-          toast({
-            title: res.payload,
-            status: "error",
-            duration: 5000,
-            position: "top",
-            isClosable: true,
-          });
-        } else {
-          toast({
-            title: "Sign Up Success Now Time Login",
-            status: "success",
-            duration: 5000,
-            position: "top",
-            isClosable: true,
-          });
-          navigate("/signin");
-          window.location.reload();
-        }
-      });
-    }
-<<<<<<< HEAD
-
-}
-
-<<<<<<< HEAD
->>>>>>> c67e613 (add authreducr function)
-=======
-useEffect(()=>{
-  if(status){
-   
-    
-    navigate("/signin")
-    toast({
-      title: 'Sign Up Success Now Time Login',
-      status: 'success',
-      duration: 5000,
-      position:"top",
-      isClosable: true,
-    })
-    window.location.reload()
-  }else if(isError){
-    toast({
-      title: `Something went wrong!${isErrorData}`,
-      status: 'error',
-      duration: 5000,
-      position:"top",
-      isClosable: true,
-    })
-=======
->>>>>>> 08993e4 (bug fixed)
-  }
-
->>>>>>> 3bc0099 (added)
   return (
     <Box style={{ fontFamily: "sans-serif" }}>
       <Text textAlign={"center"} fontSize={"20px"} mt={"30px"} fontWeight={600}>
@@ -278,15 +146,7 @@ useEffect(()=>{
         OR SIGN UP WITH EMAIL
       </Text>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       <FormControl w={["95%", "75%", "65%"]} margin={"auto"}>
-=======
-      <FormControl w={"65%"} margin={"auto"}>
->>>>>>> 6808b6d (added signup and signin page)
-=======
-      <FormControl w={["95%", "75%", "65%"]} margin={"auto"}>
->>>>>>> d3067d5 (Signup responsiveness done)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -295,22 +155,12 @@ useEffect(()=>{
         >
           EMAIL ADDRESS :
         </FormLabel>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c67e613 (add authreducr function)
         <Input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           size="lg"
           type="email"
         />
-<<<<<<< HEAD
-=======
-        <Input size="lg" type="email" />
->>>>>>> 6808b6d (added signup and signin page)
-=======
->>>>>>> c67e613 (add authreducr function)
         <FormHelperText>We'll send your order confirmation here</FormHelperText>
         <FormLabel
           color={"gray"}
@@ -320,22 +170,12 @@ useEffect(()=>{
         >
           FIRST NAME :
         </FormLabel>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c67e613 (add authreducr function)
         <Input
           value={firstname}
           onChange={(e) => setFirstName(e.target.value)}
           size="lg"
           type="text"
         />
-<<<<<<< HEAD
-=======
-        <Input size="lg" type="text" />
->>>>>>> 6808b6d (added signup and signin page)
-=======
->>>>>>> c67e613 (add authreducr function)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -344,22 +184,12 @@ useEffect(()=>{
         >
           LAST NAME :
         </FormLabel>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c67e613 (add authreducr function)
         <Input
           value={lastname}
           onChange={(e) => setLastName(e.target.value)}
           size="lg"
           type="text"
         />
-<<<<<<< HEAD
-=======
-        <Input size="lg" type="text" />
->>>>>>> 6808b6d (added signup and signin page)
-=======
->>>>>>> c67e613 (add authreducr function)
         <FormLabel
           color={"gray"}
           fontSize={"14px"}
@@ -393,22 +223,12 @@ useEffect(()=>{
         >
           DATE OF BIRTH :
         </FormLabel>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c67e613 (add authreducr function)
         <Input
           value={dob}
           onChange={(e) => setDob(e.target.value)}
           size="lg"
           type="date"
         />
-<<<<<<< HEAD
-=======
-        <Input size="lg" type="date" />
->>>>>>> 6808b6d (added signup and signin page)
-=======
->>>>>>> c67e613 (add authreducr function)
         <FormHelperText>You need to be 16 or over to use ASOS</FormHelperText>
         <FormLabel
           color={"gray"}
@@ -419,46 +239,21 @@ useEffect(()=>{
         >
           MOSTLY INTERESTED IN :
         </FormLabel>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c67e613 (add authreducr function)
         <RadioGroup
           value={interest}
           onChange={(e) => setInterest(e)}
           defaultValue="1"
         >
-<<<<<<< HEAD
           <Stack spacing={5} direction="row">
             <Radio size="lg" mr={"50px"} colorScheme="blue" value="Womenswear">
               Womenswear
             </Radio>
             <Radio size="lg" colorScheme="blue" value="Menswear">
               Menswear
-=======
-        <RadioGroup defaultValue="2">
-=======
->>>>>>> c67e613 (add authreducr function)
-          <Stack spacing={5} direction="row">
-            <Radio size="lg" mr={"50px"} colorScheme="blue" value="Womenswear">
-              Womenswear
-            </Radio>
-<<<<<<< HEAD
-            <Radio  size='lg' colorScheme="blue" value="2">
-            Menswear
->>>>>>> 6808b6d (added signup and signin page)
-=======
-            <Radio size="lg" colorScheme="blue" value="Menswear">
-              Menswear
->>>>>>> c67e613 (add authreducr function)
             </Radio>
           </Stack>
         </RadioGroup>
       </FormControl>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c67e613 (add authreducr function)
       <Box w={"65%"} margin={"auto"} mt={"50px"} mb={"20px"}>
         <Button
           onClick={sendSignupRequest}
@@ -466,23 +261,7 @@ useEffect(()=>{
           bg={"#2d2d2d"}
           color={"white"}
         >
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
           {isLooding ? <Spinner /> : "JOIN FASHION WORLD"}
-=======
-      <Box w={"65%"} margin={"auto"} mt={'50px'} mb={'20px'}>
-        <Button w={"100%"} bg={'#2d2d2d'} color={'white'}>
-=======
->>>>>>> c67e613 (add authreducr function)
-          JOIN ASOS
->>>>>>> 6808b6d (added signup and signin page)
-=======
-          {isLooding?<Spinner />:"JOIN FASHION WORLD"}
->>>>>>> d3067d5 (Signup responsiveness done)
-=======
-          {isLooding ? <Spinner /> : "JOIN FASHION WORLD"}
->>>>>>> 08993e4 (bug fixed)
         </Button>
       </Box>
     </Box>

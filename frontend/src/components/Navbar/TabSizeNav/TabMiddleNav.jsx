@@ -36,21 +36,10 @@ import { HiOutlineHeart, HiOutlineUser } from "react-icons/hi";
 import { FiShoppingBag } from "react-icons/fi";
 import { GrContact } from "react-icons/gr";
 import { IoBagOutline } from "react-icons/io5";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 520db7e (dynamic bag count change accourding to length)
 import { useSelector } from "react-redux";
 export const TabMiddleNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { data, loading, error } = useSelector((state) => state.CartReducer);
-<<<<<<< HEAD
-=======
-export const TabMiddleNav = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
->>>>>>> ecca77a (Final Touch up)
-=======
->>>>>>> 520db7e (dynamic bag count change accourding to length)
   const btnRef = useRef();
   const [userData, setData] = useState(
     JSON.parse(localStorage.getItem("userdata"))
@@ -162,8 +151,6 @@ export const TabMiddleNav = () => {
             <Link to="/wishlist">
               <HiOutlineHeart size={30} style={{ marginLeft: "20px" }} />
             </Link>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <Box position={"relative"}>
             <Link to={"/cart"}>
                   {" "}
@@ -172,22 +159,6 @@ export const TabMiddleNav = () => {
                   <Text position={"absolute"} right="3" top="1.5">{data.length}</Text>
                 </Link>
                 </Box>
-=======
-            <Link to={"/cart"}>
-              {" "}
-              <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
-            </Link>
->>>>>>> ecca77a (Final Touch up)
-=======
-            <Box position={"relative"}>
-            <Link to={"/cart"}>
-                  {" "}
-                  <IoBagOutline size={30} style={{ marginLeft: "20px" }} />
-     
-                  <Text position={"absolute"} right="3" top="1.5">{data.length}</Text>
-                </Link>
-                </Box>
->>>>>>> 520db7e (dynamic bag count change accourding to length)
           </Flex>
         </Box>
       </Flex>

@@ -5,10 +5,6 @@
    gap:28px;
    justify-content: center;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ecca77a (Final Touch up)
 .insta{
     width: 40%;
 }
@@ -16,39 +12,15 @@
     width: 40%;
 }
 .fb
-<<<<<<< HEAD
 {
     width: 40%;
-=======
-.fb,.insta,.snapchat
-{
-<<<<<<< HEAD
-    width: 2.5%;
->>>>>>> f83085a (women data)
-=======
-    width: 25.5%;
->>>>>>> b8362dc (responsive landing page)
-=======
-{
-    width: 40%;
->>>>>>> ecca77a (Final Touch up)
     border-radius: 50%;
 }
 
 .visa,.master,.paypal,.american,.electron
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     width:25.5%;
     height:80%
-=======
-    width:2.5%;
-    height:2%
->>>>>>> f83085a (women data)
-=======
-    width:25.5%;
-    height:80%
->>>>>>> b8362dc (responsive landing page)
 }
 
 /* end footer */
@@ -60,29 +32,12 @@
     justify-content: center;
 
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* .helpdiv
 {
         width: 100%;
         line-height: 30px;
         text-align: left;
 } */
-=======
-.helpdiv
-=======
-/* .helpdiv
->>>>>>> b8362dc (responsive landing page)
-{
-        width: 100%;
-        line-height: 30px;
-        text-align: left;
-<<<<<<< HEAD
-}
->>>>>>> f83085a (women data)
-=======
-} */
->>>>>>> b8362dc (responsive landing page)
 .head
 {
     font-size: 16px;
